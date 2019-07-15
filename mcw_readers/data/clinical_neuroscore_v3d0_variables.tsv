@@ -1,976 +1,976 @@
 redcap	worksheet	row	column
-0	age			
-1	wms_io_raw	Template	15	3
-2	wms_io_per	Template	15	5
-3	wais_ver			
-4	fsiq	Template	49	3
-5	vci	Template	50	4
-6	sim_raw	Template	51	3
-7	sim_ss	Template	51	4
-8	voc_raw	Template	52	3
-9	voc_ss	Template	52	4
-10	in_raw	Template	53	3
-11	in_ss	Template	53	4
-12	pri	Template	55	4
-13	bd_raw	Template	56	3
-14	bd_ss	Template	56	4
-15	mr_raw	Template	57	3
-16	mr_ss	Template	57	4
-17	vp_raw	Template	58	3
-18	vp_ss	Template	58	4
-19	wmi	Template	61	4
-20	dsp_raw	Template	59	3
-21	dsp_ss	Template	59	4
-22	dsp_rel			
-23	ar_raw	Template	63	3
-24	ar_ss	Template	63	4
-25	psi	Template	65	4
-26	ss_raw	Template	66	3
-27	ss_ss	Template	66	4
-28	cd_raw	Template	67	3
-29	cd_ss	Template	67	4
-30	wms_ver			
-31	LM_ver			
-32	LMI_raw	Template	96	3
-33	LMI_ss	Template	96	4
-34	LMII_raw	Template	97	3
-35	LMII_ss	Template	97	4
-36	LMrec_raw	Template	98	3
-37	LMrec_per	Template	98	4
-38	VPAI_raw	Template	99	3
-39	VPAI_ss	Template	99	4
-40	VPAII_raw	Template	100	3
-41	VPAII_ss	Template	100	4
-42	VPArec_raw	Template	101	3
-43	VPArec_perc	Template	101	4
-44	VRI_raw	Template	103	3
-45	VRI_ss	Template	103	4
-46	VRII_raw	Template	104	3
-47	VRII_ss	Template	104	4
-48	VRrec_raw	Template	105	3
-49	VRrec_per	Template	105	4
-50	VRcopy_raw	Template	143	3
-51	VRcopy_perc	Template	143	4
-52	hvlt_form			
-53	hvlt_tot_raw	Template	176	3
-54	hvlt_tot_ss	Template	176	4
-55	hvlt_tot_per	Template	176	5
-56	hvlt_tot_int	Template	176	6
-57	hvlt_delay_raw	Template	177	3
-58	hvlt_delay_ss	Template	177	4
-59	hvlt_perc_raw	Template	178	3
-60	hvlt_perc_ss	Template	178	4
-61	hvlt_disc_raw	Template	179	3
-62	hvlt_disc_ss	Template	179	4
-63	hvlt_disc_tp			
-64	hvlt_disc_fp			
-65	hvlt_disc_fn			
-66	HVLT_MemProfile			
-67	HVLT_MemProfile_MixedExplained			
-68	HVLTMemProfile2			
-69	HVLTMemProfile2_MixedExplained			
-70	cvlt_form			
-71	cvlt_tot_raw	Template	168	3
-72	cvlt_tot_ss	Template	168	4
-73	cvlt_sdelayfree_raw	Template	169	3
-74	cvlt_sdelayfree_ss	Template	169	4
-75	cvlt_sdelaycued_raw	Template	170	3
-76	cvlt_sdelaycued_ss	Template	170	4
-77	cvlt_ldelayfree_raw	Template	171	3
-78	cvlt_ldelayfree_ss	Template	171	4
-79	cvlt_ldelaycued_raw	Template	172	3
-80	cvlt_ldelaycued_ss	Template	172	4
-81	cvlt_recogdisc_raw	Template	173	3
-82	cvlt_recogdisc_ss	Template	173	4
-83	cvlt_fcrecog_perc	Template	174	3
-84	BVMT_form			
-85	BVMT_tot_raw	Template	176	3
-86	BVMT_tot_ss	Template	176	4
-87	BVMT_delay_raw	Template	177	3
-88	BVMT_delay_ss	Template	177	4
-89	BVMT_rec_raw	Template	179	3
-90	BVMT_rec_perc	Template	179	4
-91	bnt_ver			
-92	bnt_raw	Template	223	3
-93	bnt_ss	Template	223	4
-94	bdae_CIM_raw	Template	224	3
-95	bdae_CIM_ss	Template	224	4
-96	bdae_RS_raw	Template	226	3
-97	bdae_RN_raw	Template	226	4
-98	bdae_RN_class			
-99	bdae_CT_raw	Template	227	3
-100	bdae_SP_raw	Template	227	4
-101	bdae_praxis_NG_raw			
-102	bdae_praxis_CG_raw			
-103	bdae_praxis_UPO_raw			
-104	bdae_praxis_BFRM_raw			
-105	bdae_WC_raw			
-106	wratread_form			
-107	wratread_raw	Template	238	3
-108	wratread_ss	Template	238	4
-109	WJIII_WA_raw	Template	259	3
-110	WJIII_WA_ss	Template	259	4
-111	clock_score	Template	308	3
-112	clock_time			
-113	clock_class			
-114	JLO_form			
-115	JLO_raw	Template	306	3
-116	JLO_ss	Template	306	4
-117	sdmt_writ_raw	Template	323	3
-118	sdmt_writ_ss	Template	323	4
-119	sdmt_oral_raw	Template	324	3
-120	sdmt_oral_ss	Template	324	4
-121	PASAT_form			
-122	PASAT_3srate_raw	Template	327	3
-123	PASAT_3srate_ss	Template	327	4
-124	PASAT_2srate_raw	Template	328	3
-125	PASAT_2srate_ss	Template	328	4
-126	CPT3_disc_ss	Template	345	3
-127	CPT3_detect_class			
-128	CPT3_omis_ss	Template	346	3
-129	CPT3_omis_class			
-130	CPT3_comis_ss	Template	347	3
-131	CPT3_comis_class			
-132	CPT3_per_ss	Template	348	3
-133	CPT3_per_class			
-134	CPT3_HRT_ss	Template	352	3
-135	CPT3_HRT_class			
-136	CPT3_HRTSD_ss	Template	353	3
-137	CPT3_HRTSD_class			
-138	CPT3_var_ss	Template	351	3
-139	CPT3_var_class			
-140	CPT3_HRTbc_ss	Template	352	3
-141	CPT3_HRTbc_class			
-142	CPT3_HRTisi_ss	Template	353	3
-143	CPT3_HRTisi_class			
-144	trails_ver			
-145	trailsa_raw	Template	364	3
-146	trailsa_ss	Template	364	4
-147	trailsa_err	Template	364	6
-148	trailsb_raw	Template	365	3
-149	trailsb_ss	Template	365	4
-150	trailsb_err	Template	365	6
-151	wcst_ver			
-152	wcst_cat_raw	Template	369	3
-153	wcst_cat_perc	Template	369	5
-154	wcst_fms_raw	Template	370	3
-155	wcst_fms_perc	Template	370	5
-156	wcst_err_raw	Template	371	3
-157	wcst_err_ss	Template	371	4
-158	wcst_per_raw	Template	372	3
-159	wcst_per_ss	Template	372	4
-160	letfluency_ver			
-161	DKEFSletterflue_raw	Template	381	3
-162	DKEFSletterflue_ss	Template	381	4
-163	DKEFSletterlfue_per	Template	381	5
-164	DKEFSleterflue_int	Template	381	6
-165	letfluency_raw			
-166	letfluency_ss			
-167	letfluency_per			
-168	letfluency_int			
-169	catfluency_ver			
-170	DKEFScatflu_raw	Template	382	3
-171	DKEFScatflu_ss	Template	382	4
-172	DKEFScatflu_per	Template	382	5
-173	DKEFScatflu_int	Template	382	6
-174	catfluency_raw			
-175	catfluency_ss			
-176	catfluency_per			
-177	catfluency_int			
-178	DKEFS_switch_vers			
-179	DKEFSswitchfluency_raw	Template	383	3
-180	DKEFSswitchfluency_ss	Template	383	4
-181	DKEFSswitchaccuracy_raw	Template	383	5
-182	DKEFSswitchaccuracy_ss	Template	383	6
-183	DKEFSTrails_vis_scan_raw	Template	374	3
-184	DKEFSTrails_vis_scan_ss	Template	374	4
-185	DKEFSTrails_num_seq_raw	Template	375	3
-186	DKEFSTrails_num_seq_ss	Template	375	4
-187	DKEFSTrails_let_seq_raw	Template	376	3
-188	DKEFSTrails_let_seq_ss	Template	376	4
-189	DKEFSTrails_switch_raw	Template	377	3
-190	DKEFSTrails_switch_ss	Template	377	4
-191	DKEFSTrails_errors_raw	Template	378	3
-192	DKEFSTrails_errors_ss	Template	378	4
-193	DKEFSTrails_mot_speed_raw	Template	379	3
-194	DKEFSTrails_mot_speed_ss	Template	379	4
-195	DKEFSTower_ach_score_raw	Template	412	3
-196	DKEFSTower_ach_score_ss	Template	412	4
-197	DKEFSTower_mean1move_raw	Template	413	3
-198	DKEFSTower_mean1move_ss	Template	413	4
-199	DKEFSTower_timepermove_raw	Template	414	3
-200	DKEFSTower_timepermove_ss	Template	414	4
-201	DKEFSTower_move_acc_raw	Template	415	3
-202	DKEFSTower_move_acc_ss	Template	415	4
-203	DKEFSTower_rule_viol_raw	Template	416	3
-204	DKEFSTower_rule_viol_ss	Template	416	4
-205	DKEFSTower_tot_rvs_raw	Template	417	3
-206	DKEFSTower_tot_rvs_perc	Template	417	5
-207	book_cat_errors_raw	Template	451	3
-208	book_cat_errors_ss	Template	451	4
-209	TapSet_raw	Template	419	3
-210	MotSeq_raw	Template	420	3
-211	ML_PDE_raw	Template	447	3
-212	ML_PFE_raw	Template	447	3
-213	RS_PDE_raw	Template	447	3
-214	RS_PFE_raw	Template	447	3
-215	pegs_DH_trial1_raw	Template	480	3
-216	pegs_DH_trial1_ss	Template	480	4
-217	pegs_NDH_trial1_raw	Template	482	3
-218	pegs_NDH_trial1_ss	Template	482	4
-219	gripstrength_DH_raw	Template	477	3
-220	gripstrength_DH_ss	Template	477	4
-221	gripstrength_NDH_raw	Template	478	3
-222	gripstrength_NDH_ss	Template	478	4
-223	gds_raw	Template	494	3
-224	gds_class	Template	494	6
-225	bdi_raw	Template	492	3
-226	bdi_class	Template	492	6
-227	depression_label			
-228	adfacs_iadlperc	Template	496	3
-229	adfacs_adlperc	Template	497	3
-230	adfacs_tot	Template	498	3
-231	maq_physio_panic	Template	675	4
-232	maq_soc_pho	Template	676	4
-233	maq_worry_fear	Template	677	4
-234	maq_neg_aff	Template	678	4
-235	maq_tot	Template	679	4
-236	bai_raw	Template	492	3
-237	bai_class	Template	492	6
-238	A1C			
-239	Addenbrooke_Attn			
-240	Addenbrookedate			
-241	Addenbrooke_Fluency			
-242	Addenbrooke_Lang			
-243	Addenbrooke_Mem			
-244	Addenbrooke_tot			
-245	Addenbrooke_Visuo			
-246	adls			
-247	Amygdala_L_TIVperc			
-248	Amygdala_L_vol			
-249	Amygdala_L_Zscore			
-250	Amygdala_R_TIVperc			
-251	Amygdala_R_vol			
-252	Amygdala_R_Zscore			
-253	Amygdala_TIVperc			
-254	Amygdala_vol			
-255	Amygdala_Zscore			
-256	appetite			
-257	appliance			
-258	B12			
-259	BPdiastolic			
-260	BPsystolic			
-261	BrainStem_TIVperc			
-262	BrainStem_vol			
-263	BrainStem_Zscore			
-264	cad			
-265	Caudate_L_TIVperc			
-266	Caudate_L_vol			
-267	Caudate_L_Zscore			
-268	Caudate_R_TIVperc			
-269	Caudate_R_vol			
-270	Caudate_R_Zscore			
-271	Caudate_TIVperc			
-272	Caudate_vol			
-273	Caudate_Zscore			
-274	Cerebellum_L_TIVperc			
-275	Cerebellum_L_vol			
-276	Cerebellum_L_Zscore			
-277	Cerebellum_R_TIVperc			
-278	Cerebellum_R_vol			
-279	Cerebellum_R_Zscore			
-280	Cerebellum_TIVperc			
-281	Cerebellum_vol			
-282	Cerebellum_Zscore			
-283	cholesterol			
-284	cog_attn			
-285	cog_behav			
-286	cog_course			
-287	cog_judg			
-288	cog_mem			
-289	cog_onset			
-290	cog_para			
-291	cog_pers			
-292	cog_probsol			
-293	cog_proc			
-294	cog_wfp			
-295	cook			
-296	CSF_Dura_TIVperc			
-297	CSF_Dura_vol			
-298	CSF_Dura_Zscore			
-299	cva			
-300	DATA			
-301	declinefromoutsideeval			
-302	diabetes			
-303	drive			
-304	drug			
-305	drug_name			
-306	drug_type			
-307	employ			
-308	etoh_abuse			
-309	etoh_drinks			
-310	exercise			
-311	falls			
-312	famhx_dem			
-313	famhx_demtype			
-314	famhx_demtype_explained			
-315	famhx_onset			
-316	famhx_onset_explained			
-317	famhx_psy			
-318	famhx_psyrel			
-319	famhx_rel			
-320	fazekas			
-321	finance			
-322	FrontalLobe_L_TIVperc			
-323	FrontalLobe_L_vol			
-324	FrontalLobe_L_Zscore			
-325	FrontalLobe_R_TIVperc			
-326	FrontalLobe_R_vol			
-327	FrontalLobe_R_Zscore			
-328	FrontalLobe_TIVperc			
-329	FrontalLobe_vol			
-330	FrontalLobe_Zscore			
-331	GrayMatter_TIVperc			
-332	GrayMatter_vol			
-333	GrayMatter_Zscore			
-334	Hippocampus_Asym_Index			
-335	Hippocampus_Asym_percentile			
-336	Hippocampus_Asym_Zscor			
-337	Hippocampus_L_TIVperc			
-338	Hippocampus_L_vol			
-339	Hippocampus_L_Zscore			
-340	Hippocampus_R_TIVperc			
-341	Hippocampus_R_vol			
-342	Hippocampus_R_Zscore			
-343	Hippocampus_TIVperc			
-344	Hippocampus_vol			
-345	Hippocampus_Zscore			
-346	hypertension			
-347	iadls			
-348	insight			
-349	LateralVent_L_TIVperc			
-350	LateralVent_L_vol			
-351	LateralVent_L_Zscore			
-352	LateralVent_R_TIVperc			
-353	LateralVent_R_vol			
-354	LateralVent_R_Zscore			
-355	LateralVent_TIVperc			
-356	LateralVent_vol			
-357	LateralVent_Zscore			
-358	mail			
-359	marital			
-360	med			
-361	MMSEdate			
-362	MMSEscore			
-363	mood_curr			
-364	mTIV			
-365	neurobehav			
-366	Neurology_Etiology			
-367	neurologytx			
-368	NeurologyVisit_Date			
-369	NeuroReaderDate			
-370	NP_provider			
-371	NpsyDate			
-372	OccipitalLobe_L_TIVperc			
-373	OccipitalLobe_L_vol			
-374	OccipitalLobe_L_Zscore			
-375	OccipitalLobe_R_TIVperc			
-376	OccipitalLobe_R_vol			
-377	OccipitalLobe_R_Zscore			
-378	OccipitalLobe_TIVperc			
-379	OccipitalLobe_vol			
-380	OccipitalLobe_Zscore			
-381	occup			
-382	OSAtx			
-383	other_neurol			
-384	other_neurol_prob			
-385	Outside_Neuropsych			
-386	Pallidum_L_TIVperc			
-387	Pallidum_L_vol			
-388	Pallidum_L_Zscore			
-389	Pallidum_R_TIVperc			
-390	Pallidum_R_vol			
-391	Pallidum_R_Zscore			
-392	Pallidum_TIVperc			
-393	Pallidum_vol			
-394	Pallidum_Zscore			
-395	ParietalLobe_L_TIVperc			
-396	ParietalLobe_L_vol			
-397	ParietalLobe_L_Zscore			
-398	ParietalLobe_R_TIVperc			
-399	ParietalLobe_R_vol			
-400	ParietalLobe_R_Zscore			
-401	ParietalLobe_TIVperc			
-402	ParietalLobe_vol			
-403	ParietalLobe_Zscore			
-404	premorbidpsych			
-405	premorbidpsych_description			
-406	priortx			
-407	psychosis			
-408	psychosistype			
-409	psydx			
-410	Putamen_L_TIVperc			
-411	Putamen_L_vol			
-412	Putamen_L_Zscore			
-413	Putamen_R_TIVperc			
-414	Putamen_R_vol			
-415	Putamen_R_Zscore			
-416	Putamen_TIVperc			
-417	Putamen_vol			
-418	Putamen_Zscore			
-419	rm_memname			
-420	rx_antidep			
-421	rx_antipsy			
-422	rx_anx			
-423	rx_mem			
-424	shop			
-425	sleep			
-426	sleep_med			
-427	suicide			
-428	tbi			
-429	TemporalLobe_L_TIVperc			
-430	TemporalLobe_L_vol			
-431	TemporalLobe_L_Zscore			
-432	TemporalLobe_R_TIVperc			
-433	TemporalLobe_R_vol			
-434	TemporalLobe_R_Zscore			
-435	TemporalLobe_TIVperc			
-436	TemporalLobe_vol			
-437	TemporalLobe_Zscore			
-438	Thalamus_L_TIVperc			
-439	Thalamus_L_vol			
-440	Thalamus_L_Zscore			
-441	Thalamus_R_TIVperc			
-442	Thalamus_R_vol			
-443	Thalamus_R_Zscore			
-444	Thalamus_TIVperc			
-445	Thalamus_vol			
-446	Thalamus_Zscore			
-447	therapy			
-448	tobacco			
-449	traumahx			
-450	TSH			
-451	tumor			
-452	VentD_L_TIVperc			
-453	VentD_L_vol			
-454	VentD_L_Zscore			
-455	VentD_R_TIVperc			
-456	VentD_R_vol			
-457	VentD_R_Zscore			
-458	VentD_TIVperc			
-459	VentD_vol			
-460	VentD_Zscore			
-461	WBV_TIVperc			
-462	WBV_vol			
-463	WBV_Zscore			
-464	WhiteMatter_TIVperc			
-465	WhiteMatter_vol			
-466	WhiteMatter_Zscore			
-467	WM_load			
-468	Amygdala_L_perc			
-469	Amygdala_perc			
-470	Amygdala_R_perc			
-471	BrainStem_perc			
-472	Caudate_L_perc			
-473	Caudate_perc			
-474	Caudate_R_perc			
-475	Cerebellum_L_perc			
-476	Cerebellum_perc			
-477	Cerebellum_R_perc			
-478	CSF_Dura_perc			
-479	FrontalLobe_L_perc			
-480	FrontalLobe_perc			
-481	FrontalLobe_R_perc			
-482	GrayMatter_perc			
-483	Hippocampus_L_perc			
-484	Hippocampus_perc			
-485	Hippocampus_R_perc			
-486	LateralVent_L_perc			
-487	LateralVent_perc			
-488	LateralVent_R_perc			
-489	OccipitalLobe_L_perc			
-490	OccipitalLobe_perc			
-491	OccipitalLobe_R_perc			
-492	Pallidum_L_perc			
-493	Pallidum_perc			
-494	Pallidum_R_perc			
-495	ParietalLobe_L_perc			
-496	ParietalLobe_perc			
-497	ParietalLobe_R_perc			
-498	Putamen_L_perc			
-499	Putamen_perc			
-500	Putamen_R_perc			
-501	TemporalLobe_L_perc			
-502	TemporalLobe_perc			
-503	TemporalLobe_R_perc			
-504	Thalamus_L_perc			
-505	Thalamus_perc			
-506	Thalamus_R_perc			
-507	VentD_L_perc			
-508	VentD_perc			
-509	VentD_R_perc			
-510	WBV_perc			
-511	WhiteMatter_perc			
-534	A1C_BL			
-535	adfacs_adlperc_BL			
-536	adfacs_iadlperc_BL			
-537	adfacs_tot_BL			
-538	adls_BL			
-539	age_BL			
-540	Amnestic			
-541	APOE			
-542	appetite_BL			
-543	appliance_BL			
-544	ar_raw_BL			
-545	ar_ss_BL			
-546	B12_BL			
-547	bai_class_BL			
-548	bai_raw_BL			
-549	bdae_CIM_raw_BL			
-550	bdae_CIM_ss_bl			
-551	bdae_CT_raw_BL			
-552	bdae_praxis_BFRM_raw_BL			
-553	bdae_praxis_CG_raw_BL			
-554	bdae_praxis_NG_raw_BL			
-555	bdae_praxis_UPO_raw_BL			
-556	bdae_RN_class_BL			
-557	bdae_RN_raw_BL			
-558	bdae_RS_raw_BL			
-559	bdae_SP_raw_BL			
-560	bdae_WC_raw_BL			
-561	bdi_class_BL			
-562	bdi_raw_BL			
-563	bd_raw_BL			
-564	bd_ss_BL			
-565	bnt_raw_BL			
-566	bnt_ss_BL			
-567	bnt_ver_BL			
-568	book_cat_errors_raw_BL			
-569	book_cat_errors_ss_BL			
-570	BPdiastolic_BL			
-571	BPsystolic_BL			
-572	BVMT_delay_raw_BL			
-573	BVMT_delay_ss_BL			
-574	BVMT_form_BL			
-575	BVMT_rec_perc_BL			
-576	BVMT_rec_raw_BL			
-577	BVMT_tot_raw_BL			
-578	BVMT_tot_ss_BL			
-579	cad_BL			
-580	catfluency_int_BL			
-581	catfluency_per_BL			
-582	catfluency_raw_BL			
-583	catfluency_ss_BL			
-584	catfluency_ver_BL			
-585	cd_raw_BL			
-586	cd_ss_BL			
-587	cholesterol_BL			
-588	clock_class_BL			
-589	clock_score_BL			
-590	clock_time_BL			
-591	cog_attn_BL			
-592	cog_behav_BL			
-593	cog_course_BL			
-594	cog_judg_BL			
-595	cog_mem_BL			
-596	cognitive_change			
-597	cog_onset_BL			
-598	cog_para_BL			
-599	cog_pers_BL			
-600	cog_probsol_BL			
-601	cog_proc_BL			
-602	CogResFactor1			
-603	CogResFactor2			
-604	CogResFactor3			
-605	CogResFactor4			
-606	CogResFactor5			
-607	CogResFactor6			
-608	cog_wfp_BL			
-609	cook_BL			
-610	CPT3_comis_class_BL			
-611	CPT3_comis_ss_BL			
-612	CPT3_detect_class_BL			
-613	CPT3_detect_ss_BL			
-614	CPT3_HRTbc_class_BL			
-615	CPT3_HRTbc_ss_BL			
-616	CPT3_HRT_class_BL			
-617	CPT3_HRTisi_class_BL			
-618	CPT3_HRTisi_ss_BL			
-619	CPT3_HRTSD_class_BL			
-620	CPT3_HRTSD_ss_BL			
-621	CPT3_HRT_ss_BL			
-622	CPT3_omis_class_BL			
-623	CPT3_omis_ss_BL			
-624	CPT3_per_class_BL			
-625	CPT3_per_ss_BL			
-626	CPT3_var_class_BL			
-627	CPT3_var_ss_BL			
-628	ct_ab			
-629	ct_atrophy			
-630	ct_date			
-631	ct_other			
-632	ct_vasc			
-633	ct_vent			
-634	cva_BL			
-635	cvlt_fcrecog_perc_BL			
-636	cvlt_form_BL			
-637	cvlt_ldelaycued_raw_BL			
-638	cvlt_ldelaycued_ss_BL			
-639	cvlt_ldelayfree_raw_BL			
-640	cvlt_ldelayfree_ss_BL			
-641	cvlt_recogdisc_raw_BL			
-642	cvlt_recogdisc_ss_BL			
-643	cvlt_sdelaycued_raw_BL			
-644	cvlt_sdelaycued_ss_BL			
-645	cvlt_sdelayfree_raw_BL			
-646	cvlt_sdelayfree_ss_BL			
-647	cvlt_tot_raw_BL			
-648	cvlt_tot_ss_BL			
-649	datadoublecheck			
-650	data_entry_ambiguities			
-651	Date_BL			
-652	declinefromoutsideeval_BL			
-653	depression_label3			
-654	depression_label_BL			
-655	devel_hx			
-656	diabetes_BL			
-657	Differ_HC_FL			
-658	Differ_HC_FL_L			
-659	Differ_HC_FL_R			
-660	Differ_HC_OL			
-661	Differ_HC_OL_L			
-662	Differ_HC_OL_R			
-663	Differ_HC_PL			
-664	Differ_HC_PL_L			
-665	Differ_HC_PL_R			
-666	Differ_HC_TL			
-667	Differ_HC_TL_L			
-668	Differ_HC_TL_R			
-669	Differ_HC_WBV			
-670	DiseaseDuration			
-671	DKEFScatflu_int_BL			
-672	DKEFScatflu_per_BL			
-673	DKEFScatflu_raw_BL			
-674	DKEFScatflu_ss_BL			
-675	DKEFSleterflue_int_BL			
-676	DKEFSletterflue_raw_BL			
-677	DKEFSletterflue_ss_BL			
-678	DKEFSletterlfue_per_BL			
-679	DKEFSswitchaccuracy_raw_BL			
-680	DKEFSswitchaccuracy_ss_BL			
-681	DKEFSswitchfluency_raw_BL			
-682	DKEFSswitchfluency_ss_BL			
-683	DKEFS_switch_vers_BL			
-684	DKEFSTower_ach_score_raw_BL			
-685	DKEFSTower_ach_score_ss_BL			
-686	DKEFSTower_mean1move_raw_BL			
-687	DKEFSTower_mean1move_ss_BL			
-688	DKEFSTower_move_acc_raw_BL			
-689	DKEFSTower_move_acc_ss_BL			
-690	DKEFSTower_rule_viol_raw_BL			
-691	DKEFSTower_rule_viol_ss_BL			
-692	DKEFSTower_timepermove_raw_BL			
-693	DKEFSTower_timepermove_ss_BL			
-694	DKEFSTower_tot_rvs_perc_BL			
-695	DKEFSTower_tot_rvs_raw_BL			
-696	DKEFSTrails_errors_raw_BL			
-697	DKEFSTrails_errors_ss_BL			
-698	DKEFSTrails_let_seq_raw_BL			
-699	DKEFSTrails_let_seq_ss_BL			
-700	DKEFSTrails_mot_speed_raw_BL			
-701	DKEFSTrails_mot_speed_ss_BL			
-702	DKEFSTrails_num_seq_raw_BL			
-703	DKEFSTrails_num_seq_ss_BL			
-704	DKEFSTrails_switch_raw_BL			
-705	DKEFSTrails_switch_ss_BL			
-706	DKEFSTrails_vis_scan_raw_BL			
-707	DKEFSTrails_vis_scan_ss_BL			
-708	DOB			
-709	Domains			
-710	drive_BL			
-711	drug_BL			
-712	drug_name_BL			
-713	drug_type_BL			
-714	dsp_raw_BL			
-715	dsp_rel_BL			
-716	dsp_ss_BL			
-717	dxdiscrepancybetweenproviders			
-718	ed_level			
-719	ed_qual			
-720	ed_yrs			
-721	employ_BL			
-722	ETIOL0			
-723	ETIOL1			
-724	ETIOL2			
-725	Etiology_1_Neurology			
-726	etiology_1_Neurology_Explained			
-727	etiology_1_NPsy			
-728	etiology_anc			
-729	etiology_NPsy_Explained			
-730	etoh_abuse_BL			
-731	etoh_drinks_BL			
-732	exercise_BL			
-733	falls_BL			
-734	FAMHX0			
-735	FAMHX1			
-736	FAMHX2			
-737	FAMHX3			
-738	famhx_dem_BL			
-739	famhx_demtype_BL			
-740	famhx_demtype_explained_BL			
-741	famhx_onset_BL			
-742	famhx_onset_explained_BL			
-743	famhx_psy_BL			
-744	famhx_psyrel_BL			
-745	famhx_rel_BL			
-746	FDGPET			
-747	filter_.			
-748	Filter1			
-749	finance_BL			
-750	firstname			
-751	frontosubcort_v_amnestic			
-752	frontosubcort_v_amnestic_anc			
-753	fsiq_BL			
-754	gds_class_BL			
-755	gds_raw_BL			
-756	gripstrength_DH_raw_BL			
-757	gripstrength_DH_ss_BL			
-758	gripstrength_NDH_raw_BL			
-759	gripstrength_NDH_ss_BL			
-760	Grouped_CogResFactor1			
-761	Grouped_CogResFactor2			
-762	Grouped_CogResFactor3			
-763	Grouped_CogResFactor4			
-764	Grouped_CogResFactor5			
-765	Grouped_CogResFactor6			
-766	hand			
-767	hvlt_delay_raw_BL			
-768	hvlt_delay_ss_BL			
-769	hvlt_disc_fn_BL			
-770	hvlt_disc_fp_BL			
-771	hvlt_disc_raw_BL			
-772	hvlt_disc_ss_BL			
-773	hvlt_disc_tp_BL			
-774	hvlt_form_BL			
-775	hvlt_perc_raw_BL			
-776	hvlt_perc_ss_BL			
-777	hvlt_tot_int_BL			
-778	hvlt_tot_per_BL			
-779	hvlt_tot_raw_BL			
-780	hvlt_tot_ss_BL			
-781	hypertension_BL			
-782	iadls_BL			
-783	Include_JakBondi			
-784	in_raw_BL			
-785	insight_BL			
-786	in_ss_BL			
-787	JakBondi_Domains			
-788	JakBondi_MCI_AmnesticvsNonamnestic			
-789	JakBondi_MCI_type			
-790	JLO_form_BL			
-791	JLO_raw_BL			
-792	JLO_ss_BL			
-793	lang_first			
-794	lang_first_BL			
-795	lang_fluency			
-796	lang_fluency_BL			
-797	lang_sec			
-798	lang_sec_BL			
-799	lastname			
-800	letfluency_int_BL			
-801	letfluency_per_BL			
-802	letfluency_raw_BL			
-803	letfluency_ss_BL			
-804	letfluency_ver_BL			
-805	LMII_raw_BL			
-806	LMII_ss_BL			
-807	LMI_raw_BL			
-808	LMI_ss_BL			
-809	LMrec_per_BL			
-810	LMrec_raw_BL			
-811	LM_ver_BL			
-812	mail_BL			
-813	maq_neg_aff_BL			
-814	maq_physio_panic_BL			
-815	maq_soc_pho_BL			
-816	maq_tot_BL			
-817	maq_worry_fear_BL			
-818	marital_BL			
-819	MCItype			
-820	med_BL			
-821	ML_PDE_raw_BL			
-822	ML_PFE_raw_BL			
-823	mood_curr_BL			
-824	MotSeq_raw_BL			
-825	mri_ab			
-826	mri_atrophy			
-827	mri_date			
-828	mri_hippatro			
-829	mri_hippscler			
-830	mri_tumor			
-831	mri_vascular			
-832	mri_wm			
-833	MRN			
-834	mr_raw_BL			
-835	mr_ss_BL			
-836	neurobehav_anc			
-837	neuroim			
-838	neuroim_type			
-839	neurology_dx_old			
-840	Neurology_Etiology_BL			
-841	neurologytx_BL			
-842	neurologyvisitdate			
-843	NeurologyVisit_Date_BL			
-844	notes			
-845	NOTES0			
-846	NOTES1			
-847	NOTES2			
-848	NP_provider_BL			
-849	occup_BL			
-850	occup_categories			
-851	occup_recat_homemaker			
-852	original_frontosub_v_am_anc			
-853	OSAtx_BL			
-854	other_neurol_BL			
-855	other_neurol_prob_BL			
-856	Outside_Neuropsych_BL			
-857	PASAT_2srate_raw_BL			
-858	PASAT_2srate_ss_BL			
-859	PASAT_3srate_raw_BL			
-860	PASAT_3srate_ss_BL			
-861	PASAT_form_BL			
-862	pegs_DH_trial1_raw_BL			
-863	pegs_DH_trial1_ss_BL			
-864	pegs_NDH_trial1_raw_BL			
-865	pegs_NDH_trial1_ss_BL			
-866	PET_amyvid			
-867	PetersenAmnestic			
-868	Petersen_AmnesticvsNonamnestic			
-869	PetersenDomains			
-870	PetersenMCI_Domains			
-871	PetersenMCItype			
-872	PET_result			
-873	PREMO0			
-874	PREMO1			
-875	PREMO10			
-876	PREMO11			
-877	PREMO12			
-878	PREMO2			
-879	PREMO3			
-880	PREMO4			
-881	PREMO5			
-882	PREMO6			
-883	PREMO7			
-884	PREMO8			
-885	PREMO9			
-886	PREMOA			
-887	PREMOB			
-888	PREMOC			
-889	PREMOD			
-890	PREMOE			
-891	PREMOF			
-892	PREMOG			
-893	PREMOH			
-894	PREMOI			
-895	PREMOJ			
-896	PREMOK			
-897	PREMOL			
-898	PREMOM			
-899	PREMON			
-900	PREMOO			
-901	PREMOP			
-902	PREMOQ			
-903	PREMOR			
-904	premorbidpsych_BL			
-905	premorbidpsych_description_BL			
-906	PREMOS			
-907	PREMOT			
-908	PREMOU			
-909	PREMOV			
-910	PREMOW			
-911	PREMOX			
-912	PREMOY			
-913	PREMOZ			
-914	pri_BL			
-915	priortx_BL			
-916	psi_BL			
-917	psychosis_BL			
-918	psychosistype_BL			
-919	psydx_BL			
-920	race			
-921	rm_memname_BL			
-922	RS_PDE_raw_BL			
-923	RS_PFE_raw_BL			
-924	rx_antidep_BL			
-925	rx_antipsy_BL			
-926	rx_anx_BL			
-927	rx_mem_BL			
-928	sdmt_oral_raw_BL			
-929	sdmt_oral_ss_BL			
-930	sdmt_writ_raw_BL			
-931	sdmt_writ_ss_BL			
-932	SES			
-933	sex			
-934	shop_BL			
-935	sim_raw_BL			
-936	sim_ss_BL			
-937	sleep_BL			
-938	sleep_med_BL			
-939	ss_raw_BL			
-940	ss_ss_BL			
-941	suicide_BL			
-942	TapSet_raw_BL			
-943	tbi_BL			
-944	therapy_BL			
-945	tobacco_BL			
-946	trailsa_err_BL			
-947	trailsa_raw_BL			
-948	trailsa_ss_BL			
-949	trailsb_err_BL			
-950	trailsb_raw_BL			
-951	trailsb_ss_BL			
-952	trails_ver_BL			
-953	traumahx_BL			
-954	TSH_BL			
-955	tumor_BL			
-956	VascularRisks_Burden			
-957	VascularRisks_Number			
-958	VascularRisksPresent			
-959	vci_BL			
-960	voc_raw_BL			
-961	voc_ss_BL			
-962	VPAII_raw_BL			
-963	VPAII_ss_BL			
-964	VPAI_raw_BL			
-965	VPAI_ss_BL			
-966	VPArec_perc_BL			
-967	VPArec_raw_BL			
-968	vp_raw_BL			
-969	vp_ss_BL			
-970	VRcopy_perc_BL			
-971	VRcopy_raw_BL			
-972	VRII_raw_BL			
-973	VRII_ss_BL			
-974	VRI_raw_BL			
-975	VRI_ss_BL			
-976	VRrec_per_BL			
-977	VRrec_raw_BL			
-978	wais_ver_BL			
-979	wcst_cat_perc_BL			
-980	wcst_cat_raw_BL			
-981	wcst_err_raw_BL			
-982	wcst_err_ss_BL			
-983	wcst_fms_perc_BL			
-984	wcst_fms_raw_BL			
-985	wcst_per_raw_BL			
-986	wcst_per_ss_BL			
-987	wcst_ver_BL			
-988	WJIII_WA_raw_BL			
-989	WJIII_WA_ss_BL			
-990	wmi_BL			
-991	wms_io_per_BL			
-992	wms_io_raw_BL			
-993	wms_ver_BL			
-994	wratread_form_BL			
-995	wratread_raw_BL			
-996	wratread_ss_BL			
+age			
+wms_io_raw	Template	15	3
+wms_io_per	Template	15	5
+wais_ver			
+fsiq	Template	49	3
+vci	Template	50	4
+sim_raw	Template	51	3
+sim_ss	Template	51	4
+voc_raw	Template	52	3
+voc_ss	Template	52	4
+in_raw	Template	53	3
+in_ss	Template	53	4
+pri	Template	55	4
+bd_raw	Template	56	3
+bd_ss	Template	56	4
+mr_raw	Template	57	3
+mr_ss	Template	57	4
+vp_raw	Template	58	3
+vp_ss	Template	58	4
+wmi	Template	61	4
+dsp_raw	Template	59	3
+dsp_ss	Template	59	4
+dsp_rel			
+ar_raw	Template	63	3
+ar_ss	Template	63	4
+psi	Template	65	4
+ss_raw	Template	66	3
+ss_ss	Template	66	4
+cd_raw	Template	67	3
+cd_ss	Template	67	4
+wms_ver			
+LM_ver			
+LMI_raw	Template	96	3
+LMI_ss	Template	96	4
+LMII_raw	Template	97	3
+LMII_ss	Template	97	4
+LMrec_raw	Template	98	3
+LMrec_per	Template	98	4
+VPAI_raw	Template	99	3
+VPAI_ss	Template	99	4
+VPAII_raw	Template	100	3
+VPAII_ss	Template	100	4
+VPArec_raw	Template	101	3
+VPArec_perc	Template	101	4
+VRI_raw	Template	103	3
+VRI_ss	Template	103	4
+VRII_raw	Template	104	3
+VRII_ss	Template	104	4
+VRrec_raw	Template	105	3
+VRrec_per	Template	105	4
+VRcopy_raw	Template	143	3
+VRcopy_perc	Template	143	4
+hvlt_form			
+hvlt_tot_raw	Template	176	3
+hvlt_tot_ss	Template	176	4
+hvlt_tot_per	Template	176	5
+hvlt_tot_int	Template	176	6
+hvlt_delay_raw	Template	177	3
+hvlt_delay_ss	Template	177	4
+hvlt_perc_raw	Template	178	3
+hvlt_perc_ss	Template	178	4
+hvlt_disc_raw	Template	179	3
+hvlt_disc_ss	Template	179	4
+hvlt_disc_tp			
+hvlt_disc_fp			
+hvlt_disc_fn			
+HVLT_MemProfile			
+HVLT_MemProfile_MixedExplained			
+HVLTMemProfile2			
+HVLTMemProfile2_MixedExplained			
+cvlt_form			
+cvlt_tot_raw	Template	168	3
+cvlt_tot_ss	Template	168	4
+cvlt_sdelayfree_raw	Template	169	3
+cvlt_sdelayfree_ss	Template	169	4
+cvlt_sdelaycued_raw	Template	170	3
+cvlt_sdelaycued_ss	Template	170	4
+cvlt_ldelayfree_raw	Template	171	3
+cvlt_ldelayfree_ss	Template	171	4
+cvlt_ldelaycued_raw	Template	172	3
+cvlt_ldelaycued_ss	Template	172	4
+cvlt_recogdisc_raw	Template	173	3
+cvlt_recogdisc_ss	Template	173	4
+cvlt_fcrecog_perc	Template	174	3
+BVMT_form			
+BVMT_tot_raw	Template	176	3
+BVMT_tot_ss	Template	176	4
+BVMT_delay_raw	Template	177	3
+BVMT_delay_ss	Template	177	4
+BVMT_rec_raw	Template	179	3
+BVMT_rec_perc	Template	179	4
+bnt_ver			
+bnt_raw	Template	223	3
+bnt_ss	Template	223	4
+bdae_CIM_raw	Template	224	3
+bdae_CIM_ss	Template	224	4
+bdae_RS_raw	Template	226	3
+bdae_RN_raw	Template	226	4
+bdae_RN_class			
+bdae_CT_raw	Template	227	3
+bdae_SP_raw	Template	227	4
+bdae_praxis_NG_raw			
+bdae_praxis_CG_raw			
+bdae_praxis_UPO_raw			
+bdae_praxis_BFRM_raw			
+bdae_WC_raw			
+wratread_form			
+wratread_raw	Template	238	3
+wratread_ss	Template	238	4
+WJIII_WA_raw	Template	259	3
+WJIII_WA_ss	Template	259	4
+clock_score	Template	308	3
+clock_time			
+clock_class			
+JLO_form			
+JLO_raw	Template	306	3
+JLO_ss	Template	306	4
+sdmt_writ_raw	Template	323	3
+sdmt_writ_ss	Template	323	4
+sdmt_oral_raw	Template	324	3
+sdmt_oral_ss	Template	324	4
+PASAT_form			
+PASAT_3srate_raw	Template	327	3
+PASAT_3srate_ss	Template	327	4
+PASAT_2srate_raw	Template	328	3
+PASAT_2srate_ss	Template	328	4
+CPT3_disc_ss	Template	345	3
+CPT3_detect_class			
+CPT3_omis_ss	Template	346	3
+CPT3_omis_class			
+CPT3_comis_ss	Template	347	3
+CPT3_comis_class			
+CPT3_per_ss	Template	348	3
+CPT3_per_class			
+CPT3_HRT_ss	Template	352	3
+CPT3_HRT_class			
+CPT3_HRTSD_ss	Template	353	3
+CPT3_HRTSD_class			
+CPT3_var_ss	Template	351	3
+CPT3_var_class			
+CPT3_HRTbc_ss	Template	352	3
+CPT3_HRTbc_class			
+CPT3_HRTisi_ss	Template	353	3
+CPT3_HRTisi_class			
+trails_ver			
+trailsa_raw	Template	364	3
+trailsa_ss	Template	364	4
+trailsa_err	Template	364	6
+trailsb_raw	Template	365	3
+trailsb_ss	Template	365	4
+trailsb_err	Template	365	6
+wcst_ver			
+wcst_cat_raw	Template	369	3
+wcst_cat_perc	Template	369	5
+wcst_fms_raw	Template	370	3
+wcst_fms_perc	Template	370	5
+wcst_err_raw	Template	371	3
+wcst_err_ss	Template	371	4
+wcst_per_raw	Template	372	3
+wcst_per_ss	Template	372	4
+letfluency_ver			
+DKEFSletterflue_raw	Template	381	3
+DKEFSletterflue_ss	Template	381	4
+DKEFSletterlfue_per	Template	381	5
+DKEFSleterflue_int	Template	381	6
+letfluency_raw			
+letfluency_ss			
+letfluency_per			
+letfluency_int			
+catfluency_ver			
+DKEFScatflu_raw	Template	382	3
+DKEFScatflu_ss	Template	382	4
+DKEFScatflu_per	Template	382	5
+DKEFScatflu_int	Template	382	6
+catfluency_raw			
+catfluency_ss			
+catfluency_per			
+catfluency_int			
+DKEFS_switch_vers			
+DKEFSswitchfluency_raw	Template	383	3
+DKEFSswitchfluency_ss	Template	383	4
+DKEFSswitchaccuracy_raw	Template	383	5
+DKEFSswitchaccuracy_ss	Template	383	6
+DKEFSTrails_vis_scan_raw	Template	374	3
+DKEFSTrails_vis_scan_ss	Template	374	4
+DKEFSTrails_num_seq_raw	Template	375	3
+DKEFSTrails_num_seq_ss	Template	375	4
+DKEFSTrails_let_seq_raw	Template	376	3
+DKEFSTrails_let_seq_ss	Template	376	4
+DKEFSTrails_switch_raw	Template	377	3
+DKEFSTrails_switch_ss	Template	377	4
+DKEFSTrails_errors_raw	Template	378	3
+DKEFSTrails_errors_ss	Template	378	4
+DKEFSTrails_mot_speed_raw	Template	379	3
+DKEFSTrails_mot_speed_ss	Template	379	4
+DKEFSTower_ach_score_raw	Template	412	3
+DKEFSTower_ach_score_ss	Template	412	4
+DKEFSTower_mean1move_raw	Template	413	3
+DKEFSTower_mean1move_ss	Template	413	4
+DKEFSTower_timepermove_raw	Template	414	3
+DKEFSTower_timepermove_ss	Template	414	4
+DKEFSTower_move_acc_raw	Template	415	3
+DKEFSTower_move_acc_ss	Template	415	4
+DKEFSTower_rule_viol_raw	Template	416	3
+DKEFSTower_rule_viol_ss	Template	416	4
+DKEFSTower_tot_rvs_raw	Template	417	3
+DKEFSTower_tot_rvs_perc	Template	417	5
+book_cat_errors_raw	Template	451	3
+book_cat_errors_ss	Template	451	4
+TapSet_raw	Template	419	3
+MotSeq_raw	Template	420	3
+ML_PDE_raw	Template	447	3
+ML_PFE_raw	Template	447	3
+RS_PDE_raw	Template	447	3
+RS_PFE_raw	Template	447	3
+pegs_DH_trial1_raw	Template	480	3
+pegs_DH_trial1_ss	Template	480	4
+pegs_NDH_trial1_raw	Template	482	3
+pegs_NDH_trial1_ss	Template	482	4
+gripstrength_DH_raw	Template	477	3
+gripstrength_DH_ss	Template	477	4
+gripstrength_NDH_raw	Template	478	3
+gripstrength_NDH_ss	Template	478	4
+gds_raw	Template	494	3
+gds_class	Template	494	6
+bdi_raw	Template	492	3
+bdi_class	Template	492	6
+depression_label			
+adfacs_iadlperc	Template	496	3
+adfacs_adlperc	Template	497	3
+adfacs_tot	Template	498	3
+maq_physio_panic	Template	675	4
+maq_soc_pho	Template	676	4
+maq_worry_fear	Template	677	4
+maq_neg_aff	Template	678	4
+maq_tot	Template	679	4
+bai_raw	Template	492	3
+bai_class	Template	492	6
+A1C			
+Addenbrooke_Attn			
+Addenbrookedate			
+Addenbrooke_Fluency			
+Addenbrooke_Lang			
+Addenbrooke_Mem			
+Addenbrooke_tot			
+Addenbrooke_Visuo			
+adls			
+Amygdala_L_TIVperc			
+Amygdala_L_vol			
+Amygdala_L_Zscore			
+Amygdala_R_TIVperc			
+Amygdala_R_vol			
+Amygdala_R_Zscore			
+Amygdala_TIVperc			
+Amygdala_vol			
+Amygdala_Zscore			
+appetite			
+appliance			
+B12			
+BPdiastolic			
+BPsystolic			
+BrainStem_TIVperc			
+BrainStem_vol			
+BrainStem_Zscore			
+cad			
+Caudate_L_TIVperc			
+Caudate_L_vol			
+Caudate_L_Zscore			
+Caudate_R_TIVperc			
+Caudate_R_vol			
+Caudate_R_Zscore			
+Caudate_TIVperc			
+Caudate_vol			
+Caudate_Zscore			
+Cerebellum_L_TIVperc			
+Cerebellum_L_vol			
+Cerebellum_L_Zscore			
+Cerebellum_R_TIVperc			
+Cerebellum_R_vol			
+Cerebellum_R_Zscore			
+Cerebellum_TIVperc			
+Cerebellum_vol			
+Cerebellum_Zscore			
+cholesterol			
+cog_attn			
+cog_behav			
+cog_course			
+cog_judg			
+cog_mem			
+cog_onset			
+cog_para			
+cog_pers			
+cog_probsol			
+cog_proc			
+cog_wfp			
+cook			
+CSF_Dura_TIVperc			
+CSF_Dura_vol			
+CSF_Dura_Zscore			
+cva			
+DATA			
+declinefromoutsideeval			
+diabetes			
+drive			
+drug			
+drug_name			
+drug_type			
+employ			
+etoh_abuse			
+etoh_drinks			
+exercise			
+falls			
+famhx_dem			
+famhx_demtype			
+famhx_demtype_explained			
+famhx_onset			
+famhx_onset_explained			
+famhx_psy			
+famhx_psyrel			
+famhx_rel			
+fazekas			
+finance			
+FrontalLobe_L_TIVperc			
+FrontalLobe_L_vol			
+FrontalLobe_L_Zscore			
+FrontalLobe_R_TIVperc			
+FrontalLobe_R_vol			
+FrontalLobe_R_Zscore			
+FrontalLobe_TIVperc			
+FrontalLobe_vol			
+FrontalLobe_Zscore			
+GrayMatter_TIVperc			
+GrayMatter_vol			
+GrayMatter_Zscore			
+Hippocampus_Asym_Index			
+Hippocampus_Asym_percentile			
+Hippocampus_Asym_Zscor			
+Hippocampus_L_TIVperc			
+Hippocampus_L_vol			
+Hippocampus_L_Zscore			
+Hippocampus_R_TIVperc			
+Hippocampus_R_vol			
+Hippocampus_R_Zscore			
+Hippocampus_TIVperc			
+Hippocampus_vol			
+Hippocampus_Zscore			
+hypertension			
+iadls			
+insight			
+LateralVent_L_TIVperc			
+LateralVent_L_vol			
+LateralVent_L_Zscore			
+LateralVent_R_TIVperc			
+LateralVent_R_vol			
+LateralVent_R_Zscore			
+LateralVent_TIVperc			
+LateralVent_vol			
+LateralVent_Zscore			
+mail			
+marital			
+med			
+MMSEdate			
+MMSEscore			
+mood_curr			
+mTIV			
+neurobehav			
+Neurology_Etiology			
+neurologytx			
+NeurologyVisit_Date			
+NeuroReaderDate			
+NP_provider			
+NpsyDate			
+OccipitalLobe_L_TIVperc			
+OccipitalLobe_L_vol			
+OccipitalLobe_L_Zscore			
+OccipitalLobe_R_TIVperc			
+OccipitalLobe_R_vol			
+OccipitalLobe_R_Zscore			
+OccipitalLobe_TIVperc			
+OccipitalLobe_vol			
+OccipitalLobe_Zscore			
+occup			
+OSAtx			
+other_neurol			
+other_neurol_prob			
+Outside_Neuropsych			
+Pallidum_L_TIVperc			
+Pallidum_L_vol			
+Pallidum_L_Zscore			
+Pallidum_R_TIVperc			
+Pallidum_R_vol			
+Pallidum_R_Zscore			
+Pallidum_TIVperc			
+Pallidum_vol			
+Pallidum_Zscore			
+ParietalLobe_L_TIVperc			
+ParietalLobe_L_vol			
+ParietalLobe_L_Zscore			
+ParietalLobe_R_TIVperc			
+ParietalLobe_R_vol			
+ParietalLobe_R_Zscore			
+ParietalLobe_TIVperc			
+ParietalLobe_vol			
+ParietalLobe_Zscore			
+premorbidpsych			
+premorbidpsych_description			
+priortx			
+psychosis			
+psychosistype			
+psydx			
+Putamen_L_TIVperc			
+Putamen_L_vol			
+Putamen_L_Zscore			
+Putamen_R_TIVperc			
+Putamen_R_vol			
+Putamen_R_Zscore			
+Putamen_TIVperc			
+Putamen_vol			
+Putamen_Zscore			
+rm_memname			
+rx_antidep			
+rx_antipsy			
+rx_anx			
+rx_mem			
+shop			
+sleep			
+sleep_med			
+suicide			
+tbi			
+TemporalLobe_L_TIVperc			
+TemporalLobe_L_vol			
+TemporalLobe_L_Zscore			
+TemporalLobe_R_TIVperc			
+TemporalLobe_R_vol			
+TemporalLobe_R_Zscore			
+TemporalLobe_TIVperc			
+TemporalLobe_vol			
+TemporalLobe_Zscore			
+Thalamus_L_TIVperc			
+Thalamus_L_vol			
+Thalamus_L_Zscore			
+Thalamus_R_TIVperc			
+Thalamus_R_vol			
+Thalamus_R_Zscore			
+Thalamus_TIVperc			
+Thalamus_vol			
+Thalamus_Zscore			
+therapy			
+tobacco			
+traumahx			
+TSH			
+tumor			
+VentD_L_TIVperc			
+VentD_L_vol			
+VentD_L_Zscore			
+VentD_R_TIVperc			
+VentD_R_vol			
+VentD_R_Zscore			
+VentD_TIVperc			
+VentD_vol			
+VentD_Zscore			
+WBV_TIVperc			
+WBV_vol			
+WBV_Zscore			
+WhiteMatter_TIVperc			
+WhiteMatter_vol			
+WhiteMatter_Zscore			
+WM_load			
+Amygdala_L_perc			
+Amygdala_perc			
+Amygdala_R_perc			
+BrainStem_perc			
+Caudate_L_perc			
+Caudate_perc			
+Caudate_R_perc			
+Cerebellum_L_perc			
+Cerebellum_perc			
+Cerebellum_R_perc			
+CSF_Dura_perc			
+FrontalLobe_L_perc			
+FrontalLobe_perc			
+FrontalLobe_R_perc			
+GrayMatter_perc			
+Hippocampus_L_perc			
+Hippocampus_perc			
+Hippocampus_R_perc			
+LateralVent_L_perc			
+LateralVent_perc			
+LateralVent_R_perc			
+OccipitalLobe_L_perc			
+OccipitalLobe_perc			
+OccipitalLobe_R_perc			
+Pallidum_L_perc			
+Pallidum_perc			
+Pallidum_R_perc			
+ParietalLobe_L_perc			
+ParietalLobe_perc			
+ParietalLobe_R_perc			
+Putamen_L_perc			
+Putamen_perc			
+Putamen_R_perc			
+TemporalLobe_L_perc			
+TemporalLobe_perc			
+TemporalLobe_R_perc			
+Thalamus_L_perc			
+Thalamus_perc			
+Thalamus_R_perc			
+VentD_L_perc			
+VentD_perc			
+VentD_R_perc			
+WBV_perc			
+WhiteMatter_perc			
+A1C_BL			
+adfacs_adlperc_BL			
+adfacs_iadlperc_BL			
+adfacs_tot_BL			
+adls_BL			
+age_BL			
+Amnestic			
+APOE			
+appetite_BL			
+appliance_BL			
+ar_raw_BL			
+ar_ss_BL			
+B12_BL			
+bai_class_BL			
+bai_raw_BL			
+bdae_CIM_raw_BL			
+bdae_CIM_ss_bl			
+bdae_CT_raw_BL			
+bdae_praxis_BFRM_raw_BL			
+bdae_praxis_CG_raw_BL			
+bdae_praxis_NG_raw_BL			
+bdae_praxis_UPO_raw_BL			
+bdae_RN_class_BL			
+bdae_RN_raw_BL			
+bdae_RS_raw_BL			
+bdae_SP_raw_BL			
+bdae_WC_raw_BL			
+bdi_class_BL			
+bdi_raw_BL			
+bd_raw_BL			
+bd_ss_BL			
+bnt_raw_BL			
+bnt_ss_BL			
+bnt_ver_BL			
+book_cat_errors_raw_BL			
+book_cat_errors_ss_BL			
+BPdiastolic_BL			
+BPsystolic_BL			
+BVMT_delay_raw_BL			
+BVMT_delay_ss_BL			
+BVMT_form_BL			
+BVMT_rec_perc_BL			
+BVMT_rec_raw_BL			
+BVMT_tot_raw_BL			
+BVMT_tot_ss_BL			
+cad_BL			
+catfluency_int_BL			
+catfluency_per_BL			
+catfluency_raw_BL			
+catfluency_ss_BL			
+catfluency_ver_BL			
+cd_raw_BL			
+cd_ss_BL			
+cholesterol_BL			
+clock_class_BL			
+clock_score_BL			
+clock_time_BL			
+cog_attn_BL			
+cog_behav_BL			
+cog_course_BL			
+cog_judg_BL			
+cog_mem_BL			
+cognitive_change			
+cog_onset_BL			
+cog_para_BL			
+cog_pers_BL			
+cog_probsol_BL			
+cog_proc_BL			
+CogResFactor1			
+CogResFactor2			
+CogResFactor3			
+CogResFactor4			
+CogResFactor5			
+CogResFactor6			
+cog_wfp_BL			
+cook_BL			
+CPT3_comis_class_BL			
+CPT3_comis_ss_BL			
+CPT3_detect_class_BL			
+CPT3_detect_ss_BL			
+CPT3_HRTbc_class_BL			
+CPT3_HRTbc_ss_BL			
+CPT3_HRT_class_BL			
+CPT3_HRTisi_class_BL			
+CPT3_HRTisi_ss_BL			
+CPT3_HRTSD_class_BL			
+CPT3_HRTSD_ss_BL			
+CPT3_HRT_ss_BL			
+CPT3_omis_class_BL			
+CPT3_omis_ss_BL			
+CPT3_per_class_BL			
+CPT3_per_ss_BL			
+CPT3_var_class_BL			
+CPT3_var_ss_BL			
+ct_ab			
+ct_atrophy			
+ct_date			
+ct_other			
+ct_vasc			
+ct_vent			
+cva_BL			
+cvlt_fcrecog_perc_BL			
+cvlt_form_BL			
+cvlt_ldelaycued_raw_BL			
+cvlt_ldelaycued_ss_BL			
+cvlt_ldelayfree_raw_BL			
+cvlt_ldelayfree_ss_BL			
+cvlt_recogdisc_raw_BL			
+cvlt_recogdisc_ss_BL			
+cvlt_sdelaycued_raw_BL			
+cvlt_sdelaycued_ss_BL			
+cvlt_sdelayfree_raw_BL			
+cvlt_sdelayfree_ss_BL			
+cvlt_tot_raw_BL			
+cvlt_tot_ss_BL			
+datadoublecheck			
+data_entry_ambiguities			
+Date_BL			
+declinefromoutsideeval_BL			
+depression_label3			
+depression_label_BL			
+devel_hx			
+diabetes_BL			
+Differ_HC_FL			
+Differ_HC_FL_L			
+Differ_HC_FL_R			
+Differ_HC_OL			
+Differ_HC_OL_L			
+Differ_HC_OL_R			
+Differ_HC_PL			
+Differ_HC_PL_L			
+Differ_HC_PL_R			
+Differ_HC_TL			
+Differ_HC_TL_L			
+Differ_HC_TL_R			
+Differ_HC_WBV			
+DiseaseDuration			
+DKEFScatflu_int_BL			
+DKEFScatflu_per_BL			
+DKEFScatflu_raw_BL			
+DKEFScatflu_ss_BL			
+DKEFSleterflue_int_BL			
+DKEFSletterflue_raw_BL			
+DKEFSletterflue_ss_BL			
+DKEFSletterlfue_per_BL			
+DKEFSswitchaccuracy_raw_BL			
+DKEFSswitchaccuracy_ss_BL			
+DKEFSswitchfluency_raw_BL			
+DKEFSswitchfluency_ss_BL			
+DKEFS_switch_vers_BL			
+DKEFSTower_ach_score_raw_BL			
+DKEFSTower_ach_score_ss_BL			
+DKEFSTower_mean1move_raw_BL			
+DKEFSTower_mean1move_ss_BL			
+DKEFSTower_move_acc_raw_BL			
+DKEFSTower_move_acc_ss_BL			
+DKEFSTower_rule_viol_raw_BL			
+DKEFSTower_rule_viol_ss_BL			
+DKEFSTower_timepermove_raw_BL			
+DKEFSTower_timepermove_ss_BL			
+DKEFSTower_tot_rvs_perc_BL			
+DKEFSTower_tot_rvs_raw_BL			
+DKEFSTrails_errors_raw_BL			
+DKEFSTrails_errors_ss_BL			
+DKEFSTrails_let_seq_raw_BL			
+DKEFSTrails_let_seq_ss_BL			
+DKEFSTrails_mot_speed_raw_BL			
+DKEFSTrails_mot_speed_ss_BL			
+DKEFSTrails_num_seq_raw_BL			
+DKEFSTrails_num_seq_ss_BL			
+DKEFSTrails_switch_raw_BL			
+DKEFSTrails_switch_ss_BL			
+DKEFSTrails_vis_scan_raw_BL			
+DKEFSTrails_vis_scan_ss_BL			
+DOB			
+Domains			
+drive_BL			
+drug_BL			
+drug_name_BL			
+drug_type_BL			
+dsp_raw_BL			
+dsp_rel_BL			
+dsp_ss_BL			
+dxdiscrepancybetweenproviders			
+ed_level			
+ed_qual			
+ed_yrs			
+employ_BL			
+ETIOL0			
+ETIOL1			
+ETIOL2			
+Etiology_1_Neurology			
+etiology_1_Neurology_Explained			
+etiology_1_NPsy			
+etiology_anc			
+etiology_NPsy_Explained			
+etoh_abuse_BL			
+etoh_drinks_BL			
+exercise_BL			
+falls_BL			
+FAMHX0			
+FAMHX1			
+FAMHX2			
+FAMHX3			
+famhx_dem_BL			
+famhx_demtype_BL			
+famhx_demtype_explained_BL			
+famhx_onset_BL			
+famhx_onset_explained_BL			
+famhx_psy_BL			
+famhx_psyrel_BL			
+famhx_rel_BL			
+FDGPET			
+filter_.			
+Filter1			
+finance_BL			
+firstname			
+frontosubcort_v_amnestic			
+frontosubcort_v_amnestic_anc			
+fsiq_BL			
+gds_class_BL			
+gds_raw_BL			
+gripstrength_DH_raw_BL			
+gripstrength_DH_ss_BL			
+gripstrength_NDH_raw_BL			
+gripstrength_NDH_ss_BL			
+Grouped_CogResFactor1			
+Grouped_CogResFactor2			
+Grouped_CogResFactor3			
+Grouped_CogResFactor4			
+Grouped_CogResFactor5			
+Grouped_CogResFactor6			
+hand			
+hvlt_delay_raw_BL			
+hvlt_delay_ss_BL			
+hvlt_disc_fn_BL			
+hvlt_disc_fp_BL			
+hvlt_disc_raw_BL			
+hvlt_disc_ss_BL			
+hvlt_disc_tp_BL			
+hvlt_form_BL			
+hvlt_perc_raw_BL			
+hvlt_perc_ss_BL			
+hvlt_tot_int_BL			
+hvlt_tot_per_BL			
+hvlt_tot_raw_BL			
+hvlt_tot_ss_BL			
+hypertension_BL			
+iadls_BL			
+Include_JakBondi			
+in_raw_BL			
+insight_BL			
+in_ss_BL			
+JakBondi_Domains			
+JakBondi_MCI_AmnesticvsNonamnestic			
+JakBondi_MCI_type			
+JLO_form_BL			
+JLO_raw_BL			
+JLO_ss_BL			
+lang_first			
+lang_first_BL			
+lang_fluency			
+lang_fluency_BL			
+lang_sec			
+lang_sec_BL			
+lastname			
+letfluency_int_BL			
+letfluency_per_BL			
+letfluency_raw_BL			
+letfluency_ss_BL			
+letfluency_ver_BL			
+LMII_raw_BL			
+LMII_ss_BL			
+LMI_raw_BL			
+LMI_ss_BL			
+LMrec_per_BL			
+LMrec_raw_BL			
+LM_ver_BL			
+mail_BL			
+maq_neg_aff_BL			
+maq_physio_panic_BL			
+maq_soc_pho_BL			
+maq_tot_BL			
+maq_worry_fear_BL			
+marital_BL			
+MCItype			
+med_BL			
+ML_PDE_raw_BL			
+ML_PFE_raw_BL			
+mood_curr_BL			
+MotSeq_raw_BL			
+mri_ab			
+mri_atrophy			
+mri_date			
+mri_hippatro			
+mri_hippscler			
+mri_tumor			
+mri_vascular			
+mri_wm			
+MRN			
+mr_raw_BL			
+mr_ss_BL			
+neurobehav_anc			
+neuroim			
+neuroim_type			
+neurology_dx_old			
+Neurology_Etiology_BL			
+neurologytx_BL			
+neurologyvisitdate			
+NeurologyVisit_Date_BL			
+notes			
+NOTES0			
+NOTES1			
+NOTES2			
+NP_provider_BL			
+occup_BL			
+occup_categories			
+occup_recat_homemaker			
+original_frontosub_v_am_anc			
+OSAtx_BL			
+other_neurol_BL			
+other_neurol_prob_BL			
+Outside_Neuropsych_BL			
+PASAT_2srate_raw_BL			
+PASAT_2srate_ss_BL			
+PASAT_3srate_raw_BL			
+PASAT_3srate_ss_BL			
+PASAT_form_BL			
+pegs_DH_trial1_raw_BL			
+pegs_DH_trial1_ss_BL			
+pegs_NDH_trial1_raw_BL			
+pegs_NDH_trial1_ss_BL			
+PET_amyvid			
+PetersenAmnestic			
+Petersen_AmnesticvsNonamnestic			
+PetersenDomains			
+PetersenMCI_Domains			
+PetersenMCItype			
+PET_result			
+PREMO0			
+PREMO1			
+PREMO10			
+PREMO11			
+PREMO12			
+PREMO2			
+PREMO3			
+PREMO4			
+PREMO5			
+PREMO6			
+PREMO7			
+PREMO8			
+PREMO9			
+PREMOA			
+PREMOB			
+PREMOC			
+PREMOD			
+PREMOE			
+PREMOF			
+PREMOG			
+PREMOH			
+PREMOI			
+PREMOJ			
+PREMOK			
+PREMOL			
+PREMOM			
+PREMON			
+PREMOO			
+PREMOP			
+PREMOQ			
+PREMOR			
+premorbidpsych_BL			
+premorbidpsych_description_BL			
+PREMOS			
+PREMOT			
+PREMOU			
+PREMOV			
+PREMOW			
+PREMOX			
+PREMOY			
+PREMOZ			
+pri_BL			
+priortx_BL			
+psi_BL			
+psychosis_BL			
+psychosistype_BL			
+psydx_BL			
+race			
+rm_memname_BL			
+RS_PDE_raw_BL			
+RS_PFE_raw_BL			
+rx_antidep_BL			
+rx_antipsy_BL			
+rx_anx_BL			
+rx_mem_BL			
+sdmt_oral_raw_BL			
+sdmt_oral_ss_BL			
+sdmt_writ_raw_BL			
+sdmt_writ_ss_BL			
+SES			
+sex			
+shop_BL			
+sim_raw_BL			
+sim_ss_BL			
+sleep_BL			
+sleep_med_BL			
+ss_raw_BL			
+ss_ss_BL			
+suicide_BL			
+TapSet_raw_BL			
+tbi_BL			
+therapy_BL			
+tobacco_BL			
+trailsa_err_BL			
+trailsa_raw_BL			
+trailsa_ss_BL			
+trailsb_err_BL			
+trailsb_raw_BL			
+trailsb_ss_BL			
+trails_ver_BL			
+traumahx_BL			
+TSH_BL			
+tumor_BL			
+VascularRisks_Burden			
+VascularRisks_Number			
+VascularRisksPresent			
+vci_BL			
+voc_raw_BL			
+voc_ss_BL			
+VPAII_raw_BL			
+VPAII_ss_BL			
+VPAI_raw_BL			
+VPAI_ss_BL			
+VPArec_perc_BL			
+VPArec_raw_BL			
+vp_raw_BL			
+vp_ss_BL			
+VRcopy_perc_BL			
+VRcopy_raw_BL			
+VRII_raw_BL			
+VRII_ss_BL			
+VRI_raw_BL			
+VRI_ss_BL			
+VRrec_per_BL			
+VRrec_raw_BL			
+wais_ver_BL			
+wcst_cat_perc_BL			
+wcst_cat_raw_BL			
+wcst_err_raw_BL			
+wcst_err_ss_BL			
+wcst_fms_perc_BL			
+wcst_fms_raw_BL			
+wcst_per_raw_BL			
+wcst_per_ss_BL			
+wcst_ver_BL			
+WJIII_WA_raw_BL			
+WJIII_WA_ss_BL			
+wmi_BL			
+wms_io_per_BL			
+wms_io_raw_BL			
+wms_ver_BL			
+wratread_form_BL			
+wratread_raw_BL			
+wratread_ss_BL			
