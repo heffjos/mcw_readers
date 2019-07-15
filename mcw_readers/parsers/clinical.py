@@ -14,6 +14,7 @@ except ImportError:
     import importlib_resources as pkg_resources
 
 from .. import data
+from ..utils import pdftotext
 
 with pkg_resources.path(data, 'clinical_neuroscore_v3d0_variables.tsv') as data_file:
     VARIABLES = pd.read_csv(data_file, sep='\t')
@@ -73,13 +74,55 @@ def parse_neuroscore_v3d0(wb, exam, debug=False):
     results = results.pivot(index='index', columns='variables', values='values')
 
     if debug:
-        date = '07071986'
+        date = '07071977'
     else:
-        date = datetime(wb['Template'].cell(row=9, column=DATE_COL + col_adj).value, 
-                        '%d-%b-%Y').strftime('%d%m%Y')
+        date = datetime.strptime(
+            wb['Template'].cell(row=9, column=DATE_COL + col_adj).value, 
+            '%d-%b-%Y').strftime('%Y%m%d')
 
     return date, results
-        
+
 def parse_neuroreader_v2d2d8(pdf):
-    pass
+    """
+    Parses neuroreader pdf files.
+
+    **Paramters**
+
+        pdf
+            path to pdf file to convert
+    **Outuputs**
+        date
+            The date of the exam. This if for file namimg purposes.
+        results
+            A dataframe. The columns are the measured variables the rows are
+            participants. They should be identified by some random string so
+            they are deidentified.
+    """
+    out_text = os.path.splitext(pdf)[0] + '.txt'
+
+    pdftotext(pdf, out_text, '-table')
+
+    with open(out_text) as in_file:
+        lines = [x.strip().split() for x in in_file.readlines() if x.strip()]
+
+    date = datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y%m%d')
+    results = {
+        'mTIV_ml': float(lines[7][7]),
+        'hippocampal_left-right_asymmetry_index': float(lines[9][0]),
+        'hippocampal_left-right_nr_index': float(lines[9][1]),
+        'hippocampal_left-right_z-score': float(lines[9][2]),
+        'hippocampal_left-right_percentile': float(lines[9][3]),
+    }
+
+    for line in lines[11:31] + lines[40:60]:
+        structure = '_'.join(line[0:len(line)-5]).lower()
+        results[structure + '_vol_ml'] = float(line[-5])
+        results[structure + '_vol_to_mTIV_ratio'] = float(line[-4])
+        results[structure + '_nr_index'] = float(line[-3])
+        results[structure + '_z_score'] = float(line[-2])
+        results[structure + '_percentile'] = float(line[-1])
+    
+    return date, results
+    
+    
     
