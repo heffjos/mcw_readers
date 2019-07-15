@@ -23,5 +23,5 @@ included['column'] = included['column'].str.strip().apply(
 included['column'] = included['column']
 included['row'] = included['row']
 included[['redcap', 'worksheet', 'row', 'column']].to_csv(
-    out_file, sep='\t', index_label=False, float_format='%.0f')
+    out_file, sep='\t', index=False, float_format='%.0f')
 
