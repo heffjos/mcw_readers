@@ -65,6 +65,13 @@ def parse_neuroscore_v3d0(wb, exam, debug=False):
             sheet.cell(row=int(x), column=int(y)).value 
             for x, y in zip(defined_variables['row'], defined_variables['column'])]
 
+
+    results = results.melt(var_name='variables', value_name='values')
+    garbage = results['values'].str.match(r'^=|^raw$|^val$|^\[ERR\]$|^SS$', na=False)
+    results['values'][garbage] = np.nan
+    results['index'] = 0
+    results = results.pivot(index='index', columns='variables', values='values')
+
     if debug:
         date = '07071986'
     else:
