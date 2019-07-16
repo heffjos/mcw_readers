@@ -29,8 +29,8 @@ setup(
     package_data={
         '': ['LICENSE', 'README.md'],
         'mcw_readers': ['data/clinical_neuroscore_v3d0_variables.tsv',
-                        'data/xpdf-tool-linux-4.01.01/bin64/pdftotext',
-                        'data/xpdf-tool-win-4.01.01/bin64/pdftotext'],
+                        'data/xpdf-tools-linux-4.01.01/bin64/pdftotext',
+                        'data/xpdf-tools-win-4.01.01/bin64/pdftotext'],
     },
     include_package_data=True,
 )
