@@ -14,14 +14,16 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/heffjos/mcw_readers',
     packages=find_packages(),
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
-        'Operating System :: OS Independent',
-    ],
     entry_points={
         'gui_scripts': [
             'mcw_parse_clinical_files=mcw_readers.cli.mcw_parse_clinical_files:main',
         ],
     },
+    install_requires=[
+        'openpyxl',
+        'numpy',
+        'pandas',
+        'importlib_resources',
+        'PySimpleGUI',
+    ],
 )
