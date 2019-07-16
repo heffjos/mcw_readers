@@ -23,7 +23,7 @@ def pdftotext(in_pdf, out_text, options=None):
     """
     if 'win' in sys.platform:
         with pkg_resources.path(data, 'xpdf-tools-win-4.01.01') as xpdf:
-            PDFTOTEXT = xpdf.joinpath('bin64', 'pdftotext')
+            PDFTOTEXT = xpdf.joinpath('bin64', 'pdftotext.exe')
     else:
         with pkg_resources.path(data, 'xpdf-tools-linux-4.01.01') as xpdf:
             PDFTOTEXT = xpdf.joinpath('bin64', 'pdftotext')
