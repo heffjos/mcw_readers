@@ -9,20 +9,18 @@ from openpyxl.utils.exceptions import InvalidFileException
 
 def main():
     layout = [
-        [sg.Text('Id', size=(10, 1), auto_size_text=False, justification='right'),
+        [sg.Text('Id', size=(20, 1), auto_size_text=False, justification='right'),
          sg.InputText(key='participant')],
-        [sg.Text('Neuroscore runs', size=(10, 1), auto_size_text=False, justification='right'),
+        [sg.Text('Neuroscore runs', size=(20, 1), auto_size_text=False, justification='right'),
          sg.InputText(key='runs', default_text='1')],
-        [sg.Text('Neuroscore file', size=(10, 1), auto_size_text=False, justification='right'), 
+        [sg.Text('Neuroscore file', size=(20, 1), auto_size_text=False, justification='right'), 
          sg.InputText(key='neuroscore_file'), 
          sg.FileBrowse()],
-        [sg.Text('Neuroreader files:', size=(10, 1), auto_size_text=False, justification='right'), 
+        [sg.Text('Neuroreader files:', size=(20, 1), auto_size_text=False, justification='right'), 
          sg.InputText(key='neuroreader_files'), 
          sg.FilesBrowse()],
         [sg.Submit(), sg.Cancel()]
     ]
-    event, values = sg.Window('Neuroparser', layout, default_element_size=(40, 1)).Read()
-
     window = sg.Window('Clinical Parse', layout, default_element_size=(40, 1))
 
     while True:
@@ -32,13 +30,16 @@ def main():
             runs = values['runs']
             neuroscore_file = values['neuroscore_file']
             neuroreader_files = values['neuroreader_files']
-            sg.Popup('Participant      : {}'
-                     'Runs             : {}'
-                     'Neuroscore file  : {}'
-                     'Neuroreader files: {}'.format(participant,
+
+            sg.Popup('Participant      : {}\n'
+                     'Runs             : {}\n'
+                     'Neuroscore file  : {}\n'
+                     'Neuroreader files: {}\n'.format(participant,
                                                     runs,
                                                     neuroscore_file,
-                                                    neuroreader_Files))
+                                                neuroreader_files))
+            break
+        if event is None or event == 'Cancel':
             break
 
     window.Close()
