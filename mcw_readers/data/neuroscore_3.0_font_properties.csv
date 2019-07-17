@@ -1,0 +1,800 @@
+measure	indent_level	is_bold
+COGNITIVE STATUS	0	-1
+	0	-1
+Information & Orientation (WMS-III)	0	#VALUE!
+Temporal Orientation	0	-1
+Mini Mental State Examination	0	-1
+R-BANS	0	-1
+Total Scale	1	0
+Immediate Memory	1	0
+List Learning	2	0
+Story Memory	2	0
+Visuospatial/Constructional	1	0
+Figure Copy	2	0
+Line Orientation	2	0
+Language	1	0
+Picture Naming	2	0
+Semantic Fluency	2	0
+Attention	1	0
+Digit Span	2	0
+Coding	2	0
+Delayed Memory	1	0
+List Recall	2	0
+List Recognition	2	0
+Story Recall	2	0
+Figure Recall	2	0
+Mattis Dementia Rating Scale-2	0	-1
+Attention	1	0
+Initiation / Perseveration	1	0
+Constructional	1	0
+Conceptualization	1	0
+Memory	1	0
+Total Score	1	0
+Montreal Cognitive Assessment	0	-1
+	0	0
+INTELLECTUAL ABILITY	0	-1
+	0	-1
+Wechsler Adult Intelligence Scale-IV	0	-1
+Full Scale IQ	1	0
+Verbal Comprehension Index	1	0
+Similarities	2	0
+Vocabulary	2	0
+Information	2	0
+Comprehension	2	0
+Perceptual Reasoning Index	1	0
+Block Design	2	0
+Matrix Reasoning	2	0
+Visual Puzzles	2	0
+Picture Completion	2	0
+Figure Weights	2	0
+Working Memory Index	1	0
+Digit Span	2	0
+Arithmetic	2	0
+L-N Sequencing	2	0
+Processing Speed Index	1	0
+Symbol Search	2	0
+Coding	2	0
+Cancellation	2	0
+Wechsler Adult Intelligence Scale-III	0	-1
+Verbal IQ	1	0
+Performance IQ	1	0
+Full Scale IQ	1	0
+Verbal Comprehension Index	1	0
+Vocabulary	2	0
+Similarities	2	0
+Information	2	0
+Comprehension	2	0
+Perceptual Organization Index	1	0
+Picture Completion	2	0
+Block Design	2	0
+Matrix Reasoning	2	0
+Picture Arrangement	2	0
+Working Memory Index	1	0
+Arithmetic	2	0
+Digit Span	2	0
+L-N Sequencing	2	0
+Processing Speed Index	1	0
+Digit Symbol-Coding	2	0
+Symbol Search	2	0
+Test of Premorbid Function (ACS)	0	-1
+	0	0
+MEMORY & LEARNING	0	-1
+	0	-1
+Wechsler Memory Scale-IV	0	-1
+Auditory Memory Index	1	0
+Logical Memory I	2	0
+Logical Memory II	2	0
+LM Recognition	2	0
+Verbal Paired Associates I	2	0
+Verbal Paired Associates II	2	0
+VPA Recognition	2	0
+Visual Memory Index	1	0
+Visual Reproduction I	2	0
+Visual Reproduction II	2	0
+VR Recognition	2	0
+Designs I	2	0
+Designs II	2	0
+Designs Recognition	2	0
+Visual Working Memory Index	1	0
+Symbol Span	2	0
+Spatial Addition	2	0
+Immediate Memory Index	1	0
+Delayed Memory Index	1	0
+Wechsler Memory Scale-III	0	-1
+Immediate Memory Index	1	0
+Auditory Immediate	1	0
+Visual Immediate	1	0
+General Memory Index	1	0
+Auditory Delayed	1	0
+Visual Delayed	1	0
+Auditory Recognition Delayed	1	0
+Working Memory Index	1	0
+Auditory Memory	1	0
+Logical Memory I	2	0
+Logical Memory II	2	0
+Logical Memory % Retention	2	0
+Logical Memory Recognition	2	0
+Thematic I	2	0
+Thematic II	2	0
+Verbal Paired Associates I	2	0
+Verbal Paired Associates II	2	0
+VPA Recognition	2	0
+VPA % Retention	2	0
+Word Lists I	2	0
+Word Lists II	2	0
+Word Lists Recognition	2	0
+Word Lists % Retention	2	0
+Visual Memory	1	0
+Visual Reproduction I	2	0
+Visual Reproduction II	2	0
+Visual Reproduction % Retention	2	0
+Visual Reproduction Recognition	2	0
+Visual Reproduction Copy	2	0
+Faces I	2	0
+Faces II	2	0
+Faces Recognition	2	0
+Faces % Retention	2	0
+Family Pictures I	2	0
+Family Pictures II	2	0
+Family Pictures Recognition	2	0
+Family Pictures % Retention	2	0
+Working Memory	1	0
+Spatial Span	2	0
+L-N Sequencing	2	0
+Digit Span	2	0
+Mental Control	2	0
+Rey-Auditory Verbal Learning Task	0	-1
+Sum of Trials 1-5	1	0
+Immediate Recall	1	0
+Delayed Recall	1	0
+Recognition	1	0
+Selective Reminding Test	0	-1
+Long Term Storage	1	0
+Consistent Long Term Retrieval	1	0
+Delayed Recall	1	0
+Recognition	1	0
+California Verbal Learning Task-II	0	-1
+Total Recall	1	0
+Short Delay Free Recall	1	0
+Short Delay Cued Recall	1	0
+Long Delay Free Recall	1	0
+Long Delay Cued Recall	1	0
+Recognition Discriminability	1	0
+Forced Choice Recognition	1	0
+Hopkins Verbal Learning Task-R	0	-1
+Total Recall	1	0
+Delayed Recall	1	0
+Percent Retention	1	0
+Discrimination Index	1	0
+Brief Visuospatial Memory Test-R 	0	-1
+Total Recall	1	0
+Delayed Recall	1	0
+Discrimination Index	1	0
+HVLT/BVMT Discrepancy Total Recall	0	0
+HVLT/BVMT Discrepancy Delay Recall	0	0
+7/24 Spatial Recall Test	0	-1
+Immediate Recall	1	0
+Delayed Recall	1	0
+Rey-O Complex Figure Test	0	-1
+Immediate Recall	1	0
+Delayed Recall	1	0
+Recognition	1	0
+Rush Object Recall Test 	0	-1
+Immediate Recall	1	0
+Recognition	1	0
+TOMM	0	-1
+Trial 1	1	0
+Trial 2	1	0
+Trial 3	1	0
+Rey-15 Item	0	-1
+Correct Sequence/Location (Rows)	0	0
+Correct (Rows)	0	0
+Correct Matrix Location (Items)	0	0
+Correct (Items)	0	0
+Recognition	0	0
+Word Memory Test	0	-1
+Immediate Recognition	1	0
+Delayed Recognition	1	0
+Consistency	1	0
+Multiple Choice Recognition	1	0
+Paired Associates	1	0
+Short-Delay Free Recall	1	0
+Long-Delay Free Recall	1	0
+Word Choice (ACS)	0	-1
+VSVT	0	-1
+Easy Items Correct (  /24)	1	0
+Difficult Items Correct (  /24)	1	0
+Total Items Correct (  /24)	1	0
+	0	0
+LANGUAGE	0	-1
+	0	-1
+Boston Diagnostic Aphasia Exam-3	0	-1
+Boston Naming Test	1	0
+Complex Ideational Material	1	0
+Commands	1	0
+Repeating Phrases	1	0
+Picture Description: Cookie Theft	1	0
+Multi-Lingual Aphasia Exam-3	0	-1
+Tokens	1	0
+Sentence Repetition	1	0
+Visual Naming	1	0
+Right-Left Orientation	0	-1
+Peabody Picture Vocabulary Test-4	0	-1
+	0	0
+ACADEMIC ACHIEVEMENT	0	-1
+	0	-1
+Wide Range Achievement Tests-4	0	-1
+Word Reading	1	0
+Spelling	1	0
+Math Computation	1	0
+Sentence Comprehension	1	0
+WJ-III Tests of Achievement	0	-1
+Academic Skills	1	0
+Academic Applications	1	0
+Academic Fluency	1	0
+Broad Reading	1	0
+Letter-Word Identification	2	0
+Reading Fluency	2	0
+Passage Comprehension	2	0
+Broad Written Language	1	0
+Spelling	2	0
+Writing Fluency	2	0
+Writing Samples	2	0
+Broad Math	1	0
+Calculation	2	0
+Math Fluency	2	0
+Applied Problems	2	0
+Basic Reading Skills	1	0
+Word Attack	2	0
+Nelson-Denny Reading	0	-1
+Comprehension	1	0
+Comprehension (Extended Time)	1	0
+Reading Rate	1	0
+Gray's Oral Reading Tests-4	0	-1
+Rate Score	1	0
+Accuracy Score	1	0
+Fluency Score	1	0
+Comprehension Score	1	0
+Wechsler Individual Achievement Test-III	0	-1
+Total Achievment:	1	-1
+Total Reading Composite	1	0
+Reading Comprehension	2	0
+Pseudoword Decoding	2	0
+Pseudoword Decoding Speed	2	0
+Oral Reading Fluency	2	0
+Word Reading	2	0
+Word Reading Speed	2	0
+Basic Reading Composite	1	0
+Reading Comprehension and Fluency	1	0
+Written Expression	1	0
+Spelling	2	0
+Sentence Composition	2	0
+(Sentence Combining)	3	0
+(Sentence Building)	3	0
+Essay Composistion	1	0
+(Word Count)	3	0
+(Theme Development/Organization)	3	0
+Mathematics Composite	1	0
+Math Problem Solving	2	0
+Numerical Operations	2	0
+Math Fluency	1	0
+Addition	2	0
+Subtraction	2	0
+Multiplication	2	0
+Oral Language Composites	1	0
+Listening Comprehension	2	0
+(Receptive Vocabulary)	3	0
+(Oral Discourse Comprehension)	3	0
+Oral Expression	2	0
+(Sentence Repetition)	3	0
+(Expressive Vocabulary)	3	0
+(Oral Word Fluency) 	3	0
+	0	0
+VISUAL-SPATIAL	0	-1
+	0	-1
+Judgment of Line Orientation	0	-1
+Benton's Facial Recognition	0	-1
+Clock Drawing	0	-1
+Greek Cross	0	-1
+Hooper Visual Organization	0	-1
+Line Bisection	0	-1
+Beery VMI (6th Edition)	0	-1
+     Beery VMI	0	0
+     Visual Perception	0	0
+     Motor Coordination	0	#VALUE!
+WAIS-III: Block Design	0	-1
+	0	0
+ATTENTION & CONCENTRATION	0	-1
+	0	-1
+WMS-III: Digit Span	0	-1
+WMS-III: Spatial Span	0	-1
+Symbol Digit Modalities Test	0	-1
+Written	1	0
+Oral Retest	1	0
+Oral Only	1	0
+Paced Auditory Serial Addition Test	0	-1
+3" Rate	1	0
+2" Rate	1	0
+Brief Test of Attention	0	-1
+Gordon Diagnostic System 	0	-1
+Vigilance Task	1	0
+Correct (Block 1+2)	2	0
+Commissions (Block 1+2)	2	0
+Distractibility Task	1	0
+Correct (Block 1+2)	2	0
+Commissions (Block 1+2)	2	0
+Conner's CPT-II	0	-1
+ADHD Clinical Confidence Index	1	0
+Neurological Clinical Confidence Index	1	0
+Omissions	1	0
+Commissions	1	0
+Hit Reaction Time	1	0
+Variability	1	0
+Conner's CPT-3	0	-1
+Detectability (d')	1	0
+Omissions	1	0
+Commissions	1	0
+Perseverations	1	0
+HRT	1	0
+HRT SD	1	0
+Variability	1	0
+HRT Block Change	1	0
+HRT ISI Change	1	0
+Cancellation Tasks	0	-1
+Omissions	1	0
+Commissions	1	0
+Completion Time	1	0
+	0	0
+EXECUTIVE FUNCTIONING	0	-1
+	0	-1
+COWAT	0	-1
+FAS	0	-1
+Animal Naming	0	-1
+Trail Making Test: Part-A	0	#VALUE!
+Trail Making Test: Part-B	0	#VALUE!
+Trail Making Test: Part-A (Oral)	0	#VALUE!
+Trail Making Test: Part-B (Oral)	0	#VALUE!
+Wisconsin Card Sorting Test	0	-1
+Categories Completed	1	0
+Failures to Maintain Set	1	0
+Total Errors	1	0
+Perseverative Responses	1	0
+DKEFS - Trail Making	0	-1
+Visual Scanning	1	0
+Number Sequencing	1	0
+Letter Sequencing	1	0
+Number-Letter Switching	1	0
+Total Errors	1	0
+Motor Speed	1	0
+DKEFS - Verbal Fluency	0	-1
+Letter Fluency	1	0
+Category Fluency	1	0
+Switching Fluency	1	0
+Switching Accuracy	1	0
+DKEFS - Design Fluency	0	-1
+Filled Dots	1	0
+Empty Dots	1	0
+Switching	1	0
+Total Repetitions	1	0
+DKEFS - C/W Interference	0	-1
+Color Naming	1	0
+Word Reading	1	0
+Inhibition	1	0
+Inhibition/Switching	1	0
+Inhibition/Switching Errors	1	0
+DKEFS - Sorting	0	-1
+Confirmed Correct Sorts	1	0
+Free Sorting Description	1	0
+Repeated Sorts	1	0
+Set-Loss Sorts	1	0
+DKEFS - 20 Questions	0	-1
+Initial Abstraction	1	0
+Total Questions Asked	1	0
+Weighted Achievement	1	0
+Repeated Questions	1	0
+Set-Loss Questions	1	0
+DKEFS - Proverbs	0	-1
+Achievement: Free Inquiry	1	0
+Accuracy Only Score	1	0
+Abstraction Only Score	1	0
+DKEFS - Tower	0	-1
+Achievement Score	1	0
+Mean First Move Time	1	0
+Time / Move Ratio	1	0
+Move Accuracy Ratio	1	0
+Rule-Violation / Item Ratio	1	0
+Total Rule Violations	1	0
+Short Category Test	0	-1
+Tapping Set	0	-1
+Motor Sequencing	0	-1
+Frontal Systems Behavior Scale	0	-1
+Self-Rating: Before	1	-1
+Apathy	2	0
+Disinhibition	2	0
+Exec. Dysfunction	2	0
+Total Score	2	0
+Self-Rating: After	1	-1
+Apathy	2	0
+Disinhibition	2	0
+Exec. Dysfunction	2	0
+Total Score	2	0
+Family Rating: Before	1	-1
+Apathy	2	0
+Disinhibition	2	0
+Exec. Dysfunction	2	0
+Total Score	2	0
+Family Rating: After	1	-1
+Apathy	2	0
+Disinhibition	2	0
+Exec. Dysfunction	2	0
+Total Score	2	0
+Stroop Color-Word Test	0	-1
+Word Score	1	0
+Color Score	1	0
+Color-Word Score	1	0
+Interference Score	1	0
+Multiple Loops (PDE, PFE)	0	#VALUE!
+Recurrent Series (PDE,PFE)	0	#VALUE!
+Picture Absurdities	0	-1
+Booklet Category	0	-1
+     Errors	0	0
+ILS	0	-1
+     Memory/ Orientation	0	0
+     Managing Money	0	0
+     Managing Home and Transportation	0	0
+     Health and Safety	0	0
+     Social Adjustment	0	0
+	0	0
+SENSORY PERCEPTUAL EXAMINATION	0	-1
+	0	-1
+Tactile Imperceptions (DSS)	0	#VALUE!
+Auditory Imperceptions (DSS)	0	#VALUE!
+Visual Imperceptions (DSS)	0	#VALUE!
+Above Eye Level	1	0
+Eye Level	1	0
+Below Eye Level	1	0
+Finger Gnosis	0	-1
+Graphesthesia	0	-1
+Smell Identification Test	0	-1
+	0	0
+PSYCHO-MOTOR	0	-1
+	0	-1
+Finger Speed	0	-1
+Dominant Hand	1	0
+Non-Dominant Hand	1	0
+Grip Strength	0	-1
+Dominant Hand	1	0
+Non-Dominant Hand	1	0
+Grooved Pegboard	0	-1
+Dominant Hand	1	0
+Trial 2	2	0
+Non-Dominant Hand	1	0
+Trial 2	2	0
+9-Hole Pegboard	0	-1
+Dominant Hand	1	0
+Trial 2	2	0
+Non-Dominant Hand	1	0
+Trial 2	2	0
+	0	0
+MOOD & PERSONALITY	0	-1
+	0	-1
+Beck Depression Inventory-2	0	-1
+Beck Anxiety Inventory	0	-1
+Geriatric Depression Scale	0	-1
+ADFACS (Modified Scores)	0	#VALUE!
+Instrumental ADL's	1	0
+Basic ADL's	1	0
+Total Impairment	1	0
+State-Trait Anxiety Inventory	0	-1
+State Anxiety	1	0
+Trait Anxiety	1	0
+ADHD Rating Scales-IV (Self)	0	#VALUE!
+Childhood Symptoms	1	0
+Inattention	2	0
+Hyperactivity-Impulsivity	2	0
+Total ADHD	2	0
+Current Symptoms	1	0
+Inattention	2	0
+Hyperactivity-Impulsivity	2	0
+Total ADHD	2	0
+ADHD Rating Scales-IV (Parent)	0	#VALUE!
+Childhood Symptoms	1	0
+Inattention	2	0
+Hyperactivity-Impulsivity	2	0
+Total ADHD	2	0
+Current Symptoms	1	0
+Inattention	2	0
+Hyperactivity-Impulsivity	2	0
+Total ADHD	2	0
+Clinical Assessment of ADHD (Self)	0	-1
+Negative Impression (NI)	1	0
+Infrequency (IF)	1	0
+Positive Impression (PI)	1	0
+Childhood Symptoms	1	-1
+Inattention (ATT)	1	0
+Impulsivity (IMP)	1	0
+Hyperactivity (HYP)	1	0
+Personal (PER)	1	0
+Academic/Occupational (A/O)	1	0
+Social (SOC)	1	0
+Clinical Index - Childhood	1	0
+Current Symptoms	1	-1
+Inattention (ATT)	1	0
+Impulsivity (IMP)	1	0
+Hyperactivity (HYP)	1	0
+Personal (PER)	1	0
+Academic/Occupational (A/O)	1	0
+Social (SOC)	1	0
+Clinical Index - Current	1	0
+Total Clinical Index (CAT-A CI)	1	0
+Clinical Assessment of ADHD (Other)	0	-1
+Negative Impression (NI)	1	0
+Infrequency (IF)	1	0
+Positive Impression (PI)	1	0
+Childhood Symptoms	1	0
+Inattention (ATT)	1	0
+Impulsivity (IMP)	1	0
+Hyperactivity (HYP)	1	0
+Personal (PER)	1	0
+Academic/Occupational (A/O)	1	0
+Social (SOC)	1	0
+Clinical Index - Childhood	1	0
+Current Symptoms	1	-1
+Inattention (ATT)	1	0
+Impulsivity (IMP)	1	0
+Hyperactivity (HYP)	1	0
+Personal (PER)	1	0
+Academic/Occupational (A/O)	1	0
+Social (SOC)	1	0
+Clinical Index - Current	1	0
+Total Clinical Index (CAT-A CI)	1	0
+ASEBA - Adult Self Report	0	-1
+Anxious / Depressed	2	0
+Withdrawn	2	0
+Somatic Complaints	2	0
+Thought Problems	2	0
+Attention Problems	2	0
+Aggressive Behavior	2	0
+Rule-Breaking Behavior	2	0
+Intrusive	2	0
+Depressive Problems	2	0
+Anxiety Problems	2	0
+Somatic Problems	2	0
+Avoidant Personality Problems	2	0
+AD/H Problems	2	0
+     Inattention	2	0
+     Hyper-Impulsivity	2	0
+Antisocial Personality Problems	2	0
+ASEBA: YSR	1	-1
+Anxious / Depressed	2	0
+Withdrawn	2	0
+Somatic Complaints	2	0
+Social Problems	2	0
+Thought Problems	2	0
+Attention Problems	2	0
+Rule-Breaking Behavior	2	0
+Aggressive Behavior	2	0
+Affective Problems	2	0
+Anxiety Problems	2	0
+Somatic Problems	2	0
+AD/H Problems	2	0
+Oppositional Defiant Problems	2	0
+Conduct Problems	2	0
+ASEBA - Adult Behavior Checklist	0	-1
+Anxious / Depressed	2	0
+Withdrawn	2	0
+Somatic Complaints	2	0
+Thought Problems	2	0
+Attention Problems	2	0
+Aggressive Behavior	2	0
+Rule-Breaking Behavior	2	0
+Intrusive	2	0
+Depressive Problems	2	0
+Anxiety Problems	2	0
+Somatic Problems	2	0
+Avoidant Personality Problems	2	0
+AD/H Problems	2	0
+     Inattention	2	0
+     Hyper-Impulsivity	2	0
+Antisocial Personality Problems	2	0
+ASEBA: CBCL	1	-1
+Anxious / Depressed	2	0
+Withdrawn	2	0
+Somatic Complaints	2	0
+Social Problems	2	0
+Thought Problems	2	0
+Attention Problems	2	0
+Rule-Breaking Behavior	2	0
+Aggressive Behavior	2	0
+Affective Problems	2	0
+Anxiety Problems	2	0
+Somatic Problems	2	0
+AD/H Problems	2	0
+Oppositional Defiant Problems	2	0
+Conduct Problems	2	0
+QoLiE-31	0	-1
+Seizure Worry	1	0
+Overall Quality of Life	1	0
+Emotional Well-being	1	0
+Energy / Fatigue	1	0
+Cognitive Functioning	1	0
+Medication Effects	1	0
+Social Functioning	1	0
+Overall Score	1	0
+ABAS-II	0	-1
+General Adaptive Composite	1	0
+Conceptual Composite	1	0
+Communication	2	0
+Functional Academics	2	0
+Self-Direction	2	0
+Social Composite	1	0
+Leisure	2	0
+Social	2	0
+Practical Composite	1	0
+Community Use	2	0
+Home Living	2	0
+Health & Safety	2	0
+Self-Care	2	0
+ABAS-3	0	-1
+General Adaptive Composite	1	0
+Conceptual Composite	1	0
+Communication	2	0
+Functional Academics	2	0
+Self-Direction	2	0
+Social Composite	1	0
+Leisure	2	0
+Social	2	0
+Practical Composite	1	0
+Community Use	2	0
+Home Living	2	0
+Health & Safety	2	0
+Self-Care	2	0
+Practical	2	0
+Work	2	0
+FACT-Br	0	-1
+Physical Well-being	1	0
+Social/Family Well-being	1	0
+Relationship with MD	1	0
+Emotional Well-being	1	0
+Functional Well-being	1	0
+Brain Specific Concerns	1	0
+Total Fact-G	1	0
+Fatigue (raw/ 52)	1	0
+MAQ	0	-1
+Physiological Panic	1	0
+Social Phobia	1	0
+Worry / Fears	1	0
+Negative Affectivity	1	0
+Total MAQ	1	0
+PDQ-39	0	-1
+Mobility	1	0
+ADL	1	0
+Emotional	1	0
+Stigma	1	0
+Social	1	0
+Cognition	1	0
+Communication	1	0
+Body Discomfort	1	0
+Personality Assessment Inventory	0	-1
+Inconsistency (ICN)	1	0
+Infrequency (INF)	1	0
+Negative Impression (NIM)	1	0
+Positive Impression (PIM)	1	0
+Somatic Complaints (SOM)	1	0
+Anxiety (ANX)	1	0
+Anxiety-Related Disorders (ARD)	1	0
+Depression (DEP)	1	0
+Mania (MAN)	1	0
+Paranoia (PAR)	1	0
+Schizophrenia (SCZ)	1	0
+Borderline Features (BOR)	1	0
+Antisocial Features (ANT)	1	0
+Alcohol Problems (ALC)	1	0
+Drug Problems (DRG)	1	0
+Aggression (AGG)	1	0
+Suicidal Ideation (SUI)	1	0
+Stress (STR)	1	0
+Nonsupport (NON)	1	0
+Treatment Rejection (RXR)	1	0
+Dominance (DOM)	1	0
+Warmth (WRM)	1	0
+Traumatic Symptom Inventory	0	-1
+Atypical Response (ATR)	1	0
+Response Level (RL)	1	0
+Inconsistent Response (INC)	1	0
+Anxious Arousal (AA)	1	0
+Depression (DEP)	1	0
+Anger-Irritability (AI)	1	0
+Intrusive Experiences (IE)	1	0
+Defensive Avoidance (DA)	1	0
+Dissociation (DIS)	1	0
+Sexual Concerns (SC)	1	0
+Dysfxn Sexual Behavior (DSB)	1	0
+Impaired Self-reference (ISR)	1	0
+Tension Reduction Behavior (TRB)	1	0
+MMPI-Rf	0	-1
+VRIN-r: Variable Inconsistency 	1	0
+TRIN-r: True Inconsistency	1	0
+F-r: Infrequent Responses	1	0
+Fp-r: Infrequent (Path.)	1	0
+Fs: Infrequent Somatic 	1	0
+FBS-r: Symptom Validity	1	0
+RBS: Response Bias	1	0
+L-r: Uncommon Virtues	1	0
+K-r: Adjustment Validity	1	0
+EID: Emotional/Internalizing Dysfxn	1	0
+THD: Thought Dysfunction	1	0
+BDX: Behavioral/Externalizing Dysfxn	1	0
+RCd: Demoralization	1	0
+RC1: Somatic Complaints	1	0
+RC2: Low Positive Emotions	1	0
+RC3: Cynicism	1	0
+RC4: Antisocial Behavior	1	0
+RC6: Ideas of Persecution	1	0
+RC7: Dysfxn Negative Emotions	1	0
+RC8: Aberrant Experiences	1	0
+RC9: Hypomanic Activation	1	0
+MMPI-2 (K-Corrected)	0	-1
+    VRIN	0	0
+    TRIN	0	0
+     F	0	0
+     Fb	0	0
+     Fp	0	0
+L	1	0
+K	1	0
+S	1	0
+1 - Hs	1	0
+2 - D	1	0
+3 - Hy	1	0
+4 - Pd	1	0
+5 - Mf	1	0
+6 - Pa	1	0
+7 - Pt	1	0
+8 - Sc	1	0
+9 - Ma	1	0
+0 - Si	1	0
+QUEST	0	-1
+Total Score	1	0
+Communication	1	0
+Work & Finances	1	0
+Hobbies	1	0
+Physical	1	0
+Psychosocial	1	0
+SIMS	0	-1
+Psychosis	1	0
+Neurologic Impairment	1	0
+Amnestic Disorders	1	0
+Low Intelligence	1	0
+Affective Disorders	1	0
+Total Score	1	0
+PTSD Checklist	0	-1
+Brief Symptom Inventory 18	0	-1
+Somatization	1	0
+Depression	1	0
+Anxiety	1	0
+GSI	1	0
+SRS-2 (Self)	0	-1
+     Awr	0	0
+     Cog	0	0
+     Com	0	0
+     Mot	0	0
+RRB (DSM-5)	0	0
+SCI (DSM-5)	0	0
+  SRS Total	0	0
+SRS-2 (Other)	0	-1
+     Awr	0	0
+     Cog	0	0
+     Com	0	0
+     Mot	0	0
+RRB (DSM-5)	0	0
+SCI (DSM-5)	0	0
+    SRS Total	0	-1
+RAND-36 Health Inventory	0	-1
+     Physical Functioning	0	0
+     Role Limitations (physical)	0	0
+     Role Limitations (emotional)	0	0
+     Energy/Fatigue	0	0
+     Emotional Well-being	0	0
+     Social Functioning	0	0
+     Pain	0	0
+     General Health	0	0
