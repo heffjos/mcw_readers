@@ -51,4 +51,10 @@ font_properties['indent_header'] = indent_header
     
 
 
-                                  
+# BVMT_tot_raw: current = 176, should be 181
+# BVMT_tot_ss: current = 176, should be 181
+# BVMT_delay_raw: current = 177, should be 182
+# BVMT_delay_ss: current = 177, should be 182
+# BVMT_rec_raw: current = 179, should be ???
+# BVMT_rec_perc: current = 179, should be ???
+# CPT3_HRT_ss:  
