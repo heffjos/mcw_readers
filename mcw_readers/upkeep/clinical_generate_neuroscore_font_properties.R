@@ -14,7 +14,7 @@ font_data <- read_excel(font_file, trim_ws = FALSE)
 
 # we only want tp 1 or no timpeoint variable names to match redcap
 # currently there are 975 of them
-included <- assigned_data %>%
+redcap_data <- assigned_data %>%
   filter(tp == 1 | is.na(tp)) %>%
   mutate(redcap = str_replace(variable, '_[:digit:]+$', ''),
          column = as.numeric(LETTER_TO_NUMERIC[str_to_lower(column)])) %>%
@@ -29,11 +29,10 @@ processed_data <- font_data %>%
          measure = str_trim(measure),
          is_bold = ifelse(is_bold == -1 | is.na(is_bold), 1, 0)) %>%
   group_by(version) %>%
-  mutate(line = seq(first(line), n() + first(line) - 1),
+  mutate(row = seq(first(row), n() + first(row) - 1),
          bold_header = ifelse(is_bold, measure, NA)) %>%
   fill(bold_header) %>%
   ungroup() %>%
-  rename(row = "line") %>%
   filter(!is.na(measure))
 
 # u10.21.16 == u11.01.16  for template sheet
@@ -55,8 +54,15 @@ for (i in 1:nrow(processed_data)) {
 }
 processed_data$indent_header <- indent_header
 
-# now let's consolidate included and processed_data
-reference_v3.0 <- processed_data %>% 
-  filter(version == "3.0") %>%
-  left_join(included, by = "row")
+# now let's consolidate redcap_data and processed_data
+reference_3.0ulatest <- processed_data %>% 
+  filter(version == "3.0ulatest") %>%
+  left_join(redcap_data, by = "row") %>%
+  select(measure, bold_header, indent_header, redcap, worksheet, column)
+
+redcap_processed_data <- processed_data %>%
+  select(measure, row, version, bold_header, indent_header) %>%
+  left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header"))
+
+
   
