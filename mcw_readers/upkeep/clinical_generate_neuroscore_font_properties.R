@@ -7,7 +7,7 @@ names(LETTER_TO_NUMERIC) <- letters
 data_dir = normalizePath('../data')
 assigned_file = file.path(data_dir, 'comprehensive_sorted_neuropsych.xlsx')
 font_file <- file.path(data_dir, 'all_versions_font_properties.xlsm')
-out_file = file.path(data_dir, 'clinical_neuroscore_v3d0_variables.tsv')
+out_versions_labeled <- file.path(data_dir, 'clinical_versions_labeled.tsv')
 
 assigned_data <- read_excel(assigned_file, na = "NA")
 font_data <- read_excel(font_file, trim_ws = FALSE)
@@ -19,8 +19,6 @@ redcap_data <- assigned_data %>%
   mutate(redcap = str_replace(variable, '_[:digit:]+$', ''),
          column = as.numeric(LETTER_TO_NUMERIC[str_to_lower(column)])) %>%
   select(redcap, worksheet, row, column)
-
-out_file = file.path(data_dir, 'clinical_neuroscore_v3d0_variables.tsv')
 
 # work on font properties now
 processed_data <- font_data %>%
@@ -64,5 +62,6 @@ redcap_processed_data <- processed_data %>%
   select(measure, row, version, bold_header, indent_header) %>%
   left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header"))
 
+write_delim(redcap_processed_data, out_versions_labeled, delim = "\t")
 
   
