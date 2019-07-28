@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'gui_scripts': [
-            'mcw_parse_clinical_files=mcw_readers.cli.mcw_parse_clinical_files:main',
+            'mcw_parse_neuros=mcw_readers.cli.mcw_parse_neuros:main',
         ],
     },
     install_requires=[
@@ -28,7 +28,7 @@ setup(
     ],
     package_data={
         '': ['LICENSE', 'README.md'],
-        'mcw_readers': ['data/clinical_neuroscore_v3d0_variables.tsv',
+        'mcw_readers': ['data/clinical_versions_labeled.tsv',
                         'data/xpdf-tools-linux-4.01.01/bin64/pdftotext',
                         'data/xpdf-tools-win-4.01.01/bin64/pdftotext.exe'],
     },
