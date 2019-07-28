@@ -15,12 +15,14 @@ except ImportError:
 
 from .. import data
 from ..utils import pdftotext
+from ..utils import clinical_detect_neuroscore_version
 
-with pkg_resources.path(data, 'clinical_neuroscore_v3d0_variables.tsv') as data_file:
-    VARIABLES = pd.read_csv(data_file, sep='\t')
+with pkg_resources.path(data, 'clinical_versions_labeled.tsv') as data_file:
+    CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
+
 DATE_COL = 5
 
-def parse_neuroscore_v3d0(wb, exam, debug=False):
+def clinical_parse_neuroscore(wb, exam, debug=False):
     """
     Parses neuroscore workbook, primarily the Template worksheet
 
@@ -47,12 +49,15 @@ def parse_neuroscore_v3d0(wb, exam, debug=False):
             participants. They should be identified by some random string so
             they are deidentified.
     """
-
     col_adj = exam * 4
-    results = pd.DataFrame({x: [np.nan] for x in VARIABLES['redcap']})
+    version = clinical_detect_neuroscore_verions(wb)
+    if version == None:
+        raise Exception('Could not detect clinical neuroscore verion')
+    variables = CLINICAL_VARIABLES[CLINICAL_VARIABLES['version'] == version]
+    results = pd.DataFrame({x: [np.nan] for x in variables['redcap']})
 
-    defined_variables = VARIABLES[(~VARIABLES['row'].isnull()) &
-                                  (~VARIABLES['column'].isnull())]
+    defined_variables = variables[(~variables['row'].isnull()) &
+                                  (~variables['column'].isnull())]
     defined_variables['column'] = defined_variables['column'] + col_adj
     worksheets = pd.unique(defined_variables['worksheet'])
     if any(pd.isnull(worksheets)):
