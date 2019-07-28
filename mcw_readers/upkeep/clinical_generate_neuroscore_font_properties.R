@@ -5,8 +5,8 @@ LETTER_TO_NUMERIC <- 1:length(letters)
 names(LETTER_TO_NUMERIC) <- letters
 
 data_dir = normalizePath('../data')
-assigned_file = file.path(data_dir, 'comprehensive_sorted_neuropsych.xlsx')
-font_file <- file.path(data_dir, 'all_versions_font_properties.xlsm')
+assigned_file = file.path(data_dir, 'clinical_v3.0ulatest_labeled.xlsx')
+font_file <- file.path(data_dir, 'clinical_versions_font_properties.xlsm')
 out_versions_labeled <- file.path(data_dir, 'clinical_versions_labeled.tsv')
 
 assigned_data <- read_excel(assigned_file, na = "NA")
