@@ -68,6 +68,49 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (811, 2): None},
 }
 
+CLINICAL_NEUROREADER_MAPPER = {
+    'WholeBrainMatter': 'WBV',
+    'GrayMatter': 'GrayMatter',
+    'WhiteMatter': 'WhiteMatter',
+    'Hippocampus': 'Hippocampus',
+    'RightHippocampus': 'Hippocampus_R',
+    'LeftHippocampus': 'Hippocampus_L',
+    'Amygdala': 'Amygdala',
+    'RightAmygdala': 'Amygdala_R',
+    'LeftAmygdala': 'Amygdala_L',
+    'Putamen': 'Putamen',
+    'RightPutamen': 'Putamen_R',
+    'LeftPutamen': 'Putamen_L',
+    'Thalamus': 'Thalamus',
+    'RightThalamus': 'Thalamus_R',
+    'LeftThalamus': 'Thalamus_L',
+    'VentralDiencephalon': 'VentD',
+    'RightVentralDiencephalon': 'VentD_R',
+    'LeftVentralDiencephalon': 'VentD_L',
+    'Pallidum': 'Pallidum',
+    'RightPallidum': 'Pallidum_R',
+    'LeftPallidum': 'Pallidum_L',
+    'Caudate': 'Caudate',
+    'RightCaudate': 'Caudate_R',
+    'LeftCaudate': 'Caudate_L',
+    'BrainStem': 'BrainStem',
+    'FrontalLobe': 'FrontalLobe',
+    'RightFrontalLobe': 'FrontalLobe_R',
+    'LeftFrontalLobe': 'FrontalLobe_L',
+    'ParietalLobe': 'ParietalLobe',
+    'RightParietalLobe': 'ParietalLobe_R',
+    'LeftParietalLobe': 'ParietalLobe_L',
+    'OccipitalLobe': 'OccipitalLobe',
+    'RightOccipitalLobe': 'OccipitalLobe_R',
+    'LeftOccipitalLobe': 'OccipitalLobe_L',
+    'TemporalLobe': 'TemporalLobe',
+    'RightTemporalLobe': 'TemporalLobe_R',
+    'LeftTemporalLobe': 'TemporalLobe_L',
+    'Cerebellum': 'Cerebellum',
+    'RightCerebellum': 'Cerebellum_R',
+    'LeftCerebellum': 'Cerebellum_L',
+}
+
 def pdftotext(in_pdf, out_text, options=None):
     """
     Converts pdf files to text files
@@ -129,7 +172,6 @@ def clinical_detect_neuroscore_version(wb):
                 cell_value = cell_value.strip()
             if cell_value != value:
                 is_version = False
-                print('{} {} {}'.format(version, cell_value, value))
                 break
         if is_version:
             return version
