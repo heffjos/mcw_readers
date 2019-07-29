@@ -16,6 +16,7 @@ except ImportError:
 from .. import data
 from ..utils import pdftotext
 from ..utils import clinical_detect_neuroscore_version
+from ..utils import CLINICAL_NEUROREADER_MAPPER
 
 with pkg_resources.path(data, 'clinical_versions_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
@@ -112,22 +113,20 @@ def parse_neuroreader_v2d2d8(pdf):
 
     date = datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y%m%d')
     results = {
-        'mTIV_ml': float(lines[7][7]),
-        'hippocampal_left-right_asymmetry_index': float(lines[9][0]),
-        'hippocampal_left-right_nr_index': float(lines[9][1]),
-        'hippocampal_left-right_z-score': float(lines[9][2]),
-        'hippocampal_left-right_percentile': float(lines[9][3]),
+        'mTIV': float(lines[7][7]),
+        'Hippocampus_Asym_Index': float(lines[9][0]),
+        'Hippocampus_Asym_Zscor': float(lines[9][2]),
+        'Hippocampus_Asym_percentile': float(lines[9][3]),
     }
 
     for line in lines[11:31] + lines[40:60]:
-        structure = '_'.join(line[0:len(line)-5]).lower()
-        results[structure + '_vol_ml'] = float(line[-5])
-        results[structure + '_vol_to_mTIV_ratio'] = float(line[-4])
-        results[structure + '_nr_index'] = float(line[-3])
-        results[structure + '_z_score'] = float(line[-2])
-        results[structure + '_percentile'] = float(line[-1])
+        structure = CLINICAL_NEUROREADER_MAPPER[''.join(line[0:len(line)-5])]
+        results[structure + '_vol'] = float(line[-5])
+        results[structure + '_TIVperc'] = float(line[-4])
+        results[structure + '_Zscore'] = float(line[-2])
+        results[structure + '_perc'] = float(line[-1])
     
-    return date, results
+    return date, pd.DataFrame(results)
     
     
     
