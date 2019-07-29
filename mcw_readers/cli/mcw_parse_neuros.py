@@ -35,7 +35,6 @@ def main():
 
     while True:
         event, values = window.Read()
-        print('{}'.format(event))
         if event == 'Submit':
             participant = values['participant']
             runs = values['runs']
@@ -54,7 +53,6 @@ def main():
             break
         for tp in ['tp1', 'tp2', 'tp3']:
             if values[tp] != '' and values[tp][-1] not in '0123456789':
-                print('Updating')
                 window.Element(tp).Update(values[tp][:-1])
 
     window.Close()
