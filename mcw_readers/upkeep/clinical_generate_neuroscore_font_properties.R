@@ -7,7 +7,10 @@ names(LETTER_TO_NUMERIC) <- letters
 data_dir = normalizePath('../data')
 assigned_file = file.path(data_dir, 'clinical_v3.0ulatest_labeled.xlsx')
 font_file <- file.path(data_dir, 'clinical_versions_font_properties.xlsm')
-out_versions_labeled <- file.path(data_dir, 'clinical_versions_labeled.tsv')
+
+out_templates_labeled <- file.path(data_dir, 'clinical_templates_labeled.tsv')
+out_redcap_variables <- file.path(data_dir, 'clinical_redcap_variables.tsv')
+out_redcap_labeled <- file.path(data_dir, 'clinical_redcap_labeled.tsv')
 
 assigned_data <- read_excel(assigned_file, na = "NA")
 font_data <- read_excel(font_file, trim_ws = FALSE)
@@ -20,12 +23,18 @@ redcap_data <- assigned_data %>%
          column = as.numeric(LETTER_TO_NUMERIC[str_to_lower(column)])) %>%
   select(redcap, worksheet, row, column)
 
+redcap_data %>% 
+  select(redcap)  %>%
+  mutate(values = NA) %>%
+  write_delim(out_redcap_variables, delim = '\t')
+
 # work on font properties now
 processed_data <- font_data %>%
   fill(version) %>%
   mutate(indent_level = ifelse(str_detect(measure, "^ "), indent_level + 1, indent_level),
          measure = str_trim(measure),
-         is_bold = ifelse(is_bold == -1 | is.na(is_bold), 1, 0)) %>%
+         is_bold = ifelse(is_bold == -1 | is.na(is_bold), 1, 0), 
+         worksheet = "Template") %>%
   group_by(version) %>%
   mutate(row = seq(first(row), n() + first(row) - 1),
          bold_header = ifelse(is_bold, measure, NA)) %>%
@@ -51,17 +60,27 @@ for (i in 1:nrow(processed_data)) {
   }
 }
 processed_data$indent_header <- indent_header
+v3d0ulatest <- filter(processed_data, version == "3.0ulatest")
 
-# now let's consolidate redcap_data and processed_data
-reference_3.0ulatest <- processed_data %>% 
-  filter(version == "3.0ulatest") %>%
-  left_join(redcap_data, by = "row") %>%
-  select(measure, bold_header, indent_header, redcap, worksheet, column)
+# now let's create out_templates_labeled for primarily reference and sanity checks
+reference_3.0ulatest <- v3d0ulatest %>% 
+  left_join(redcap_data, by = c("row", "worksheet")) %>%
+  select(measure, bold_header, indent_header, worksheet, redcap, column)
 
 redcap_processed_data <- processed_data %>%
-  select(measure, row, version, bold_header, indent_header) %>%
-  left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header"))
+  select(measure, row, version, bold_header, indent_header, worksheet) %>%
+  left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header", "worksheet"))
 
-write_delim(redcap_processed_data, out_versions_labeled, delim = "\t")
+write_delim(redcap_processed_data, out_templates_labeled, delim = "\t")
+
+# now create out_redcap_labeled which is the file used for actual reading
+redcap_data_labeled <- redcap_data %>%
+  left_join(v3d0ulatest, by = c("row", "worksheet")) %>%
+  select(-version, -indent_level, -is_bold, -row) %>%
+  left_join(processed_data %>% select(-indent_level, -is_bold), 
+            by = c("worksheet", "measure", "bold_header", "indent_header"))
+write_delim(redcap_data_labeled, out_redcap_labeled, delim = "\t")
+
+
 
   
