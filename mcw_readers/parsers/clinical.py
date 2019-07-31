@@ -123,8 +123,8 @@ def parse_neuroreader_v2d2d8(pdf):
         results[structure + '_TIVperc'] = float(line[-4])
         results[structure + '_Zscore'] = float(line[-2])
         results[structure + '_perc'] = float(line[-1])
-    
-    return date, pd.DataFrame(results)
+
+    return date, pd.DataFrame(results, index=[0])
     
     
     
