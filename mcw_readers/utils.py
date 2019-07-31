@@ -17,6 +17,7 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): 'GSI',
         (709, 2): None,
         (726, 2): None,
+        (736, 2): None,
         (739, 2): None,
         (811, 2): None},
     '3.0': { 
@@ -26,6 +27,7 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): 'Drug Problems (DRG)',
         (709, 2): 'PTSD Checklist',
         (726, 2): 'Com',
+        (736, 2): 'Emotional Well-being',
         (739, 2): 'General Health',
         (811, 2): None},
     '3.0u1.30': {
@@ -36,6 +38,7 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): 'Warmth (WRM)',
         (709, 2): 'SRS Total',
         (726, 2): 'General Health',
+        (736, 2): None,
         (739, 2): None,
         (811, 2): None},
     '3.0u10.21.16': { 
@@ -46,6 +49,7 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): 'Dysfxn Sexual Behavior (DSB)',
         (709, 2): 'General Health',
         (726, 2): None,
+        (736, 2): None,
         (739, 2): None,
         (811, 2): None},
     '3.0ulatest': { 
@@ -55,6 +59,7 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): 'Medication Effects',
         (709, 2): 'Treatment Rejection (RXR)',
         (726, 2): 'MMPI-Rf',
+        (736, 2): 'EID: Emotional/Internalizing Dysfxn',
         (739, 2): 'RCd: Demoralization',
         (811, 2): 'General Health'},
     'Old': {
@@ -64,8 +69,20 @@ CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
         (632, 2): None,
         (709, 2): None,
         (726, 2): None,
+        (736, 2): None,
         (739, 2): None,
         (811, 2): None},
+    'Doe': {
+        (12, 2):  'COGNITIVE STATUS',
+        (13, 2):  None,
+        (622, 2): 'Depression (DEP)',
+        (632, 2): 'Stress (STR)',
+        (709, 2): 'Depression',
+        (726, 2): 'SCI (DSM-5)',
+        (736, 2): 'General Health',
+        (739, 2): None,
+        (811, 2): None},
+        
 }
 
 CLINICAL_NEUROREADER_MAPPER = {
