@@ -18,7 +18,7 @@ from ..utils import pdftotext
 from ..utils import clinical_detect_neuroscore_version
 from ..utils import CLINICAL_NEUROREADER_MAPPER
 
-with pkg_resources.path(data, 'clinical_versions_labeled.tsv') as data_file:
+with pkg_resources.path(data, 'clinical_templates_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
 
 DATE_COL = 5
