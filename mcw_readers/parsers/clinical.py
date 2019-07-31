@@ -18,12 +18,12 @@ from ..utils import pdftotext
 from ..utils import clinical_detect_neuroscore_version
 from ..utils import CLINICAL_NEUROREADER_MAPPER
 
-with pkg_resources.path(data, 'clinical_templates_labeled.tsv') as data_file:
+with pkg_resources.path(data, 'clinical_redcap_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
 
 DATE_COL = 5
 
-def clinical_parse_neuroscore(wb, exam, debug=False):
+def parse_neuroscore(wb, exam, debug=False):
     """
     Parses neuroscore workbook, primarily the Template worksheet
 
@@ -33,9 +33,9 @@ def clinical_parse_neuroscore(wb, exam, debug=False):
             an openpyxl workbook, speed is greatly improved when 
             read_only=True and maybe data_only=True
         exam
-            The template worksheet has up to 3, possibley more, visit
-            (known as exams in th worksheet) data sets. This controls which
-            exam is parsed. It is ***zero-based*** indexing.
+            The template worksheet has up to 3 visits (known as exames in the)
+            worksheet) data sets. This controls which exam is parsed. 
+            It is ***zero-based*** indexing.
         debug
             This controls whether to parse the exam date. It allows for testing
             without setting the date.
@@ -43,34 +43,33 @@ def clinical_parse_neuroscore(wb, exam, debug=False):
     **Outputs**
         date
             The date of the exam. This is for file naming purposes. The date
-            first date is assumed to be in cell(9, E). The column is two
-            columns combined to 1, so we should note the behavior of this.
+            is assumed to be in cell(9, E). The column is two columns combined 
+            to 1, so we should note the behavior of this.
         results
             A dataframe. The columns are the measured variables. The rows are
             participants. They should be identified by some random string so
             they are deidentified.
     """
     col_adj = exam * 4
-    version = clinical_detect_neuroscore_verions(wb)
+    version = clinical_detect_neuroscore_version(wb)
     if version == None:
-        raise Exception('Could not detect clinical neuroscore verion')
-    variables = CLINICAL_VARIABLES[CLINICAL_VARIABLES['version'] == version]
-    results = pd.DataFrame({x: [np.nan] for x in variables['redcap']})
+        raise Exception('Could not detect clinical neuroscore version')
+    df_key = CLINICAL_VARIABLES[CLINICAL_VARIABLES['version'] == version].copy()
+    results = pd.DataFrame({x: [np.nan] 
+                            for x in pd.unique(CLINICAL_VARIABLES['redcap'])})
 
-    defined_variables = variables[(~variables['row'].isnull()) &
-                                  (~variables['column'].isnull())]
-    defined_variables['column'] = defined_variables['column'] + col_adj
-    worksheets = pd.unique(defined_variables['worksheet'])
+    df_key['column'] = df_key['column'] + col_adj
+    worksheets = pd.unique(df_key['worksheet'])
     if any(pd.isnull(worksheets)):
         raise Exception('There are unassigned worksheets in {}'.format(data_file))
 
     for ws in worksheets:
         sheet = wb[ws]
-        df = defined_variables[defined_variables['worksheet'] == ws]
+        df = df_key[df_key['worksheet'] == ws]
 
-        results[defined_variables['redcap']] = [
+        results[df_key['redcap']] = [
             sheet.cell(row=int(x), column=int(y)).value 
-            for x, y in zip(defined_variables['row'], defined_variables['column'])]
+            for x, y in zip(df_key['row'], df_key['column'])]
 
 
     results = results.melt(var_name='variables', value_name='values')
@@ -82,9 +81,8 @@ def clinical_parse_neuroscore(wb, exam, debug=False):
     if debug:
         date = '07071977'
     else:
-        date = datetime.strptime(
-            wb['Template'].cell(row=9, column=DATE_COL + col_adj).value, 
-            '%d-%b-%Y').strftime('%Y%m%d')
+        date = (wb['Template'].cell(row=9, column=DATE_COL + col_adj).
+            value.strftime('%Y%m%d'))
 
     return date, results
 
