@@ -138,14 +138,3 @@ def clinical_detect_neuroscore_version(wb):
 
     return None
 
-def clinical_build_empty_redcap_values(version):
-    """
-    Builds empty data frame with the redcap variables as headers.
-
-    **Parameters**
-
-        version
-            The neuroj
-    """
-    pass
-    
