@@ -8,6 +8,7 @@ data_dir = normalizePath('../data')
 assigned_file = file.path(data_dir, 'clinical_v3.0ulatest_labeled.xlsx')
 font_file <- file.path(data_dir, 'clinical_versions_font_properties.xlsm')
 
+out_version_key <- file.path(data_dir, 'clinical_version_key.tsv')
 out_templates_labeled <- file.path(data_dir, 'clinical_templates_labeled.tsv')
 out_redcap_variables <- file.path(data_dir, 'clinical_redcap_variables.tsv')
 out_redcap_labeled <- file.path(data_dir, 'clinical_redcap_labeled.tsv')
@@ -72,6 +73,17 @@ redcap_processed_data <- processed_data %>%
   left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header", "worksheet"))
 
 write_delim(redcap_processed_data, out_templates_labeled, delim = "\t")
+
+# create a version key
+version_key <- redcap_processed_data %>%
+  select(measure, version, row, column) %>%
+  filter(row %in% c(12, 13, 622, 632, 709, 726, 736, 739, 811)) %>%
+  complete(row, version) %>%
+  arrange(version) %>%
+  select(measure, version, row, column) %>%
+  mutate(column = 2)
+
+write_delim(version_key, out_version_key, delim = "\t")
 
 # now create out_redcap_labeled which is the file used for actual reading
 redcap_data_labeled <- redcap_data %>%

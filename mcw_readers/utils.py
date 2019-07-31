@@ -1,6 +1,8 @@
 import sys
 import subprocess
 
+import pandas as pd
+
 try:
     import importlib.resources as pkg_resources
 except ImportError:
@@ -8,82 +10,23 @@ except ImportError:
 
 from . import data
 
-# 12 13 622 632 709 726 739 811
-CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = {
-    '2': {
-        (12, 2):  'COGNITIVE STATUS',
-        (13, 2):  None,
-        (622, 2): 'Neurologic Impairment',
-        (632, 2): 'GSI',
-        (709, 2): None,
-        (726, 2): None,
-        (736, 2): None,
-        (739, 2): None,
-        (811, 2): None},
-    '3.0': { 
-        (12, 2):  None,
-        (13, 2):  'COGNITIVE STATUS',
-        (622, 2): 'Somatic Complaints (SOM)',
-        (632, 2): 'Drug Problems (DRG)',
-        (709, 2): 'PTSD Checklist',
-        (726, 2): 'Com',
-        (736, 2): 'Emotional Well-being',
-        (739, 2): 'General Health',
-        (811, 2): None},
-    '3.0u1.30': {
-    # 3.0u2.30
-        (12, 2):  'COGNITIVE STATUS',
-        (13, 2):  None,
-        (622, 2): 'Borderline Featuers (BOR)',
-        (632, 2): 'Warmth (WRM)',
-        (709, 2): 'SRS Total',
-        (726, 2): 'General Health',
-        (736, 2): None,
-        (739, 2): None,
-        (811, 2): None},
-    '3.0u10.21.16': { 
-    # 3.0u11.01.16
-        (12, 2):  'COGNITIVE STATUS',
-        (13, 2):  None,
-        (622, 2): 'Atypical Response (ATR)',
-        (632, 2): 'Dysfxn Sexual Behavior (DSB)',
-        (709, 2): 'General Health',
-        (726, 2): None,
-        (736, 2): None,
-        (739, 2): None,
-        (811, 2): None},
-    '3.0ulatest': { 
-        (12, 2):  None,
-        (13, 2):  'COGNITIVE STATUS',
-        (622, 2): 'Somatic Problems',
-        (632, 2): 'Medication Effects',
-        (709, 2): 'Treatment Rejection (RXR)',
-        (726, 2): 'MMPI-Rf',
-        (736, 2): 'EID: Emotional/Internalizing Dysfxn',
-        (739, 2): 'RCd: Demoralization',
-        (811, 2): 'General Health'},
-    'Old': {
-        (12, 2):  'COGNITIVE STATUS',
-        (13, 2):  None,
-        (622, 2): 'GSI',
-        (632, 2): None,
-        (709, 2): None,
-        (726, 2): None,
-        (736, 2): None,
-        (739, 2): None,
-        (811, 2): None},
-    'Doe': {
-        (12, 2):  'COGNITIVE STATUS',
-        (13, 2):  None,
-        (622, 2): 'Depression (DEP)',
-        (632, 2): 'Stress (STR)',
-        (709, 2): 'Depression',
-        (726, 2): 'SCI (DSM-5)',
-        (736, 2): 'General Health',
-        (739, 2): None,
-        (811, 2): None},
-        
-}
+def clinical_build_version_key():
+    version_key = {}
+    with pkg_resources.path(data, 'clinical_version_key.tsv') as key_file:
+        df = pd.read_csv(key_file, sep='\t')
+
+    df['rc'] = list(zip(df['row'], df['column']))
+    versions = set(pd.unique(df['version']))
+    versions.difference({'3.0u2.30', '3.0u11.01.16'})
+    for version in versions:
+        version_df = df[df['version'] == version]
+        version_key[version] = {x: y if not pd.isnull(y) else None 
+                                for x, y in zip(version_df['rc'], 
+                                                version_df['measure'])}
+
+    return version_key
+
+CLINICAL_NEUROSCORE_VERSIONS_IDENTIFIERS = clinical_build_version_key()
 
 CLINICAL_NEUROREADER_MAPPER = {
     'WholeBrainMatter': 'WBV',
