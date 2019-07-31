@@ -14,11 +14,9 @@ except ImportError:
     import importlib_resources as pkg_resources
 
 def main():
-    with pkg_resources.path('mcw_readers.data', 'clinical_versions_labeled.tsv') as data_file:
+    with pkg_resources.path('mcw_readers.data', 'clinical_redcap_variables.tsv') as data_file:
         variables = pd.read_csv(data_file, sep='\t')
-        variables = variables[variables['version'] == '3.0ulatest']
-        results = pd.DataFrame({x: [np.nan] for x in variables['redcap'])
-        
+        varialbes = variables.melt(var_name='variables', value_name='values')
 
     layout = [
         [sg.Text('Id', size=(15, 1), auto_size_text=False, justification='right'),
