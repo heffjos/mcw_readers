@@ -16,13 +16,12 @@ out_redcap_labeled <- file.path(data_dir, 'clinical_redcap_labeled.tsv')
 assigned_data <- read_excel(assigned_file, na = "NA")
 font_data <- read_excel(font_file, trim_ws = FALSE)
 
-# we only want tp 1 or no timpeoint variable names to match redcap
-# currently there are 975 of them
+# clinical_v3.0ulatest_labeled.xlsx has been consolidated to only have unique
+# variables, so we do not have to do any filtering any timepoints here, also
+# all unique variables have been converted to lower case
 redcap_data <- assigned_data %>%
-  filter(tp == 1 | is.na(tp)) %>%
-  mutate(redcap = str_replace(variable, '_[:digit:]+$', ''),
-         column = as.numeric(LETTER_TO_NUMERIC[str_to_lower(column)])) %>%
-  select(redcap, worksheet, row, column)
+  mutate(column = as.numeric(LETTER_TO_NUMERIC[str_to_lower(column)])) %>%
+  select(redcap = base, worksheet, row, column)
 
 redcap_data %>% 
   select(redcap)  %>%
