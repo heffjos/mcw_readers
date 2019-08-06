@@ -1,0 +1,33 @@
+This file documents the data files located in mcw_readers/data.
+
+clinical_redcap_labeled.tsv (mcw_readers/upkeep/clinical_generate_data_files.py)
+This file contains all the information to match Neuscore measures to the redcap variables.
+Columns:
+* redcap        - the redcap variable name
+* worksheet     - the Neuroscore worksheet where the value is located; currently Template is only included
+* column        - the column where the value is located in the worksheet
+* measure       - the label for the variable in Neuroscore; it is assumed this is located in column B for Template worksheet
+* bold_header   - relevant for measures only in Template worksheet; the most recent measure in bold
+* indent_header - relevant for measures only in Template worksheet; the current indent value
+* row           - the row where the value is located in the worksheet
+* version       - the Neuroscore version
+
+clinical_redcap_variables.tsv (mcw_readers/upkeep/clinical_generate_data_files.py)
+This file is used as an initial data frame when parsing input files to redcap.
+Columns:
+* redcap - the redcap variable name
+* values - the value; all values are set to NA
+
+clinical_spss_variables.tsv (SPSS file)
+This lists all the variables in the SPSS file.
+Columns:
+* variable - the SPSS variable name
+
+clinical_templates_labeled.tsv (mcw_readers/upkeep/clinical_generate_data_files.py)
+T
+
+clinical_unique_spss_variables.tsv
+clinical_v3.0ulatest_labeled.xlsx
+clinical_version_key.tsv
+clinical_versions_font_properties.xlsm
+clinical_versions_meta_information.xlsx
