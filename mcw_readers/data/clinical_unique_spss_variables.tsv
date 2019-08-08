@@ -271,7 +271,7 @@ LateralVent_L_Zscore_1	1216	1	other	lateralvent_l_zscore
 LateralVent_L_perc_1	1217	1	perc	lateralvent_l_perc
 WM_load_1	1218	1	other	wm_load
 fazekas_1	1219	1	other	fazekas
-filter_$	1220	NA	other	filter_$
+filter_$	1220	NA	other	filter_anc
 DiseaseDuration	1221	NA	other	diseaseduration
 employ_BL	1222	bl	other	employ
 occup_BL	1223	bl	other	occup
@@ -352,7 +352,6 @@ famhx_psyrel_BL	1297	bl	other	famhx_psyrel
 exercise_BL	1298	bl	other	exercise
 Outside_Neuropsych_BL	1299	bl	other	outside_neuropsych
 declinefromoutsideeval_BL	1300	bl	other	declinefromoutsideeval
-Date_BL	1301	bl	other	date
 NP_provider_BL	1302	bl	other	np_provider
 age_BL	1303	bl	other	age
 wms_io_raw_BL	1304	bl	raw	wms_io_raw
