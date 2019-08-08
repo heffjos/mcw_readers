@@ -28,5 +28,5 @@ data <- read_delim("../data/clinical_spss_variables.tsv", delim = "\t") %>%
 # assume one-to-one mapping
 data$base[data$base %in% names(name_mapper)] <- unname(name_mapper)
   
-write_delim("../data/clinical_unique_spss_variables.tsv", delim = "\t") 
+write_delim(data, "../data/clinical_unique_spss_variables.tsv", delim = "\t") 
   
