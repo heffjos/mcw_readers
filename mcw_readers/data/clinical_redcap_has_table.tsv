@@ -125,6 +125,7 @@ pasat_3srate_ss	neuropsych_tests	NA	pasat
 pasat_2srate_raw	neuropsych_tests	NA	pasat
 pasat_2srate_ss	neuropsych_tests	NA	pasat
 cpt3_disc_ss	neuropsych_tests	NA	cpt3
+cpt3_detect_ss	neuropsych_tests	NA	cpt3
 cpt3_detect_class	neuropsych_tests	NA	cpt3
 cpt3_omis_ss	neuropsych_tests	NA	cpt3
 cpt3_omis_class	neuropsych_tests	NA	cpt3

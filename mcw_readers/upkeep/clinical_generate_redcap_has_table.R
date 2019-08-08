@@ -30,7 +30,7 @@ has_names <- c(
   'bai'
 )
 
-data_dictionary <- read_csv("./data_dictionary.csv")
+data_dictionary <- read_csv("./data/clinical_data_dictionary.csv")
 
 data <- data_dictionary %>%
   select(variable = "Variable / Field Name",
