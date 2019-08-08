@@ -1,5 +1,11 @@
 library(tidyverse)
 
+name_mapper = c(
+  "filter_$" = "filter_anc")
+
+name_delete = c(
+  "date")
+
 data <- read_delim("../data/clinical_spss_variables.tsv", delim = "\t") %>%
   mutate(order = 1:length(variable),
          tp = str_match(variable, "_([:digit:]|[bB][lL])$")[, 2],
@@ -17,6 +23,10 @@ data <- read_delim("../data/clinical_spss_variables.tsv", delim = "\t") %>%
   distinct(base, .keep_all = TRUE) %>%
   select(-tp_fct) %>%
   arrange(order) %>%
-  write_delim("../data/clinical_unique_spss_variables.tsv", delim = "\t") 
-  
+  filter(!base %in% name_delete)
 
+# assume one-to-one mapping
+data$base[data$base %in% names(name_mapper)] <- unname(name_mapper)
+  
+write_delim("../data/clinical_unique_spss_variables.tsv", delim = "\t") 
+  
