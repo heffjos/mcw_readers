@@ -106,7 +106,19 @@ def parse_neuroreader_v2d2d8(pdf):
         lines = [x.strip().split() for x in in_file.readlines() if x.strip()]
 
     results = {
-        'neuroreaderdate': datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y%m%d'),
+        'image_id': lines[0][2],
+        'group_name': lines[1][2], 
+        'neuroreaderdate': datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y-%m-%d'),
+        'study_id': int(lines[2][2]),
+        'acession_number': lines[2][5],
+        'clinical_image_id': lines[3][3],
+        'patient_id': lines[4][2],
+        'first_name': lines[4][5],
+        'last_name': lines[4][6],
+        'gender': lines[5][1],
+        'birthdate': datetime.strptime(lines[5][3], '%m-%d-%Y').strftime('%Y-%m-%d'),
+        'version': lines[-1][-1],
+
         'mTIV': float(lines[7][7]),
         'Hippocampus_Asym_Index': float(lines[9][0]),
         'Hippocampus_Asym_Zscor': float(lines[9][2]),
