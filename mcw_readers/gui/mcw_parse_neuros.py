@@ -63,12 +63,11 @@ def main():
             results = []
             wb = openpyxl.load_workbook(neuroscore_file, read_only=True, data_only=True)
             for i, pair in enumerate(pairs):
-                date, df = parse_neuroscore(wb, i)
+                df = parse_neuroscore(wb, i)
                 if pair[1]:
-                    date, neuroreader_df = parse_neuroreader_v2d2d8(pair[1])
+                    neuroreader_df = parse_neuroreader_v2d2d8(pair[1])
                     df[neuroreader_df.columns] = neuroreader_df.iloc[0, :].values
 
-                df['date'] = date
                 df['id'] = values['participant']
                 results.append(df)
             out_file = os.path.splitext(neuroscore_file)[0] + '.csv'

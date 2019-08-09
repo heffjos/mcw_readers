@@ -21,7 +21,7 @@ from ..utils import CLINICAL_NEUROREADER_MAPPER
 with pkg_resources.path(data, 'clinical_redcap_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
 
-DATE_COL = 5
+DATE_COL = 4
 
 def parse_neuroscore(wb, exam, debug=False):
     """
@@ -41,10 +41,6 @@ def parse_neuroscore(wb, exam, debug=False):
             without setting the date.
 
     **Outputs**
-        date
-            The date of the exam. This is for file naming purposes. The date
-            is assumed to be in cell(9, E). The column is two columns combined 
-            to 1, so we should note the behavior of this.
         results
             A dataframe. The columns are the measured variables. The rows are
             participants. They should be identified by some random string so
@@ -79,12 +75,14 @@ def parse_neuroscore(wb, exam, debug=False):
     results = results.pivot(index='index', columns='variables', values='values')
 
     if debug:
-        date = '07071977'
+        results['np_date'] = '07071977'
     else:
-        date = (wb['Template'].cell(row=9, column=DATE_COL + col_adj).
-            value.strftime('%Y%m%d'))
+        results['np_date'] = (wb['Template']
+                              .cell(row=9, column=DATE_COL + col_adj)
+                              .value
+                              .strftime('%Y%m%d'))
 
-    return date, results
+    return results
 
 def parse_neuroreader_v2d2d8(pdf):
     """
@@ -95,8 +93,6 @@ def parse_neuroreader_v2d2d8(pdf):
         pdf
             path to pdf file to convert
     **Outuputs**
-        date
-            The date of the exam. This if for file namimg purposes.
         results
             A dataframe. The columns are the measured variables the rows are
             participants. They should be identified by some random string so
@@ -109,8 +105,8 @@ def parse_neuroreader_v2d2d8(pdf):
     with open(out_text) as in_file:
         lines = [x.strip().split() for x in in_file.readlines() if x.strip()]
 
-    date = datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y%m%d')
     results = {
+        'neuroreaderdate': datetime.strptime(lines[1][5], '%Y-%b-%d').strftime('%Y%m%d'),
         'mTIV': float(lines[7][7]),
         'Hippocampus_Asym_Index': float(lines[9][0]),
         'Hippocampus_Asym_Zscor': float(lines[9][2]),
@@ -124,7 +120,7 @@ def parse_neuroreader_v2d2d8(pdf):
         results[structure + '_Zscore'] = float(line[-2])
         results[structure + '_perc'] = float(line[-1])
 
-    return date, pd.DataFrame(results, index=[0])
+    return pd.DataFrame(results, index=[0])
     
     
     
