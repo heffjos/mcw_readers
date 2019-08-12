@@ -50,37 +50,37 @@ def parse_neuroscore(wb, exam, debug=False):
     version = clinical_detect_neuroscore_version(wb)
     if version == None:
         raise Exception('Could not detect clinical neuroscore version')
-    df_key = CLINICAL_VARIABLES[CLINICAL_VARIABLES['version'] == version].copy()
-    results = pd.DataFrame({x: [np.nan] 
-                            for x in pd.unique(CLINICAL_VARIABLES['redcap'])})
 
+    df_key = CLINICAL_VARIABLES[CLINICAL_VARIABLES['version'] == version].copy()
     df_key['column'] = df_key['column'] + col_adj
+
     worksheets = pd.unique(df_key['worksheet'])
     if any(pd.isnull(worksheets)):
         raise Exception('There are unassigned worksheets in {}'.format(data_file))
 
-    for ws in worksheets:
+    results = {'variable': [], 'value': []}
+    # missing assigments have no group value
+    df_worksheets = list(df_key.groupby('worksheet')) 
+    for ws, df in df_worksheets:
         sheet = wb[ws]
-        df = df_key[df_key['worksheet'] == ws]
+        for variable, x, y in zip(df['redcap'], df['row'], df['column']):
+            results['variable'].append(variable)
+            results['value'].append(sheet.cell(row=int(x), column=int(y)).value)
 
-        results[df_key['redcap']] = [
-            sheet.cell(row=int(x), column=int(y)).value 
-            for x, y in zip(df_key['row'], df_key['column'])]
-
-
-    results = results.melt(var_name='variables', value_name='values')
-    garbage = results['values'].str.match(r'^=|^raw$|^val$|^\[ERR\]$|^SS$', na=False)
-    results['values'][garbage] = np.nan
+    results = pd.DataFrame(results).fillna(pd.np.nan)
+    garbage = results['value'].str.match(r'^=|^raw$|^val$|^\[ERR\]$|^SS$', 
+                                         na=False)
+    results['value'][garbage] = pd.np.nan
     results['index'] = 0
-    results = results.pivot(index='index', columns='variables', values='values')
-
+    results = results.pivot(index='index', columns='variable', values='value')
+        
     if debug:
         results['np_date'] = '07071977'
     else:
         results['np_date'] = (wb['Template']
                               .cell(row=9, column=DATE_COL + col_adj)
                               .value
-                              .strftime('%Y%m%d'))
+                              .strftime('%Y-%m-%d'))
 
     return results
 
@@ -133,6 +133,4 @@ def parse_neuroreader_v2d2d8(pdf):
         results[structure + '_perc'] = float(line[-1])
 
     return pd.DataFrame(results, index=[0])
-    
-    
     
