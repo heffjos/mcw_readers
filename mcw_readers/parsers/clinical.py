@@ -1,7 +1,5 @@
 import os
 import re
-import sys
-import openpyxl
 
 import numpy as np
 import pandas as pd
@@ -14,14 +12,14 @@ except ImportError:
     import importlib_resources as pkg_resources
 
 from .. import data
-from ..utils import pdftotext
-from ..utils import clinical_detect_neuroscore_version
-from ..utils import CLINICAL_NEUROREADER_MAPPER
+from ..utils import (
+    pdftotext, clinical_detect_neuroscore_version, CLINICAL_NEUROREADER_MAPPER
+)
 
 with pkg_resources.path(data, 'clinical_redcap_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
 
-DATE_COL = 4
+DATE_COL = 5
 
 def parse_neuroscore(wb, exam, debug=False):
     """
