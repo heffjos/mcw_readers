@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'gui_scripts': [
-            'mcw_parse_neuros=mcw_readers.cli.mcw_parse_neuros:main',
+            'mcw_parse_neuros=mcw_readers.gui.mcw_parse_neuros:main',
         ],
     },
     install_requires=[
