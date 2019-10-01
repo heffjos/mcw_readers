@@ -1,7 +1,7 @@
 This file documents the data files located in mcw_readers/data.
 
 clinical_redcap_labeled.tsv (mcw_readers/upkeep/clinical_generate_data_files.py)
-This file contains all the information to match Neuscore measures to the redcap variables.
+This file contains all the information to match Neuroscore measures to the redcap variables.
 Columns:
 * redcap        - the redcap variable name
 * worksheet     - the Neuroscore worksheet where the value is located; currently Template is only included
