@@ -28,7 +28,9 @@ setup(
     ],
     package_data={
         '': ['LICENSE', 'README.md'],
-        'mcw_readers': ['data/clinical_versions_labeled.tsv',
+        'mcw_readers': ['data/clinical_redcap_variables.tsv',
+                        'data/clinical_redcap_labeled.tsv',
+                        'data/clinical_version_key.tsv',
                         'data/xpdf-tools-linux-4.01.01/bin64/pdftotext',
                         'data/xpdf-tools-win-4.01.01/bin64/pdftotext.exe'],
     },
