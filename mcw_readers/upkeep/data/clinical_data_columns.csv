@@ -1,5 +1,7 @@
 Variable / Field Name,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record,Record
 record_id
+redcap_repeat_instrument
+redcap_repeat_instance
 lastname
 firstname
 mrn
@@ -39,9 +41,8 @@ frontosubcort_v_amnestic_anc
 original_frontosub_v_am_anc
 neurologyvisit_date
 neurology_etiology
+neurologyvisit_date_
 neurology_etiology_yr
-npsydate
-np_provider
 etiology_1_npsy
 etiology_npsy_explained
 etiology_1_neurology
@@ -49,7 +50,6 @@ etiology_1_neurology_explained
 neurologyvisitdate
 neurology_dx_old
 etiology_anc
-etiology
 neurobehav
 neurobehav_anc
 data_entry_ambiguities
@@ -96,7 +96,6 @@ dxdiscrepancybetweenproviders
 famhx_dem
 famhx_rel
 famhx_demtype
-famhx_demtype_explained
 famhx_onset
 famhx_onset_explained
 psydx
@@ -138,8 +137,7 @@ addenbrooke_mem
 addenbrooke_fluency
 addenbrooke_lang
 addenbrooke_visuo
-diseaseduration
-neuro_complete
+neurology_complete
 neuroim
 fdgpet
 pet_amyvid
@@ -161,8 +159,10 @@ mri_hippscler
 mri_vascular
 mri_wm
 mri_tumor
-imaging_complete
+baseline_testing_complete
 np_date
+npsydate
+np_provider
 age
 wms_io_raw
 wms_io_per
@@ -306,7 +306,6 @@ pasat_2srate_raw
 pasat_2srate_ss
 cpt3
 cpt3_disc_ss
-cpt3_detect_ss
 cpt3_detect_class
 cpt3_omis_ss
 cpt3_omis_class
@@ -616,8 +615,7 @@ lateralvent_l_zscore
 lateralvent_l_perc
 wm_load
 fazekas
-filter_anc
-filter1
+filter_
 neuroreader_complete
 cognitivereserve1
 cognitivereserve2
@@ -629,20 +627,6 @@ cognitivereserve3_dichot
 cognitivereserve4_dichot
 cognitivereserve5_dichot
 cr_btwmeasurevariability
-differ_hc_wbv
-differ_hc_fl
-differ_hc_fl_r
-differ_hc_fl_l
-differ_hc_pl
-differ_hc_pl_r
-differ_hc_pl_l
-differ_hc_tl
-differ_hc_tl_r
-differ_hc_tl_l
-differ_hc_ol
-differ_hc_ol_r
-differ_hc_ol_l
-vascularrisks_burden
 cogresfactor1
 cogresfactor3
 cogresfactor5
