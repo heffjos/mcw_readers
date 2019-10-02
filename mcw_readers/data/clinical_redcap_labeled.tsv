@@ -1,1179 +1,1179 @@
 redcap	worksheet	column	measure	bold_header	indent_header	row	version
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	2
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	15	3.0
+wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u1.30
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u10.21.16
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u11.01.16
-wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u1.30
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u2.3
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	15	3.0ulatest
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	Doe
 wms_io_raw	Template	3	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	Old
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	2
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	15	3.0
+wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u1.30
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u10.21.16
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u11.01.16
-wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u1.30
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	3.0u2.3
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	15	3.0ulatest
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	Doe
 wms_io_per	Template	5	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	Information & Orientation (WMS-III)	14	Old
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	2
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0
+fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	3.0u1.30
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	3.0u10.21.16
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	3.0u11.01.16
-fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	3.0u1.30
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	3.0u2.3
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	49	3.0ulatest
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	Doe
 fsiq	Template	3	Full Scale IQ	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	47	Old
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	2
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	49	3.0
+vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0u1.30
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0u10.21.16
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0u11.01.16
-vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0u1.30
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	3.0u2.3
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	50	3.0ulatest
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	Doe
 vci	Template	4	Verbal Comprehension Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	48	Old
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	2
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0
+sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u1.30
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u10.21.16
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u11.01.16
-sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u1.30
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u2.3
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0ulatest
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	Doe
 sim_raw	Template	3	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	Old
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	2
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0
+sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u1.30
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u10.21.16
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u11.01.16
-sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u1.30
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	3.0u2.3
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0ulatest
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	Doe
 sim_ss	Template	4	Similarities	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	49	Old
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	2
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0
+voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u1.30
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u10.21.16
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u11.01.16
-voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u1.30
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u2.3
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	52	3.0ulatest
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	Doe
 voc_raw	Template	3	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	Old
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	2
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0
+voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u1.30
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u10.21.16
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u11.01.16
-voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u1.30
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	3.0u2.3
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	52	3.0ulatest
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	Doe
 voc_ss	Template	4	Vocabulary	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	50	Old
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	2
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	52	3.0
+in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u1.30
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u10.21.16
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u11.01.16
-in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u1.30
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u2.3
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	53	3.0ulatest
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	Doe
 in_raw	Template	3	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	Old
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	2
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	52	3.0
+in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u1.30
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u10.21.16
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u11.01.16
-in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u1.30
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	3.0u2.3
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	53	3.0ulatest
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	Doe
 in_ss	Template	4	Information	Wechsler Adult Intelligence Scale-IV	Verbal Comprehension Index	51	Old
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	2
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	54	3.0
+pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	3.0u1.30
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	3.0u10.21.16
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	3.0u11.01.16
-pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	3.0u1.30
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	3.0u2.3
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	55	3.0ulatest
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	Doe
 pri	Template	4	Perceptual Reasoning Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	53	Old
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	2
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0
+bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u1.30
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u10.21.16
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u11.01.16
-bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u1.30
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u2.3
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0ulatest
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	Doe
 bd_raw	Template	3	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	Old
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	2
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0
+bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u1.30
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u10.21.16
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u11.01.16
-bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u1.30
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	3.0u2.3
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0ulatest
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	Doe
 bd_ss	Template	4	Block Design	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	54	Old
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	2
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0
+mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u1.30
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u10.21.16
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u11.01.16
-mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u1.30
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u2.3
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0ulatest
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	Doe
 mr_raw	Template	3	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	Old
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	2
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0
+mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u1.30
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u10.21.16
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u11.01.16
-mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u1.30
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	3.0u2.3
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0ulatest
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	Doe
 mr_ss	Template	4	Matrix Reasoning	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	55	Old
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	2
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0
+vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u1.30
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u10.21.16
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u11.01.16
-vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u1.30
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u2.3
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	58	3.0ulatest
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	Doe
 vp_raw	Template	3	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	Old
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	2
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0
+vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u1.30
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u10.21.16
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u11.01.16
-vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u1.30
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	3.0u2.3
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	58	3.0ulatest
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	Doe
 vp_ss	Template	4	Visual Puzzles	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	56	Old
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	2
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	58	3.0
+dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u1.30
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u10.21.16
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u11.01.16
-dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u1.30
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u2.3
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	59	3.0ulatest
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	Doe
 dsp_raw	Template	3	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	Old
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	2
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	58	3.0
+dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u1.30
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u10.21.16
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u11.01.16
-dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u1.30
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	3.0u2.3
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	59	3.0ulatest
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	Doe
 dsp_ss	Template	4	Picture Completion	Wechsler Adult Intelligence Scale-IV	Perceptual Reasoning Index	57	Old
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	2
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	60	3.0
+wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	3.0u1.30
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	3.0u10.21.16
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	3.0u11.01.16
-wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	3.0u1.30
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	3.0u2.3
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	61	3.0ulatest
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	Doe
 wmi	Template	4	Working Memory Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	59	Old
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	2
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	62	3.0
+ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u1.30
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u10.21.16
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u11.01.16
-ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u1.30
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u2.3
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	63	3.0ulatest
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	Doe
 ar_raw	Template	3	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	Old
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	2
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	62	3.0
+ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u1.30
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u10.21.16
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u11.01.16
-ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u1.30
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	3.0u2.3
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	63	3.0ulatest
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	Doe
 ar_ss	Template	4	Arithmetic	Wechsler Adult Intelligence Scale-IV	Working Memory Index	61	Old
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	2
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	64	3.0
+psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	3.0u1.30
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	3.0u10.21.16
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	3.0u11.01.16
-psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	3.0u1.30
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	3.0u2.3
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	65	3.0ulatest
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	Doe
 psi	Template	4	Processing Speed Index	Wechsler Adult Intelligence Scale-IV	Wechsler Adult Intelligence Scale-IV	63	Old
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	2
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0
+ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u1.30
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u10.21.16
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u11.01.16
-ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u1.30
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u2.3
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	66	3.0ulatest
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	Doe
 ss_raw	Template	3	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	Old
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	2
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0
+ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u1.30
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u10.21.16
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u11.01.16
-ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u1.30
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	3.0u2.3
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	66	3.0ulatest
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	Doe
 ss_ss	Template	4	Symbol Search	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	64	Old
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	2
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	66	3.0
+cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u1.30
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u10.21.16
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u11.01.16
-cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u1.30
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u2.3
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	67	3.0ulatest
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	Doe
 cd_raw	Template	3	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	Old
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	2
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	66	3.0
+cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u1.30
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u10.21.16
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u11.01.16
-cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u1.30
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	3.0u2.3
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	67	3.0ulatest
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	Doe
 cd_ss	Template	4	Coding	Wechsler Adult Intelligence Scale-IV	Processing Speed Index	65	Old
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	2
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0
+lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u1.30
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u10.21.16
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u11.01.16
-lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u1.30
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u2.3
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0ulatest
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	Doe
 lmi_raw	Template	3	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	Old
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	2
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0
+lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u1.30
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u10.21.16
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u11.01.16
-lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u1.30
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	3.0u2.3
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0ulatest
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	Doe
 lmi_ss	Template	4	Logical Memory I	Wechsler Memory Scale-IV	Auditory Memory Index	93	Old
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	2
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0
+lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u1.30
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u10.21.16
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u11.01.16
-lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u1.30
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u2.3
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0ulatest
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	Doe
 lmii_raw	Template	3	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	Old
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	2
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0
+lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u1.30
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u10.21.16
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u11.01.16
-lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u1.30
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	3.0u2.3
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0ulatest
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	Doe
 lmii_ss	Template	4	Logical Memory II	Wechsler Memory Scale-IV	Auditory Memory Index	94	Old
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	2
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0
+lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u1.30
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u10.21.16
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u11.01.16
-lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u1.30
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u2.3
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0ulatest
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	Doe
 lmrec_raw	Template	3	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	Old
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	2
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0
+lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u1.30
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u10.21.16
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u11.01.16
-lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u1.30
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	3.0u2.3
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0ulatest
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	Doe
 lmrec_per	Template	4	LM Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	95	Old
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	2
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0
+vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u1.30
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u10.21.16
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u11.01.16
-vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u1.30
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u2.3
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	99	3.0ulatest
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	Doe
 vpai_raw	Template	3	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	Old
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	2
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0
+vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u1.30
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u10.21.16
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u11.01.16
-vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u1.30
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	3.0u2.3
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	99	3.0ulatest
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	Doe
 vpai_ss	Template	4	Verbal Paired Associates I	Wechsler Memory Scale-IV	Auditory Memory Index	96	Old
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	2
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0
+vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u1.30
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u10.21.16
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u11.01.16
-vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u1.30
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u2.3
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	100	3.0ulatest
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	Doe
 vpaii_raw	Template	3	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	Old
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	2
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0
+vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u1.30
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u10.21.16
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u11.01.16
-vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u1.30
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	3.0u2.3
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	100	3.0ulatest
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	Doe
 vpaii_ss	Template	4	Verbal Paired Associates II	Wechsler Memory Scale-IV	Auditory Memory Index	97	Old
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	2
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	99	3.0
+vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u1.30
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u10.21.16
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u11.01.16
-vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u1.30
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u2.3
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	101	3.0ulatest
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	Doe
 vparec_raw	Template	3	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	Old
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	2
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	99	3.0
+vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u1.30
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u10.21.16
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u11.01.16
-vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u1.30
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	3.0u2.3
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	101	3.0ulatest
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	Doe
 vparec_perc	Template	4	VPA Recognition	Wechsler Memory Scale-IV	Auditory Memory Index	98	Old
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	2
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0
+vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u1.30
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u10.21.16
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u11.01.16
-vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u1.30
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u2.3
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	103	3.0ulatest
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	Doe
 vri_raw	Template	3	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	Old
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	2
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0
+vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u1.30
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u10.21.16
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u11.01.16
-vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u1.30
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	3.0u2.3
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	103	3.0ulatest
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	Doe
 vri_ss	Template	4	Visual Reproduction I	Wechsler Memory Scale-IV	Visual Memory Index	100	Old
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	2
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0
+vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u1.30
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u10.21.16
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u11.01.16
-vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u1.30
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u2.3
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	104	3.0ulatest
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	Doe
 vrii_raw	Template	3	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	Old
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	2
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0
+vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u1.30
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u10.21.16
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u11.01.16
-vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u1.30
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	3.0u2.3
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	104	3.0ulatest
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	Doe
 vrii_ss	Template	4	Visual Reproduction II	Wechsler Memory Scale-IV	Visual Memory Index	101	Old
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	2
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	103	3.0
+vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u1.30
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u10.21.16
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u11.01.16
-vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u1.30
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u2.3
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	105	3.0ulatest
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	Doe
 vrrec_raw	Template	3	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	Old
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	2
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	103	3.0
+vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u1.30
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u10.21.16
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u11.01.16
-vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u1.30
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	3.0u2.3
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	105	3.0ulatest
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	Doe
 vrrec_per	Template	4	VR Recognition	Wechsler Memory Scale-IV	Visual Memory Index	102	Old
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	2
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	141	3.0
+vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u1.30
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u10.21.16
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u11.01.16
-vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u1.30
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u2.3
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	143	3.0ulatest
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	Doe
 vrcopy_raw	Template	3	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	Old
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	2
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	141	3.0
+vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u1.30
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u10.21.16
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u11.01.16
-vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u1.30
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	3.0u2.3
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	143	3.0ulatest
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	Doe
 vrcopy_perc	Template	4	Visual Reproduction Copy	Wechsler Memory Scale-III	Visual Memory	140	Old
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	2
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0
+cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u1.30
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u10.21.16
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u11.01.16
-cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u1.30
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u2.3
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0ulatest
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	Doe
 cvlt_tot_raw	Template	3	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	Old
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	2
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0
+cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u1.30
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u10.21.16
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u11.01.16
-cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u1.30
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	3.0u2.3
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0ulatest
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	Doe
 cvlt_tot_ss	Template	4	Total Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	165	Old
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	2
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0
+cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u1.30
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u10.21.16
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u11.01.16
-cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u1.30
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u2.3
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0ulatest
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	Doe
 cvlt_sdelayfree_raw	Template	3	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	Old
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	2
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0
+cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u1.30
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u10.21.16
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u11.01.16
-cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u1.30
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	3.0u2.3
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0ulatest
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	Doe
 cvlt_sdelayfree_ss	Template	4	Short Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	166	Old
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	2
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0
+cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u1.30
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u10.21.16
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u11.01.16
-cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u1.30
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u2.3
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0ulatest
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	Doe
 cvlt_sdelaycued_raw	Template	3	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	Old
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	2
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0
+cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u1.30
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u10.21.16
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u11.01.16
-cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u1.30
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	3.0u2.3
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0ulatest
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	Doe
 cvlt_sdelaycued_ss	Template	4	Short Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	167	Old
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	2
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0
+cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u1.30
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u10.21.16
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u11.01.16
-cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u1.30
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u2.3
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0ulatest
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	Doe
 cvlt_ldelayfree_raw	Template	3	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	Old
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	2
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0
+cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u1.30
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u10.21.16
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u11.01.16
-cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u1.30
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	3.0u2.3
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0ulatest
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	Doe
 cvlt_ldelayfree_ss	Template	4	Long Delay Free Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	168	Old
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	2
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0
+cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u1.30
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u10.21.16
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u11.01.16
-cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u1.30
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u2.3
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	172	3.0ulatest
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	Doe
 cvlt_ldelaycued_raw	Template	3	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	Old
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	2
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0
+cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u1.30
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u10.21.16
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u11.01.16
-cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u1.30
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	3.0u2.3
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	172	3.0ulatest
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	Doe
 cvlt_ldelaycued_ss	Template	4	Long Delay Cued Recall	California Verbal Learning Task-II	California Verbal Learning Task-II	169	Old
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	2
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0
+cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u1.30
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u10.21.16
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u11.01.16
-cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u1.30
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u2.3
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	173	3.0ulatest
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	Doe
 cvlt_recogdisc_raw	Template	3	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	Old
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	2
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0
+cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u1.30
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u10.21.16
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u11.01.16
-cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u1.30
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	3.0u2.3
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	173	3.0ulatest
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	Doe
 cvlt_recogdisc_ss	Template	4	Recognition Discriminability	California Verbal Learning Task-II	California Verbal Learning Task-II	170	Old
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	2
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	172	3.0
+cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0u1.30
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0u10.21.16
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0u11.01.16
-cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0u1.30
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	3.0u2.3
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	174	3.0ulatest
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	Doe
 cvlt_fcrecog_perc	Template	3	Forced Choice Recognition	California Verbal Learning Task-II	California Verbal Learning Task-II	171	Old
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	2
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0
+hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u10.21.16
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u11.01.16
-hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u2.3
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0ulatest
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Doe
 hvlt_tot_raw	Template	3	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Old
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	2
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0
+hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u10.21.16
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u11.01.16
-hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u2.3
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0ulatest
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Doe
 hvlt_tot_ss	Template	4	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Old
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	2
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0
+hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u10.21.16
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u11.01.16
-hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u2.3
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0ulatest
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Doe
 hvlt_tot_per	Template	5	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Old
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	2
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0
+hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u10.21.16
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u11.01.16
-hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u1.30
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	3.0u2.3
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0ulatest
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Doe
 hvlt_tot_int	Template	6	Total Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	173	Old
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	2
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0
+hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u1.30
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u10.21.16
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u11.01.16
-hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u1.30
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u2.3
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	177	3.0ulatest
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	Doe
 hvlt_delay_raw	Template	3	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	Old
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	2
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0
+hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u1.30
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u10.21.16
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u11.01.16
-hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u1.30
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	3.0u2.3
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	177	3.0ulatest
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	Doe
 hvlt_delay_ss	Template	4	Delayed Recall	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	174	Old
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	2
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0
+hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u1.30
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u10.21.16
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u11.01.16
-hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u1.30
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u2.3
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	178	3.0ulatest
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	Doe
 hvlt_perc_raw	Template	3	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	Old
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	2
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0
+hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u1.30
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u10.21.16
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u11.01.16
-hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u1.30
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	3.0u2.3
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	178	3.0ulatest
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	Doe
 hvlt_perc_ss	Template	4	Percent Retention	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	175	Old
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	2
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	177	3.0
+hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u1.30
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u10.21.16
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u11.01.16
-hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u1.30
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u2.3
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	179	3.0ulatest
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	Doe
 hvlt_disc_raw	Template	3	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	Old
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	2
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	177	3.0
+hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u1.30
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u10.21.16
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u11.01.16
-hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u1.30
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	3.0u2.3
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	179	3.0ulatest
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	Doe
 hvlt_disc_ss	Template	4	Discrimination Index	Hopkins Verbal Learning Task-R	Hopkins Verbal Learning Task-R	176	Old
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	2
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0
+bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u1.30
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u10.21.16
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u11.01.16
-bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u1.30
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u2.3
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	181	3.0ulatest
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	Doe
 bvmt_tot_raw	Template	3	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	Old
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	2
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0
+bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u1.30
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u10.21.16
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u11.01.16
-bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u1.30
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	3.0u2.3
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	181	3.0ulatest
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	Doe
 bvmt_tot_ss	Template	4	Total Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	178	Old
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	2
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	180	3.0
+bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u1.30
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u10.21.16
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u11.01.16
-bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u1.30
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u2.3
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	182	3.0ulatest
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	Doe
 bvmt_delay_raw	Template	3	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	Old
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	2
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	180	3.0
+bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u1.30
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u10.21.16
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u11.01.16
-bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u1.30
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	3.0u2.3
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	182	3.0ulatest
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	Doe
 bvmt_delay_ss	Template	4	Delayed Recall	Brief Visuospatial Memory Test-R	Brief Visuospatial Memory Test-R	179	Old
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	2
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0
+bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u1.30
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	3.0u10.21.16
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	3.0u11.01.16
-bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u1.30
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u2.3
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	223	3.0ulatest
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	Doe
 bnt_raw	Template	3	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	Old
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	2
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0
+bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u1.30
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	3.0u10.21.16
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	3.0u11.01.16
-bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u1.30
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u2.3
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	223	3.0ulatest
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	Doe
 bnt_ss	Template	4	Boston Naming Test	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	211	Old
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	2
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0
+bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u1.30
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	3.0u10.21.16
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	3.0u11.01.16
-bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u1.30
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u2.3
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	224	3.0ulatest
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	Doe
 bdae_cim_raw	Template	3	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	Old
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	2
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0
+bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u1.30
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	3.0u10.21.16
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	3.0u11.01.16
-bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u1.30
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u2.3
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	224	3.0ulatest
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	Doe
 bdae_cim_ss	Template	4	Complex Ideational Material	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	212	Old
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	2
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	220	3.0
+bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u1.30
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u10.21.16
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u11.01.16
-bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u1.30
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u2.3
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	226	3.0ulatest
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	Doe
 bdae_rs_raw	Template	3	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	Old
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	2
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	220	3.0
+bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u1.30
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u10.21.16
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	3.0u11.01.16
-bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u1.30
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	3.0u2.3
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	226	3.0ulatest
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	217	Doe
 bdae_rn_raw	Template	4	Repeating Phrases	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	214	Old
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	2
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	221	3.0
+bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u1.30
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u10.21.16
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u11.01.16
-bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u1.30
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u2.3
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	227	3.0ulatest
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	Doe
 bdae_ct_raw	Template	3	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	Old
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	2
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	221	3.0
+bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u1.30
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u10.21.16
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	3.0u11.01.16
-bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u1.30
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	3.0u2.3
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	227	3.0ulatest
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	218	Doe
 bdae_sp_raw	Template	4	Picture Description: Cookie Theft	Boston Diagnostic Aphasia Exam-3	Boston Diagnostic Aphasia Exam-3	215	Old
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	2
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	232	3.0
+wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u1.30
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	3.0u10.21.16
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	3.0u11.01.16
-wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u1.30
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u2.3
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	238	3.0ulatest
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	Doe
 wratread_raw	Template	3	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	Old
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	2
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	232	3.0
+wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u1.30
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	3.0u10.21.16
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	3.0u11.01.16
-wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u1.30
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	3.0u2.3
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	238	3.0ulatest
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	229	Doe
 wratread_ss	Template	4	Word Reading	Wide Range Achievement Tests-4	Wide Range Achievement Tests-4	226	Old
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	2
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	253	3.0
+wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u1.30
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	3.0u10.21.16
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	3.0u11.01.16
-wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u1.30
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u2.3
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	259	3.0ulatest
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	Doe
 wjiii_wa_raw	Template	3	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	Old
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	2
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	253	3.0
+wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u1.30
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	3.0u10.21.16
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	3.0u11.01.16
-wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u1.30
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	3.0u2.3
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	259	3.0ulatest
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	250	Doe
 wjiii_wa_ss	Template	4	Word Attack	WJ-III Tests of Achievement	Basic Reading Skills	247	Old
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	259	2
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	299	3.0
+jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u1.30
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	291	3.0u10.21.16
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	291	3.0u11.01.16
-jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u1.30
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u2.3
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	306	3.0ulatest
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	296	Doe
 jlo_raw	Template	3	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	259	Old
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	259	2
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	299	3.0
+jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u1.30
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	291	3.0u10.21.16
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	291	3.0u11.01.16
-jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u1.30
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	294	3.0u2.3
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	306	3.0ulatest
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	296	Doe
 jlo_ss	Template	4	Judgment of Line Orientation	Judgment of Line Orientation	Judgment of Line Orientation	259	Old
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	261	2
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	301	3.0
+clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	296	3.0u1.30
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	293	3.0u10.21.16
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	293	3.0u11.01.16
-clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	296	3.0u1.30
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	296	3.0u2.3
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	308	3.0ulatest
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	298	Doe
 clock_score	Template	3	Clock Drawing	Clock Drawing	Clock Drawing	261	Old
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	272	2
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	316	3.0
+sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u1.30
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	308	3.0u10.21.16
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	308	3.0u11.01.16
-sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u1.30
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u2.3
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	323	3.0ulatest
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	313	Doe
 sdmt_writ_raw	Template	3	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	272	Old
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	272	2
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	316	3.0
+sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u1.30
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	308	3.0u10.21.16
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	308	3.0u11.01.16
-sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u1.30
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	311	3.0u2.3
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	323	3.0ulatest
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	313	Doe
 sdmt_writ_ss	Template	4	Written	Symbol Digit Modalities Test	Symbol Digit Modalities Test	272	Old
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	273	2
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	317	3.0
+sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u1.30
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	309	3.0u10.21.16
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	309	3.0u11.01.16
-sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u1.30
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u2.3
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	324	3.0ulatest
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	314	Doe
 sdmt_oral_raw	Template	3	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	273	Old
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	273	2
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	317	3.0
+sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u1.30
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	309	3.0u10.21.16
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	309	3.0u11.01.16
-sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u1.30
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	312	3.0u2.3
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	324	3.0ulatest
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	314	Doe
 sdmt_oral_ss	Template	4	Oral Retest	Symbol Digit Modalities Test	Symbol Digit Modalities Test	273	Old
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	276	2
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	320	3.0
+pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u1.30
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	312	3.0u10.21.16
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	312	3.0u11.01.16
-pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u1.30
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u2.3
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	327	3.0ulatest
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	317	Doe
 pasat_3srate_raw	Template	3	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	276	Old
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	276	2
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	320	3.0
+pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u1.30
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	312	3.0u10.21.16
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	312	3.0u11.01.16
-pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u1.30
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	315	3.0u2.3
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	327	3.0ulatest
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	317	Doe
 pasat_3srate_ss	Template	4	"3"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	276	Old
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	277	2
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	321	3.0
+pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u1.30
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	313	3.0u10.21.16
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	313	3.0u11.01.16
-pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u1.30
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u2.3
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	328	3.0ulatest
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	318	Doe
 pasat_2srate_raw	Template	3	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	277	Old
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	277	2
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	321	3.0
+pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u1.30
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	313	3.0u10.21.16
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	313	3.0u11.01.16
-pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u1.30
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	316	3.0u2.3
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	328	3.0ulatest
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	318	Doe
 pasat_2srate_ss	Template	4	"2"" Rate"	Paced Auditory Serial Addition Test	Paced Auditory Serial Addition Test	277	Old
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	294	2
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	338	3.0
+cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	333	3.0u1.30
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	330	3.0u10.21.16
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	330	3.0u11.01.16
-cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	333	3.0u1.30
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	333	3.0u2.3
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	345	3.0ulatest
 cpt3_disc_ss	Template	3	Detectability (d')	Conner's CPT-3	Conner's CPT-3	335	Doe
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	295	2
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	339	3.0
+cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	334	3.0u1.30
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	331	3.0u10.21.16
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	331	3.0u11.01.16
-cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	334	3.0u1.30
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	334	3.0u2.3
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	346	3.0ulatest
 cpt3_omis_ss	Template	3	Omissions	Conner's CPT-3	Conner's CPT-3	336	Doe
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	296	2
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	340	3.0
+cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	335	3.0u1.30
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	332	3.0u10.21.16
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	332	3.0u11.01.16
-cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	335	3.0u1.30
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	335	3.0u2.3
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	347	3.0ulatest
 cpt3_comis_ss	Template	3	Commissions	Conner's CPT-3	Conner's CPT-3	337	Doe
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	297	2
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	341	3.0
+cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	336	3.0u1.30
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	333	3.0u10.21.16
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	333	3.0u11.01.16
-cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	336	3.0u1.30
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	336	3.0u2.3
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	348	3.0ulatest
 cpt3_per_ss	Template	3	Perseverations	Conner's CPT-3	Conner's CPT-3	338	Doe
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	298	2
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	342	3.0
+cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	337	3.0u1.30
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	334	3.0u10.21.16
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	334	3.0u11.01.16
-cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	337	3.0u1.30
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	337	3.0u2.3
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	349	3.0ulatest
 cpt3_hrt_ss	Template	4	HRT	Conner's CPT-3	Conner's CPT-3	339	Doe
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	299	2
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	343	3.0
+cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	338	3.0u1.30
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	335	3.0u10.21.16
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	335	3.0u11.01.16
-cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	338	3.0u1.30
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	338	3.0u2.3
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	350	3.0ulatest
 cpt3_hrtsd_ss	Template	4	HRT SD	Conner's CPT-3	Conner's CPT-3	340	Doe
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	300	2
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	344	3.0
+cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	339	3.0u1.30
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	336	3.0u10.21.16
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	336	3.0u11.01.16
-cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	339	3.0u1.30
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	339	3.0u2.3
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	351	3.0ulatest
 cpt3_var_ss	Template	3	Variability	Conner's CPT-3	Conner's CPT-3	341	Doe
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	301	2
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	345	3.0
+cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	340	3.0u1.30
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	337	3.0u10.21.16
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	337	3.0u11.01.16
-cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	340	3.0u1.30
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	340	3.0u2.3
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	352	3.0ulatest
 cpt3_hrtbc_ss	Template	3	HRT Block Change	Conner's CPT-3	Conner's CPT-3	342	Doe
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	302	2
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	346	3.0
+cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	341	3.0u1.30
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	338	3.0u10.21.16
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	338	3.0u11.01.16
-cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	341	3.0u1.30
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	341	3.0u2.3
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	353	3.0ulatest
 cpt3_hrtisi_ss	Template	3	HRT ISI Change	Conner's CPT-3	Conner's CPT-3	343	Doe
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	313	2
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	357	3.0
+trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u10.21.16
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u11.01.16
-trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u2.3
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	364	3.0ulatest
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	354	Doe
 trailsa_raw	Template	3	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	303	Old
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	313	2
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	357	3.0
+trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u10.21.16
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u11.01.16
-trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u2.3
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	364	3.0ulatest
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	354	Doe
 trailsa_ss	Template	4	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	303	Old
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	313	2
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	357	3.0
+trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u10.21.16
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	349	3.0u11.01.16
-trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u1.30
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	352	3.0u2.3
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	364	3.0ulatest
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	354	Doe
 trailsa_err	Template	6	Trail Making Test: Part-A	Trail Making Test: Part-A	Trail Making Test: Part-A	303	Old
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	314	2
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	358	3.0
+trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u10.21.16
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u11.01.16
-trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u2.3
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	365	3.0ulatest
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	355	Doe
 trailsb_raw	Template	3	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	304	Old
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	314	2
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	358	3.0
+trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u10.21.16
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u11.01.16
-trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u2.3
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	365	3.0ulatest
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	355	Doe
 trailsb_ss	Template	4	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	304	Old
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	314	2
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	358	3.0
+trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u10.21.16
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	350	3.0u11.01.16
-trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u1.30
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	353	3.0u2.3
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	365	3.0ulatest
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	355	Doe
 trailsb_err	Template	6	Trail Making Test: Part-B	Trail Making Test: Part-B	Trail Making Test: Part-B	304	Old
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	316	2
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	362	3.0
+wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u1.30
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	354	3.0u10.21.16
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	354	3.0u11.01.16
-wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u1.30
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u2.3
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	369	3.0ulatest
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	Doe
 wcst_cat_raw	Template	3	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	306	Old
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	316	2
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	362	3.0
+wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u1.30
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	354	3.0u10.21.16
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	354	3.0u11.01.16
-wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u1.30
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u2.3
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	369	3.0ulatest
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	Doe
 wcst_cat_perc	Template	5	Categories Completed	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	306	Old
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	317	2
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	363	3.0
+wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u1.30
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	355	3.0u10.21.16
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	355	3.0u11.01.16
-wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u1.30
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u2.3
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	370	3.0ulatest
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	Doe
 wcst_fms_raw	Template	3	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	307	Old
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	317	2
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	363	3.0
+wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u1.30
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	355	3.0u10.21.16
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	355	3.0u11.01.16
-wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u1.30
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	358	3.0u2.3
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	370	3.0ulatest
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	Doe
 wcst_fms_perc	Template	5	Failures to Maintain Set	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	307	Old
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	318	2
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	364	3.0
+wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u1.30
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	356	3.0u10.21.16
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	356	3.0u11.01.16
-wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u1.30
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u2.3
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	371	3.0ulatest
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	361	Doe
 wcst_err_raw	Template	3	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	308	Old
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	318	2
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	364	3.0
+wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u1.30
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	356	3.0u10.21.16
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	356	3.0u11.01.16
-wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u1.30
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	359	3.0u2.3
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	371	3.0ulatest
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	361	Doe
 wcst_err_ss	Template	4	Total Errors	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	308	Old
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	319	2
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	365	3.0
+wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u1.30
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u10.21.16
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u11.01.16
-wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u1.30
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u2.3
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	372	3.0ulatest
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	362	Doe
 wcst_per_raw	Template	3	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	309	Old
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	319	2
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	365	3.0
+wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u1.30
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u10.21.16
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	357	3.0u11.01.16
-wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u1.30
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	360	3.0u2.3
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	372	3.0ulatest
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	362	Doe
 wcst_per_ss	Template	4	Perseverative Responses	Wisconsin Card Sorting Test	Wisconsin Card Sorting Test	309	Old
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	321	2
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0
+dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u1.30
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	359	3.0u10.21.16
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	359	3.0u11.01.16
-dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u1.30
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u2.3
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	374	3.0ulatest
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	364	Doe
 dkefstrails_vis_scan_raw	Template	3	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	311	Old
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	321	2
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0
+dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u1.30
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	359	3.0u10.21.16
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	359	3.0u11.01.16
-dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u1.30
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u2.3
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	374	3.0ulatest
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	364	Doe
 dkefstrails_vis_scan_ss	Template	4	Visual Scanning	DKEFS - Trail Making	DKEFS - Trail Making	311	Old
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	322	2
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	368	3.0
+dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u1.30
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	360	3.0u10.21.16
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	360	3.0u11.01.16
-dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u1.30
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u2.3
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	375	3.0ulatest
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	365	Doe
 dkefstrails_num_seq_raw	Template	3	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	312	Old
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	322	2
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	368	3.0
+dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u1.30
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	360	3.0u10.21.16
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	360	3.0u11.01.16
-dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u1.30
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u2.3
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	375	3.0ulatest
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	365	Doe
 dkefstrails_num_seq_ss	Template	4	Number Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	312	Old
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	323	2
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	369	3.0
+dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u1.30
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	361	3.0u10.21.16
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	361	3.0u11.01.16
-dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u1.30
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u2.3
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	376	3.0ulatest
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	366	Doe
 dkefstrails_let_seq_raw	Template	3	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	313	Old
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	323	2
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	369	3.0
+dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u1.30
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	361	3.0u10.21.16
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	361	3.0u11.01.16
-dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u1.30
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u2.3
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	376	3.0ulatest
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	366	Doe
 dkefstrails_let_seq_ss	Template	4	Letter Sequencing	DKEFS - Trail Making	DKEFS - Trail Making	313	Old
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	324	2
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	370	3.0
+dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u1.30
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u10.21.16
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u11.01.16
-dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u1.30
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u2.3
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	377	3.0ulatest
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	367	Doe
 dkefstrails_switch_raw	Template	3	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	314	Old
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	324	2
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	370	3.0
+dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u1.30
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u10.21.16
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	362	3.0u11.01.16
-dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u1.30
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	365	3.0u2.3
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	377	3.0ulatest
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	367	Doe
 dkefstrails_switch_ss	Template	4	Number-Letter Switching	DKEFS - Trail Making	DKEFS - Trail Making	314	Old
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	325	2
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	371	3.0
+dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u1.30
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u10.21.16
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u11.01.16
-dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u1.30
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u2.3
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	378	3.0ulatest
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	368	Doe
 dkefstrails_errors_raw	Template	3	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	315	Old
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	325	2
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	371	3.0
+dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u1.30
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u10.21.16
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	363	3.0u11.01.16
-dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u1.30
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	366	3.0u2.3
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	378	3.0ulatest
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	368	Doe
 dkefstrails_errors_ss	Template	4	Total Errors	DKEFS - Trail Making	DKEFS - Trail Making	315	Old
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	326	2
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	372	3.0
+dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u1.30
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u10.21.16
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u11.01.16
-dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u1.30
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u2.3
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	379	3.0ulatest
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	369	Doe
 dkefstrails_mot_speed_raw	Template	3	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	316	Old
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	326	2
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	372	3.0
+dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u1.30
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u10.21.16
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	364	3.0u11.01.16
-dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u1.30
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	367	3.0u2.3
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	379	3.0ulatest
 dkefstrails_mot_speed_ss	Template	4	Motor Speed	DKEFS - Trail Making	DKEFS - Trail Making	369	Doe
@@ -1228,162 +1228,162 @@ dkefsswitchaccuracy_ss	Template	6	Switching Fluency	DKEFS - Verbal Fluency	DKEFS
 dkefsswitchaccuracy_ss	Template	6	Switching Fluency	DKEFS - Verbal Fluency	DKEFS - Verbal Fluency	373	Doe
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	359	2
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	405	3.0
+dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u1.30
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	397	3.0u10.21.16
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	397	3.0u11.01.16
-dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u1.30
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u2.3
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	412	3.0ulatest
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	402	Doe
 dkefstower_ach_score_raw	Template	3	Achievement Score	DKEFS - Tower	DKEFS - Tower	349	Old
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	359	2
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	405	3.0
+dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u1.30
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	397	3.0u10.21.16
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	397	3.0u11.01.16
-dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u1.30
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	400	3.0u2.3
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	412	3.0ulatest
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	402	Doe
 dkefstower_ach_score_ss	Template	4	Achievement Score	DKEFS - Tower	DKEFS - Tower	349	Old
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	360	2
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	406	3.0
+dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u1.30
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	398	3.0u10.21.16
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	398	3.0u11.01.16
-dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u1.30
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u2.3
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	413	3.0ulatest
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	403	Doe
 dkefstower_mean1move_raw	Template	3	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	350	Old
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	360	2
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	406	3.0
+dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u1.30
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	398	3.0u10.21.16
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	398	3.0u11.01.16
-dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u1.30
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	401	3.0u2.3
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	413	3.0ulatest
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	403	Doe
 dkefstower_mean1move_ss	Template	4	Mean First Move Time	DKEFS - Tower	DKEFS - Tower	350	Old
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	361	2
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	407	3.0
+dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u1.30
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	399	3.0u10.21.16
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	399	3.0u11.01.16
-dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u1.30
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u2.3
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	414	3.0ulatest
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	404	Doe
 dkefstower_timepermove_raw	Template	3	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	351	Old
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	361	2
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	407	3.0
+dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u1.30
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	399	3.0u10.21.16
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	399	3.0u11.01.16
-dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u1.30
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	402	3.0u2.3
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	414	3.0ulatest
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	404	Doe
 dkefstower_timepermove_ss	Template	4	Time / Move Ratio	DKEFS - Tower	DKEFS - Tower	351	Old
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	362	2
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	408	3.0
+dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u1.30
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	400	3.0u10.21.16
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	400	3.0u11.01.16
-dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u1.30
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u2.3
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	415	3.0ulatest
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	405	Doe
 dkefstower_move_acc_raw	Template	3	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	352	Old
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	362	2
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	408	3.0
+dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u1.30
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	400	3.0u10.21.16
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	400	3.0u11.01.16
-dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u1.30
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	403	3.0u2.3
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	415	3.0ulatest
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	405	Doe
 dkefstower_move_acc_ss	Template	4	Move Accuracy Ratio	DKEFS - Tower	DKEFS - Tower	352	Old
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	363	2
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	409	3.0
+dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u1.30
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	401	3.0u10.21.16
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	401	3.0u11.01.16
-dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u1.30
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u2.3
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	416	3.0ulatest
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	406	Doe
 dkefstower_rule_viol_raw	Template	3	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	353	Old
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	363	2
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	409	3.0
+dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u1.30
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	401	3.0u10.21.16
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	401	3.0u11.01.16
-dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u1.30
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	404	3.0u2.3
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	416	3.0ulatest
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	406	Doe
 dkefstower_rule_viol_ss	Template	4	Rule-Violation / Item Ratio	DKEFS - Tower	DKEFS - Tower	353	Old
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	364	2
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	410	3.0
+dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u1.30
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	402	3.0u10.21.16
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	402	3.0u11.01.16
-dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u1.30
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u2.3
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	417	3.0ulatest
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	407	Doe
 dkefstower_tot_rvs_raw	Template	3	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	354	Old
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	364	2
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	410	3.0
+dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u1.30
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	402	3.0u10.21.16
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	402	3.0u11.01.16
-dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u1.30
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	405	3.0u2.3
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	417	3.0ulatest
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	407	Doe
 dkefstower_tot_rvs_perc	Template	5	Total Rule Violations	DKEFS - Tower	DKEFS - Tower	354	Old
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	366	2
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	412	3.0
+tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	407	3.0u1.30
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	404	3.0u10.21.16
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	404	3.0u11.01.16
-tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	407	3.0u1.30
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	407	3.0u2.3
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	419	3.0ulatest
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	409	Doe
 tapset_raw	Template	3	Tapping Set	Tapping Set	Tapping Set	356	Old
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	367	2
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	413	3.0
+motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	408	3.0u1.30
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	405	3.0u10.21.16
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	405	3.0u11.01.16
-motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	408	3.0u1.30
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	408	3.0u2.3
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	420	3.0ulatest
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	410	Doe
 motseq_raw	Template	3	Motor Sequencing	Motor Sequencing	Motor Sequencing	357	Old
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	394	2
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	440	3.0
+ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u1.30
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	432	3.0u10.21.16
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	432	3.0u11.01.16
-ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u1.30
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u2.3
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	447	3.0ulatest
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	437	Doe
 ml_pde_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	384	Old
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	394	2
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	440	3.0
+ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u1.30
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	432	3.0u10.21.16
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	432	3.0u11.01.16
-ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u1.30
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	435	3.0u2.3
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	447	3.0ulatest
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	437	Doe
 ml_pfe_raw	Template	3	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	Multiple Loops (PDE, PFE)	384	Old
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	395	2
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	441	3.0
+rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u1.30
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	433	3.0u10.21.16
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	433	3.0u11.01.16
-rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u1.30
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u2.3
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	448	3.0ulatest
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	438	Doe
 rs_pde_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	385	Old
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	395	2
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	441	3.0
+rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u1.30
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	433	3.0u10.21.16
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	433	3.0u11.01.16
-rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u1.30
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	436	3.0u2.3
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	448	3.0ulatest
 rs_pfe_raw	Template	3	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	Recurrent Series (PDE,PFE)	438	Doe
@@ -1400,180 +1400,180 @@ book_cat_errors_ss	Template	4	Errors	Booklet Category	Booklet Category	451	3.0ul
 book_cat_errors_ss	Template	4	Errors	Booklet Category	Booklet Category	441	Doe
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	415	2
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	470	3.0
+gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	465	3.0u1.30
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	453	3.0u10.21.16
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	453	3.0u11.01.16
-gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	465	3.0u1.30
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	477	3.0ulatest
 gripstrength_dh_raw	Template	3	Dominant Hand	Grip Strength	Grip Strength	405	Old
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	415	2
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	470	3.0
+gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	465	3.0u1.30
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	453	3.0u10.21.16
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	453	3.0u11.01.16
-gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	465	3.0u1.30
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	477	3.0ulatest
 gripstrength_dh_ss	Template	4	Dominant Hand	Grip Strength	Grip Strength	405	Old
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	416	2
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	471	3.0
+gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	466	3.0u1.30
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	454	3.0u10.21.16
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	454	3.0u11.01.16
-gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	466	3.0u1.30
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	478	3.0ulatest
 gripstrength_ndh_raw	Template	3	Non-Dominant Hand	Grip Strength	Grip Strength	406	Old
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	416	2
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	471	3.0
+gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	466	3.0u1.30
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	454	3.0u10.21.16
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	454	3.0u11.01.16
-gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	466	3.0u1.30
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	478	3.0ulatest
 gripstrength_ndh_ss	Template	4	Non-Dominant Hand	Grip Strength	Grip Strength	406	Old
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	418	2
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	473	3.0
+pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	468	3.0u1.30
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	456	3.0u10.21.16
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	456	3.0u11.01.16
-pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	468	3.0u1.30
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	480	3.0ulatest
 pegs_dh_trial1_raw	Template	3	Dominant Hand	Grooved Pegboard	Grooved Pegboard	408	Old
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	418	2
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	473	3.0
+pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	468	3.0u1.30
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	456	3.0u10.21.16
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	456	3.0u11.01.16
-pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	468	3.0u1.30
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	480	3.0ulatest
 pegs_dh_trial1_ss	Template	4	Dominant Hand	Grooved Pegboard	Grooved Pegboard	408	Old
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	420	2
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	475	3.0
+pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	470	3.0u1.30
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	458	3.0u10.21.16
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	458	3.0u11.01.16
-pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	470	3.0u1.30
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	482	3.0ulatest
 pegs_ndh_trial1_raw	Template	3	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	410	Old
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	420	2
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	475	3.0
+pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	470	3.0u1.30
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	458	3.0u10.21.16
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	458	3.0u11.01.16
-pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	470	3.0u1.30
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	482	3.0ulatest
 pegs_ndh_trial1_ss	Template	4	Non-Dominant Hand	Grooved Pegboard	Grooved Pegboard	410	Old
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	430	2
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	485	3.0
+bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u1.30
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	468	3.0u10.21.16
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	468	3.0u11.01.16
-bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u1.30
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u2.3
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	492	3.0ulatest
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	482	Doe
 bdi_raw	Template	3	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	420	Old
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	430	2
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	485	3.0
+bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u1.30
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	468	3.0u10.21.16
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	468	3.0u11.01.16
-bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u1.30
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	480	3.0u2.3
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	492	3.0ulatest
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	482	Doe
 bdi_class	Template	6	Beck Depression Inventory-2	Beck Depression Inventory-2	Beck Depression Inventory-2	420	Old
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	431	2
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	486	3.0
+bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u1.30
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	469	3.0u10.21.16
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	469	3.0u11.01.16
-bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u1.30
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u2.3
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	493	3.0ulatest
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	483	Doe
 bai_raw	Template	3	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	421	Old
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	431	2
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	486	3.0
+bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u1.30
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	469	3.0u10.21.16
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	469	3.0u11.01.16
-bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u1.30
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	481	3.0u2.3
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	493	3.0ulatest
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	483	Doe
 bai_class	Template	6	Beck Anxiety Inventory	Beck Anxiety Inventory	Beck Anxiety Inventory	421	Old
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	432	2
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	487	3.0
+gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u1.30
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	470	3.0u10.21.16
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	470	3.0u11.01.16
-gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u1.30
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u2.3
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	494	3.0ulatest
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	484	Doe
 gds_raw	Template	3	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	422	Old
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	432	2
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	487	3.0
+gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u1.30
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	470	3.0u10.21.16
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	470	3.0u11.01.16
-gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u1.30
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	482	3.0u2.3
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	494	3.0ulatest
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	484	Doe
 gds_class	Template	6	Geriatric Depression Scale	Geriatric Depression Scale	Geriatric Depression Scale	422	Old
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	434	2
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	489	3.0
+adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	484	3.0u1.30
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	472	3.0u10.21.16
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	472	3.0u11.01.16
-adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	484	3.0u1.30
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	484	3.0u2.3
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	496	3.0ulatest
 adfacs_iadlperc	Template	3	Instrumental ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	486	Doe
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	435	2
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	490	3.0
+adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	485	3.0u1.30
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	473	3.0u10.21.16
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	473	3.0u11.01.16
-adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	485	3.0u1.30
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	485	3.0u2.3
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	497	3.0ulatest
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	487	Doe
 adfacs_adlperc	Template	3	Basic ADL's	ADFACS (Modified Scores)	ADFACS (Modified Scores)	425	Old
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	436	2
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	491	3.0
+adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	486	3.0u1.30
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	474	3.0u10.21.16
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	474	3.0u11.01.16
-adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	486	3.0u1.30
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	486	3.0u2.3
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	498	3.0ulatest
 adfacs_tot	Template	3	Total Impairment	ADFACS (Modified Scores)	ADFACS (Modified Scores)	426	Old
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	532	2
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	603	3.0
+maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	596	3.0u1.30
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	584	3.0u10.21.16
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	584	3.0u11.01.16
-maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	596	3.0u1.30
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	596	3.0u2.3
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	675	3.0ulatest
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	600	Doe
 maq_physio_panic	Template	4	Physiological Panic	MAQ	MAQ	522	Old
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	533	2
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	604	3.0
+maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	597	3.0u1.30
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	585	3.0u10.21.16
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	585	3.0u11.01.16
-maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	597	3.0u1.30
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	597	3.0u2.3
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	676	3.0ulatest
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	601	Doe
 maq_soc_pho	Template	4	Social Phobia	MAQ	MAQ	523	Old
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	534	2
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	605	3.0
+maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	598	3.0u1.30
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	586	3.0u10.21.16
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	586	3.0u11.01.16
-maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	598	3.0u1.30
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	598	3.0u2.3
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	677	3.0ulatest
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	602	Doe
 maq_worry_fear	Template	4	Worry / Fears	MAQ	MAQ	524	Old
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	535	2
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	606	3.0
+maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	599	3.0u1.30
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	587	3.0u10.21.16
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	587	3.0u11.01.16
-maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	599	3.0u1.30
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	599	3.0u2.3
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	678	3.0ulatest
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	603	Doe
 maq_neg_aff	Template	4	Negative Affectivity	MAQ	MAQ	525	Old
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	536	2
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	607	3.0
+maq_tot	Template	4	Total MAQ	MAQ	MAQ	600	3.0u1.30
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	588	3.0u10.21.16
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	588	3.0u11.01.16
-maq_tot	Template	4	Total MAQ	MAQ	MAQ	600	3.0u1.30
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	600	3.0u2.3
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	679	3.0ulatest
 maq_tot	Template	4	Total MAQ	MAQ	MAQ	604	Doe

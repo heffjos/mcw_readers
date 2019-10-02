@@ -7,14 +7,36 @@ names(LETTER_TO_NUMERIC) <- letters
 data_dir = normalizePath('../data')
 assigned_file = file.path(data_dir, 'clinical_v3.0ulatest_labeled.xlsx')
 font_file <- file.path(data_dir, 'clinical_versions_font_properties.xlsm')
+data_dictionary_file <- file.path(data_dir, 'clinical_data_dictionary_latest.csv')
 
 out_version_key <- file.path(data_dir, 'clinical_version_key.tsv')
 out_templates_labeled <- file.path(data_dir, 'clinical_templates_labeled.tsv')
 out_redcap_variables <- file.path(data_dir, 'clinical_redcap_variables.tsv')
 out_redcap_labeled <- file.path(data_dir, 'clinical_redcap_labeled.tsv')
+out_neuroscore <- file.path(data_dir, 'clinical_neuroscore_labeled.tsv')
+out_neuropsych_tests <- file.path(data_dir, 'clinical_neuropsych_tests.tsv')
 
 assigned_data <- read_excel(assigned_file, na = "NA")
 font_data <- read_excel(font_file, trim_ws = FALSE)
+data_dictionary  <- read_csv(data_dictionary_file, skip = 1,
+                             col_names = c("redcap", 
+                                           "form_name", 
+                                           "section_header", 
+                                           "field_type",
+                                           "field_label", 
+                                           "choices", 
+                                           "field_note", 
+                                           "validation", 
+                                           "min", 
+                                           "max", 
+                                           "identifier", 
+                                           "branching_logic",
+                                           "required", 
+                                           "custom_alignment", 
+                                           "question_number", 
+                                           "matrix_group_name",
+                                           "matrix_ranking", 
+                                           "field_annotations"))
 
 # clinical_v3.0ulatest_labeled.xlsx has been consolidated to only have unique
 # variables, so we do not have to do any filtering any timepoints here, also
@@ -26,7 +48,7 @@ redcap_data <- assigned_data %>%
 redcap_data %>% 
   select(redcap)  %>%
   mutate(values = NA) %>%
-  write_delim(out_redcap_variables, delim = '\t')
+  write_tsv(out_redcap_variables)
 
 # work on font properties now
 processed_data <- font_data %>%
@@ -71,7 +93,7 @@ redcap_processed_data <- processed_data %>%
   select(measure, row, version, bold_header, indent_header, worksheet) %>%
   left_join(reference_3.0ulatest, by = c("measure", "bold_header", "indent_header", "worksheet"))
 
-write_delim(redcap_processed_data, out_templates_labeled, delim = "\t")
+write_tsv(redcap_processed_data, out_templates_labeled)
 
 # create a version key
 version_key <- redcap_processed_data %>%
@@ -82,16 +104,22 @@ version_key <- redcap_processed_data %>%
   select(measure, version, row, column) %>%
   mutate(column = 2)
 
-write_delim(version_key, out_version_key, delim = "\t")
+write_tsv(version_key, out_version_key)
 
+# create a test key which matches redcap variables to sub-tests in neuropsych
+# this is used to indicate whether a test was taken for a neuroscore
+neuropsych_tests <- data_dictionary %>%
+  filter(form_name == "neuropsych_tests", 
+         str_detect(branching_logic, '\\[.+\\] = "1"')) %>%
+  mutate(test = str_match(branching_logic, "\\[(.+)\\]")[ , 2]) %>%
+  select(redcap, test) %>%
+  write_tsv(out_neuropsych_tests)
+  
 # now create out_redcap_labeled which is the file used for actual reading
 redcap_data_labeled <- redcap_data %>%
   left_join(v3d0ulatest, by = c("row", "worksheet")) %>%
   select(-version, -indent_level, -is_bold, -row) %>%
   left_join(processed_data %>% select(-indent_level, -is_bold), 
             by = c("worksheet", "measure", "bold_header", "indent_header"))
-write_delim(redcap_data_labeled, out_redcap_labeled, delim = "\t")
+write_tsv(redcap_data_labeled, out_redcap_labeled)
 
-
-
-  
