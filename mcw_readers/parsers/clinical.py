@@ -19,11 +19,15 @@ from ..utils import (
 with pkg_resources.path(data, 'clinical_redcap_labeled.tsv') as data_file:
     CLINICAL_VARIABLES = pd.read_csv(data_file, sep='\t')
 
+with pkg_resources.path(data, 'clinical_neuropsych_tests.tsv') as data_file:
+    CLINICAL_TESTS = pd.read_csv(data_file, sep='\t')
+UNIQUE_TESTS = list(pd.unique(CLINICAL_TESTS['test']))
+
 DATE_COL = 5
 
 def parse_neuroscore(wb, exam, debug=False):
     """
-    Parses neuroscore workbook, primarily the Template worksheet
+    Parses neuroscore workbook, primarily the Template worksheet.
 
     **Parameters**
 
@@ -41,8 +45,8 @@ def parse_neuroscore(wb, exam, debug=False):
     **Outputs**
         results
             A dataframe. The columns are the measured variables. The rows are
-            participants. They should be identified by some random string so
-            they are deidentified.
+            participants. The presence of subtests are added to match the 
+            redcap import tool csv file.
     """
     col_adj = exam * 4
     version = clinical_detect_neuroscore_version(wb)
@@ -58,8 +62,7 @@ def parse_neuroscore(wb, exam, debug=False):
 
     results = {'variable': [], 'value': []}
     # missing assigments have no group value
-    df_worksheets = list(df_key.groupby('worksheet')) 
-    for ws, df in df_worksheets:
+    for ws, df in df_key.groupby('worksheet'):
         sheet = wb[ws]
 
         values = [sheet.cell(row=int(x), column=int(y)).value
@@ -78,20 +81,28 @@ def parse_neuroscore(wb, exam, debug=False):
                                 .strftime('%Y-%m-%d'))
 
     results = pd.DataFrame(results).fillna(pd.np.nan)
+
     garbage = results['value'].str.match(r'^=|^raw$|^val$|^\[ERR\]$|^SS$', 
                                          na=False)
     results['value'][garbage] = pd.np.nan
+
+    tests_check = CLINICAL_TESTS.merge(results, 
+                                       how='left', 
+                                       left_on='redcap', 
+                                       right_on='variable')
+    tests_check['check'] = tests_check['value'].notna()
+    tests_check = (tests_check
+                   .groupby('test')
+                   .agg({'check': pd.np.sum})
+                   .reset_index())
+    tests_check.rename(columns={'test': 'variable', 'check': 'value'}, inplace=True)
+    tests_check['value'][tests_check['value'] > 0] = 1
+
+    results = pd.concat((results, tests_check))
+
     results['index'] = 0
     results = results.pivot(index='index', columns='variable', values='value')
         
-    if debug:
-        results['np_date'] = '07071977'
-    else:
-        results['np_date'] = (wb['Template']
-                              .cell(row=9, column=DATE_COL + col_adj)
-                              .value
-                              .strftime('%Y-%m-%d'))
-
     return results
 
 def parse_neuroreader_v2d2d8(pdf):
