@@ -61,9 +61,21 @@ def parse_neuroscore(wb, exam, debug=False):
     df_worksheets = list(df_key.groupby('worksheet')) 
     for ws, df in df_worksheets:
         sheet = wb[ws]
-        for variable, x, y in zip(df['redcap'], df['row'], df['column']):
-            results['variable'].append(variable)
-            results['value'].append(sheet.cell(row=int(x), column=int(y)).value)
+
+        values = [sheet.cell(row=int(x), column=int(y)).value
+                  for x, y in zip(df['row'], df['column'])]
+
+        results['variable'].extend(list(df['redcap']))
+        results['value'].extend(values)
+
+    results['variable'].append('np_date')
+    if debug:
+        results['value'].append('07071977')
+    else:
+        results['value'].append(wb['Template']
+                                .cell(row=9, column=DATE_COL + col_adj)
+                                .value
+                                .strftime('%Y-%m-%d'))
 
     results = pd.DataFrame(results).fillna(pd.np.nan)
     garbage = results['value'].str.match(r'^=|^raw$|^val$|^\[ERR\]$|^SS$', 
