@@ -10,7 +10,7 @@ from openpyxl.utils.exceptions import InvalidFileException
 
 from mcw_readers.parsers.clinical import parse_neuroscore
 
-def main():
+def gui():
     layout = [
         [sg.Text('record id', size=(22, 1), justification='left', auto_size_text=False),
          sg.InputText(key='record_id', default_text='', size=(15, None), enable_events=True)],
@@ -72,9 +72,9 @@ def main():
 
     window.Close()
 
-if __name__ == '__main__':
+def main():
     try:
-        main()
+        gui()
     except FileNotFoundError as not_found:
         sg.PopupError(f'File not found {not_found.filename}', title='ERROR')
     except InvalidFileException as err:
@@ -83,4 +83,7 @@ if __name__ == '__main__':
         sg.PopupError(f'Unhandled error: {err}\n\n'
                       'Email help: jheffernan@mcw.edu',
                       title='ERROR')
+
+if __name__ == "__main__":
+    main()
 
