@@ -102,6 +102,28 @@ def parse_neuroscore(wb, exam, debug=False):
 
     results['index'] = 0
     results = results.pivot(index='index', columns='variable', values='value')
+
+    # convert results here
+    results['gds_class'] = results['gds_class'].map({'WNL': 0,
+                                                     'Mild': 1,
+                                                     'Mod': 2,
+                                                     'Sev': 3})
+    results['hvlt_delay_ss'] = results['hvlt_delay_ss'].str.replace('^<', '')
+    results['hvlt_disc_ss'] = results['hvlt_delay_ss'].str.replace('^<', '')
+    results['hvlt_perce_ss'] = results['hvlt_perc_ss'].str.replace('^<', '')
+    results['trailsa_err'] = results['trailsa_err'].str.replace('-E$', '')
+    results['trailsb_err'] = results['trailsb_err'].str.replace('-E$', '')
+    results['wcst_cat_perc'] = results['wcst_cat_perc'].map({'[<1]': 0,
+                                                             '[2-5]': 1,
+                                                             '[6-10]': 2,
+                                                             '[11-16]': 3,
+                                                             '[>16]': 4})
+    results['wcst_fms_perc'] = results['wcst_fms_perc'].map({'[<1]': 0,
+                                                             '[2-5]': 1,
+                                                             '[6-10]': 2,
+                                                             '[11-16]': 3,
+                                                             '[>16]': 4})
+    results['wms_io_per'] = results['wms_io_per'].str.extract('^\[(\d+)\]')
         
     return results
 
