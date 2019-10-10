@@ -72,6 +72,7 @@ def gui():
 
             out_dir = os.path.dirname(values['tsv_file'])
             out_fname = 'out_' + os.path.basename(values['tsv_file'])
+            out_fname = os.path.splitext(out_fname)[0] + '.csv'
             out_file = os.path.join(out_dir, out_fname)
 
             results.to_csv(out_file, index=False)
