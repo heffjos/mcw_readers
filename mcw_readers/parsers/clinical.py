@@ -110,7 +110,7 @@ def parse_neuroscore(wb, exam, debug=False):
                                                      'Sev': 3})
     results['hvlt_delay_ss'] = results['hvlt_delay_ss'].str.replace('^<', '')
     results['hvlt_disc_ss'] = results['hvlt_delay_ss'].str.replace('^<', '')
-    results['hvlt_perce_ss'] = results['hvlt_perc_ss'].str.replace('^<', '')
+    results['hvlt_perc_ss'] = results['hvlt_perc_ss'].str.replace('^<', '')
     results['trailsa_err'] = results['trailsa_err'].str.replace('-E$', '')
     results['trailsb_err'] = results['trailsb_err'].str.replace('-E$', '')
     results['wcst_cat_perc'] = results['wcst_cat_perc'].map({'[<1]': 0,
