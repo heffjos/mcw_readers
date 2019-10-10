@@ -12,12 +12,12 @@ from mcw_readers.parsers.clinical import parse_neuroscore
 
 def main():
     layout = [
-        [sg.Text('record id', size=(22, 1), justification='left'),
-         sg.InputText(key='record_id', default_text='', size=(15, 1), enable_events=True)],
-        [sg.Text('Neuroscore file', size=(22, 1), justification='left'), 
+        [sg.Text('record id', size=(22, 1), justification='left', auto_size_text=False),
+         sg.InputText(key='record_id', default_text='', size=(15, None), enable_events=True)],
+        [sg.Text('Neuroscore file', size=(22, 1), justification='left', auto_size_text=False), 
          sg.InputText(key='neuroscore', size=(23, None)), 
          sg.FileBrowse()],
-        [sg.Text('redcap repeat instance', size=(22, 1), justification='left'),
+        [sg.Text('redcap repeat instance', size=(22, 1), justification='left', auto_size_text=False),
          sg.InputText(key='i1', default_text='', size=(6, None), enable_events=True),
          sg.InputText(key='i2', default_text='', size=(6, None), enable_events=True),
          sg.InputText(key='i3', default_text='', size=(6, None), enable_events=True)],
