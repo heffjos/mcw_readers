@@ -332,7 +332,7 @@ wcst_ver,neuropsych_tests,,radio,"WCST version","0, STD | 1, 1-deck",,,,,,"[wcst
 wcst_cat_raw,neuropsych_tests,,text,"WCST total categories raw score",,,,,,,"[wcst] = ""1""",,,,,,
 wcst_cat_perc,neuropsych_tests,,radio,"WCST total categories percentile rank","0, < 1 | 1, 2-5 | 2, 6-10 | 3, 11-16 | 4, > 16",,,,,,"[wcst] = ""1""",,,,,,
 wcst_fms_raw,neuropsych_tests,,text,"WCST failure to maintain set raw score",,,,,,,"[wcst] = ""1""",,,,,,
-wcst_fms_perc,neuropsych_tests,,radio,"WCST failure to maintain set percentile rank","0, < 1 | 1, 2-5 | 2, 6-10 | 3, 11-16 |4, > 16",,,,,,"[wcst] = ""1""",,,,,,
+wcst_fms_perc,neuropsych_tests,,radio,"WCST failure to maintain set percentile rank","0, < 1 | 1, 2-5 | 2, 6-10 | 3, 11-16 | 4, > 16",,,,,,"[wcst] = ""1""",,,,,,
 wcst_err_raw,neuropsych_tests,,text,"WCST total errors raw score",,,,,,,"[wcst] = ""1""",,,,,,
 wcst_err_ss,neuropsych_tests,,text,"WCST total errors standard score",,,,,,,"[wcst] = ""1""",,,,,,
 wcst_per_raw,neuropsych_tests,,text,"WCST perseverations raw score",,,,,,,"[wcst] = ""1""",,,,,,

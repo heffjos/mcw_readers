@@ -317,7 +317,6 @@ catfluency_int	NA
 dkefs_switch_vers	NA
 depression_label	NA
 bai_ss	NA
-cognitive_change	NA
 mri_date	NA
 mri_ab	NA
 mri_atrophy	NA
@@ -341,6 +340,9 @@ addenbrooke_mem	NA
 addenbrooke_fluency	NA
 addenbrooke_lang	NA
 addenbrooke_visuo	NA
+hvlt_memprofile	NA
+hvlt_memprofile_mixedexplained	NA
+cognitive_change	NA
 neuroreaderdate	NA
 mtiv	NA
 wbv_vol	NA
@@ -580,11 +582,6 @@ ct_vent	NA
 ct_vasc	NA
 ct_other	NA
 devel_hx	NA
-hvlt_memprofile	NA
-hvlt_memprofile_mixedexplained	NA
-hvltmemprofile2	NA
-hvltmemprofile2_mixedexplained	NA
-depression_label3	NA
 filter_anc	NA
 diseaseduration	NA
 vascularrisks_burden	NA

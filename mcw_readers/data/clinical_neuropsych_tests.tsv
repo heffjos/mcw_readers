@@ -66,8 +66,6 @@ hvlt_disc_fp	hvlt
 hvlt_disc_fn	hvlt
 hvlt_memprofile	hvlt
 hvlt_memprofile_mixedexplained	hvlt
-hvltmemprofile2	hvlt
-hvltmemprofile2_mixedexplained	hvlt
 cvlt_form	cvlt
 cvlt_tot_raw	cvlt
 cvlt_tot_ss	cvlt
