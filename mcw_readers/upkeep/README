@@ -1,8 +1,0 @@
-All paths are relative to upkeep directory.
-
-ORDER OF OPERATIONS AFTER UPDATING UNIQUE SPSS VARIABLES
-1. Run clinical_get_unique_variables.R.
-2. Run clinical_update_v3.0latest.R.
-3. Copy/paste ./data/new_latest.tsv into one drive excel file: clinical_v3.0ulatest_labeled.xlsx
-4. Download clinical_v3.0ulatest_labeled.xlsx to ../data/clinical_v3.0ulatest_labeled.xlsx.
-5. Run clinical_generate_data_files.R
