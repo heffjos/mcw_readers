@@ -8,17 +8,9 @@ import PySimpleGUI as sg
 from pathlib import Path
 from openpyxl.utils.exceptions import InvalidFileException
 
-from mcw_readers.interfaces.lut import ped_lut
 from mcw_readers.interfaces.wb_parsers import peds_wb_parser
 
-try:
-    import importlib.resources as pkg_resources
-except ImportError:
-    import importlib_resources as pkg_resources
-
-from .. import data
-
-def gui(file_ped_lut=None):
+def gui():
     layout = [
         [sg.Text('record id', size=(22, 1), justification='left', auto_size_text=False),
          sg.InputText(key='record_id', default_text='', size=(15, None), enable_events=True)],
@@ -42,14 +34,8 @@ def gui(file_ped_lut=None):
                                             '_LOG.json')
             
             # parse now
-            if file_ped_lut:
-                current_lut = ped_lut(file_ped_lut)
-            else:
-                with pkg_resources.path(data, 'ped_lut.xlsx') as data_file:
-                    current_lut = ped_lut(data_file)
-
             peds_parser = peds_wb_parser(file_neuroscore)
-            data, new_identifiers = peds_parser.parse_data(current_lut)
+            data, new_identifiers = peds_parser.parse_default_data()
             data['record_id'] = int(values['record_id'])
 
             df_data = pd.DataFrame(data, index=[0])

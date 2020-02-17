@@ -2,8 +2,16 @@ import openpyxl
 
 import pandas as pd
 
+try:
+    import importlib.resources as pkg_resources
+except ImportError:
+    import importlib_resources as pkg_resources
+
+from .lut import ped_lut
+
+from .. import data
+
 NAN_VALUES = ['#N/A', '#REF!', '#VALUE!', None, 'RAW', 'Score', '']
-    
 
 class wb_parser:
     def __init__(self, wb_fname):
@@ -290,4 +298,15 @@ class peds_wb_parser(wb_parser):
                 new_identifiers['test_no'].append(identifier[1])
 
         return results, new_identifiers
+
+    def parse_default_data(self):
+        """Parses the data in sh with the package ped_lut"""
+
+        with pkg_resources.path(data, 'ped_lut.xlsx') as data_file:
+            current_lut = ped_lut(data_file)
+
+        results, new_identifiers = self.parse_data(current_lut)
+
+        return results, new_identifiers
+        
 
