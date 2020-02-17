@@ -16,7 +16,7 @@ try:
 except ImportError:
     import importlib_resources as pkg_resources
 
-from mcw_readers import data
+from .. import data
 
 def gui(file_ped_lut=None):
     layout = [
