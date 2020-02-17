@@ -157,7 +157,17 @@ class ped_lut(lut):
         self.dict_lut = self.convert_dflut_to_dictlut()
 
     def convert_dflut_to_dictlut(self):
-        pass
+        """Converts a df lut to a dict lut"""
+        data_cols = ['raw', 'ss', 'percentile', 'equivalent', 'form', 'notes']
+
+        values = self.df_lut.fillna({x:'' for x in data_cols})[data_cols].values.tolist()
+        results = {(identifier, test_no): values 
+                   for identifier, test_no, values 
+                   in zip(self.df_lut['identifier'], 
+                          self.df_lut['test_no'], 
+                          values)}
+
+        return results
 
     
 
