@@ -121,10 +121,9 @@ def ped_initialize_lut(excel):
     return output
 
 class lut:
-    def __init__(self, excel):
+    def __init__(self, excel, sheet_name=0):
         self.excel = excel
-        self.df_lut = pd.read_excel(self.excel)
-        self.dict_lut = self.convert_dflut_to_dictlut()
+        self.df_lut = pd.read_excel(self.excel, sheet_name = sheet_name)
         self.split_identifiers = [x.split(' | ') 
                                   for x in self.df_lut['identifier']]
 
@@ -136,8 +135,8 @@ class lut:
                 for x in self.split_identifiers]
 
 class aphasia_lut(lut):
-    def __init__(self, excel):
-        super.__init__()
+    def __init__(self, excel, sheet_name=0):
+        super().__init__(excel, sheet_name)
         self.dict_lut = self.convert_dflut_to_dictlut()
 
     def convert_dflut_to_dictlut(self):
@@ -152,8 +151,8 @@ class aphasia_lut(lut):
     
 
 class ped_lut(lut):
-    def __init__(self, excel):
-        super.__init__()
+    def __init__(self, excel, sheet_name=0):
+        super().__init__(excel, sheet_name)
         self.dict_lut = self.convert_dflut_to_dictlut()
 
     def convert_dflut_to_dictlut(self):
@@ -169,9 +168,3 @@ class ped_lut(lut):
 
         return results
 
-    
-
-    
-
-    
-        
