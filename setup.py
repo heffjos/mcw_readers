@@ -27,6 +27,7 @@ setup(
         'pandas',
         'importlib_resources',
         'PySimpleGUI',
+        'xlrd',
     ],
     package_data={
         '': ['LICENSE', 'README.md'],
