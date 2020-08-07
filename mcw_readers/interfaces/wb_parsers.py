@@ -21,7 +21,7 @@ class wb_parser:
         self.unhidden_rows = [row for row, rd in self.sh.row_dimensions.items() 
                               if not rd.hidden]
 
-class aphasia_wb_parser(wb_parser):
+class dementia_wb_parser(wb_parser):
     def __init__(self, wb_fname):
         super().__init__(wb_fname)
 
@@ -121,13 +121,13 @@ class aphasia_wb_parser(wb_parser):
 
         return self.get_identifiers(self.unhidden_rows_with_data)
 
-    def get_new_identifiers(self, aphasia_lut):
-        """Return new identifiers in sh not found in aphasia_lut"""
+    def get_new_identifiers(self, dementia_lut):
+        """Return new identifiers in sh not found in dementia_lut"""
 
         identifiers = self.get_all_identifiers()
         
         new_identifiers = [identfier for identifier, line in identifiers
-                           if identifier not in aphasia_lut.dict_lut]
+                           if identifier not in dementia_lut.dict_lut]
 
         return new_identifiers
 
@@ -137,8 +137,8 @@ class aphasia_wb_parser(wb_parser):
         return [x for x, y in self.unhidden_identifiers
                 if len(x.split(' | ')) == 1]
 
-    def parse_data(self, aphasia_lut, tp):
-        """Parse the data in sh using aphasia_lut for timepoint tp"""
+    def parse_data(self, dementia_lut, tp):
+        """Parse the data in sh using dementia_lut for timepoint tp"""
 
         tp_offset = 4 * (tp - 1)
         col_offset = 2 + tp_offset
@@ -146,7 +146,7 @@ class aphasia_wb_parser(wb_parser):
         results = {}
 
         for identifier, row_num in self.unhidden_identifiers:
-            rc_variables = aphasia_lut.dict_lut[identifier]
+            rc_variables = dementia_lut.dict_lut[identifier]
 
             for n, variable in enumerate(rc_variables):
                 if variable:

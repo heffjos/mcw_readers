@@ -134,7 +134,7 @@ class lut:
         return ['' if len(x) < (level + 1) else x[level] 
                 for x in self.split_identifiers]
 
-class aphasia_lut(lut):
+class dementia_lut(lut):
     def __init__(self, excel, sheet_name=0):
         super().__init__(excel, sheet_name)
         self.dict_lut = self.convert_dflut_to_dictlut()
