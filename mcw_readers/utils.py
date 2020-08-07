@@ -1,82 +1,142 @@
-import sys
-import subprocess
 
-import pandas as pd
-
-try:
-    import importlib.resources as pkg_resources
-except ImportError:
-    import importlib_resources as pkg_resources
-
-from . import data
-
-APHASIA_NEUROREADER_MAPPER = {
-    'WholeBrainMatter': 'WBV',
-    'GrayMatter': 'GrayMatter',
-    'WhiteMatter': 'WhiteMatter',
-    'Hippocampus': 'Hippocampus',
-    'RightHippocampus': 'Hippocampus_R',
-    'LeftHippocampus': 'Hippocampus_L',
-    'Amygdala': 'Amygdala',
-    'RightAmygdala': 'Amygdala_R',
-    'LeftAmygdala': 'Amygdala_L',
-    'Putamen': 'Putamen',
-    'RightPutamen': 'Putamen_R',
-    'LeftPutamen': 'Putamen_L',
-    'Thalamus': 'Thalamus',
-    'RightThalamus': 'Thalamus_R',
-    'LeftThalamus': 'Thalamus_L',
-    'VentralDiencephalon': 'VentD',
-    'RightVentralDiencephalon': 'VentD_R',
-    'LeftVentralDiencephalon': 'VentD_L',
-    'Pallidum': 'Pallidum',
-    'RightPallidum': 'Pallidum_R',
-    'LeftPallidum': 'Pallidum_L',
-    'Caudate': 'Caudate',
-    'RightCaudate': 'Caudate_R',
-    'LeftCaudate': 'Caudate_L',
-    'BrainStem': 'BrainStem',
-    'FrontalLobe': 'FrontalLobe',
-    'RightFrontalLobe': 'FrontalLobe_R',
-    'LeftFrontalLobe': 'FrontalLobe_L',
-    'ParietalLobe': 'ParietalLobe',
-    'RightParietalLobe': 'ParietalLobe_R',
-    'LeftParietalLobe': 'ParietalLobe_L',
-    'OccipitalLobe': 'OccipitalLobe',
-    'RightOccipitalLobe': 'OccipitalLobe_R',
-    'LeftOccipitalLobe': 'OccipitalLobe_L',
-    'TemporalLobe': 'TemporalLobe',
-    'RightTemporalLobe': 'TemporalLobe_R',
-    'LeftTemporalLobe': 'TemporalLobe_L',
-    'Cerebellum': 'Cerebellum',
-    'RightCerebellum': 'Cerebellum_R',
-    'LeftCerebellum': 'Cerebellum_L',
+NEUROREADER_HEADER_MAPPER = {
+    'Image ID': 'image_id',
+    'Group name': 'group_name',
+    'Study ID': 'study_id',
+    'Clinical Image ID': 'clinical_image_id',
+    'Patient ID': 'patient_id',
+    'Gender': 'gender',
+    # 'Analysis date': 'analysis_date', not grabbed from PyPDF4
+    'Accession Number': 'accession_number',
+    'Patient name': 'patient_name',
+    'BirthDate': 'birth_date',
+    'Age': 'age',
 }
 
-def pdftotext(in_pdf, out_text, options=None):
-    """
-    Converts pdf files to text files
+NEUROREADER_RESULTS_MAPPER = {
+    'Hippocampal Left-Right Asymmetry Index': 'hippocampal_leftright_asymmetry_index',
+    'NR Index': 'hippocampal_asymmetry_nr_index',
+    'Z-score': 'hippocampal_asymmetry_zscore',
+    'Percentile': 'hippocampal_asymmetry_percentile',
+}
 
-    **Parameters**
+NEUROREADER_TABLE_MAPPER = {
+    'Whole Brain Matter': 'whole_brain_matter',
+    'Gray Matter': 'gray_matter',
+    'White Matter': 'white_matter',
+    'Hippocampus': 'hippocampus',
+    'Right Hippocampus': 'right_hippocampus',
+    'Left Hippocampus': 'left_hippocampus',
+    'Amygdala': 'amygdala',
+    'Right Amygdala': 'right_amygdala',
+    'Left Amygdala': 'left_mygdatal',
+    'Putamen': 'putamen',
+    'Right Putamen': 'right_putamen',
+    'Left Putamen': 'left_putamen',
+    'Thalamus': 'thalamus',
+    'Right Thalamus': 'right_thalamus',
+    'Left Thalamus': 'left_thalamus',
+    'Ventral Diencephalon': 'ventral_diencephalon',
+    'Right Ventral Diencephalon': 'right_ventral_diencephalon',
+    'Left Ventral Diencephalon': 'left_ventral_diencephalon',
+    'Pallidum': 'pallidum',
+    'Right Pallidum': 'right_pallidum',
+    'Left Pallidum': 'left_pallidum',
+    'Caudate': 'caudate',
+    'Right Caudate': 'right_caudate',
+    'Left Caudate': 'left_caudate',
+    'Brain Stem': 'brain_stem',
+    'Frontal Lobe': 'frontal_labe',
+    'Right Frontal Lobe': 'right_frontal_lobe',
+    'Left Frontal Lobe': 'left_frontal_lobe',
+    'Parietal Lobe': 'parietal_lobe',
+    'Right Parietal Lobe': 'right_parietal_lobe',
+    'Left Parietal Lobe': 'left_parietal_lobe',
+    'Occipital Lobe': 'occipictal_lobe',
+    'Right Occipital Lobe': 'right_occipital_lobe',
+    'Left Occipital Lobe': 'left_occiptial_lobe',
+    'Temporal Lobe': 'temporal_lobe',
+    'Right Temporal Lobe': 'right_temporal_lobe',
+    'Left Temporal Lobe': 'left_temporal_lobe',
+    'Cerebellum': 'cerebellum',
+    'Right Cerebellum': 'right_cerebellum',
+    'Left Cerebellum': 'left_cerebellum',
+    'CSF (+ dura)': 'csf_plus_dura',
+    'Lateral Ventricle': 'lateral_ventricle',
+    'Right Lateral Ventricle': 'right_lateral_ventricle',
+    'Left Lateral Ventricle': 'left_lateral_ventricle'
+}
 
-        in_pdf
-            Path to pdf for converions
-        out_text
-            the output text file from conversion
-        options
-            a string noting the options to give binary `pdftotext`
-    """
-    if 'win' in sys.platform:
-        with pkg_resources.path(data, 'xpdf-tools-win-4.01.01') as xpdf:
-            PDFTOTEXT = xpdf.joinpath('bin64', 'pdftotext.exe')
-    else:
-        with pkg_resources.path(data, 'xpdf-tools-linux-4.01.01') as xpdf:
-            PDFTOTEXT = xpdf.joinpath('bin64', 'pdftotext')
+DEMENTIA_HEADER_MAPPER = {
+    'Image ID': 'image_id',
+    'Group name': 'group_name',
+    'Study ID': 'study_id',
+    'Clinical Image ID': 'clinical_image_id',
+    'Patient ID': 'patient_id',
+    'Gender': 'gender',
+    # 'Analysis date': 'neuroreaderdate', not grabbed from PyPDF4
+    'Accession Number': 'accession_number',
+    'Patient name': 'patient_name',
+    'BirthDate': 'birthdate',
+    'Age': 'age',
+}
 
-    args = [PDFTOTEXT]
-    if options:
-        args.extend(options.split())
-    args.extend([in_pdf, out_text])
-        
-    subprocess.run(args)
+DEMENTIA_RESULTS_MAPPER = {
+    'Hippocampal Left-Right Asymmetry Index': 'Hippocampus_Asym_Index',
+    'NR Index': 'nr_index',
+    'Z-score': 'Hippocampus_Asym_Zscor',
+    'Percentile': 'Hippocampus_Asym_percentile',
+}
+
+DEMENTIA_TABLE_MAPPER = {
+    'Whole Brain Matter': 'WBV',
+    'Gray Matter': 'GrayMatter',
+    'White Matter': 'WhiteMatter',
+    'Hippocampus': 'Hippocampus',
+    'Right Hippocampus': 'Hippocampus_R',
+    'Left Hippocampus': 'Hippocampus_L',
+    'Amygdala': 'Amygdala',
+    'Right Amygdala': 'Amygdala_R',
+    'Left Amygdala': 'Amygdala_L',
+    'Putamen': 'Putamen',
+    'Right Putamen': 'Putamen_R',
+    'Left Putamen': 'Putamen_L',
+    'Thalamus': 'Thalamus',
+    'Right Thalamus': 'Thalamus_R',
+    'Left Thalamus': 'Thalamus_L',
+    'Ventral Diencephalon': 'VentD',
+    'Right Ventral Diencephalon': 'VentD_R',
+    'Left Ventral Diencephalon': 'VentD_L',
+    'Pallidum': 'Pallidum',
+    'Right Pallidum': 'Pallidum_R',
+    'Left Pallidum': 'Pallidum_L',
+    'Caudate': 'Caudate',
+    'Right Caudate': 'Caudate_R',
+    'Left Caudate': 'Caudate_L',
+    'Brain Stem': 'BrainStem',
+    'Frontal Lobe': 'FrontalLobe',
+    'Right Frontal Lobe': 'FrontalLobe_R',
+    'Left Frontal Lobe': 'FrontalLobe_L',
+    'Parietal Lobe': 'ParietalLobe',
+    'Right Parietal Lobe': 'ParietalLobe_R',
+    'Left Parietal Lobe': 'ParietalLobe_L',
+    'Occipital Lobe': 'OccipitalLobe',
+    'Right Occipital Lobe': 'OccipitalLobe_R',
+    'Left Occipital Lobe': 'OccipitalLobe_L',
+    'Temporal Lobe': 'TemporalLobe',
+    'Right Temporal Lobe': 'TemporalLobe_R',
+    'Left Temporal Lobe': 'TemporalLobe_L',
+    'Cerebellum': 'Cerebellum',
+    'Right Cerebellum': 'Cerebellum_R',
+    'Left Cerebellum': 'Cerebellum_L',
+}
+
+NEUROREADER_MAPPERS = {
+    'ECP': (NEUROREADER_HEADER_MAPPER,
+            NEUROREADER_RESULTS_MAPPER,
+            NEUROREADER_TABLE_MAPPER),
+    'DEMENTIA': (DEMENTIA_HEADER_MAPPER,
+                 DEMENTIA_RESULTS_MAPPER,
+                 DEMENTIA_TABLE_MAPPER),
+}
 
