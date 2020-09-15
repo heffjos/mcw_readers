@@ -2,7 +2,7 @@ import openpyxl
 
 import pandas as pd
 
-def ped_initialize_lut(excel):
+def initialize_lut(excel, dept):
     """
     Initialize a blank lookup table for the pediatric neuroscore file.
 
@@ -18,11 +18,25 @@ def ped_initialize_lut(excel):
                 test - the test name the row belongs
                 test_no - the current test number
                 identifier - the unique identifier for the row
+        dept
+            A str indicating what the department for the excel file.
+            Here are the available choices:
+                peds
+                epilepsy
+                dementia
+                aphasia
     """
     output = {'test': [], 'test_no': [], 'identifier': []}
     test_counter = {}
-    TEST_COL = 2
-    RAW_COL = 3
+
+    if dept in {'peds'}:
+        TEST_COL = 2
+        RAW_COL = 3
+    elif dept in {'epilepsy', 'dementia', 'aphasia'}:
+        TEST_COL = 1
+        RAW_COL = 2
+    else:
+        raise Exception(f'Unkown dept: {dept}')
 
     wb = openpyxl.load_workbook(excel, data_only=True)
     sh = wb['Template']
@@ -64,7 +78,8 @@ def ped_initialize_lut(excel):
 
             if (sh[current_line] and 
                 sh[current_line][TEST_COL].value and 
-                sh[current_line][TEST_COL].value.strip()):
+                sh[current_line][TEST_COL].value.strip() and
+                not sh[current_line][TEST_COL].value.strip().startswith('*')):
 
                 c_text = sh[current_line][TEST_COL].value
 
@@ -120,51 +135,43 @@ def ped_initialize_lut(excel):
 
     return output
 
-class lut:
-    def __init__(self, excel, sheet_name=0):
-        self.excel = excel
-        self.df_lut = pd.read_excel(self.excel, sheet_name = sheet_name)
-        self.split_identifiers = [x.split(' | ') 
-                                  for x in self.df_lut['identifier']]
+class lut():
 
+    def __init__(self, dept, excel, sheet_name=0):
+
+        self.excel = excel
+        self.df = pd.read_excel(self.excel, sheet_name = sheet_name)
+        self.split_identifiers = [x.split(' | ') 
+                                  for x in self.df['identifier']]
+
+        if dept not in {'peds', 'epilepsy', 'dementia', 'aphasia'}:
+            raise Exception(f'Unknown dept: {dept}')
+        self.dept = dept
+
+        self.lut = self.convert_df_to_lut()
+
+    def convert_df_to_lut(self):
+        """Converts a df lut to a dict lut"""
+
+        if self.dept in {'peds'}:
+            data_cols = ['raw', 'ss', 'percentile', 'equivalent', 'form', 'notes']
+        elif self.dept in {'epilepsy', 'dementia', 'aphasia'}:
+            data_cols = ['raw', 'ss', 'percentile', 'notes']
+        else:
+            raise Exception(f'Unkown dept: {dept}')
+
+        values = self.df.fillna({x:'' for x in data_cols})[data_cols].values.tolist()
+        results = {(identifier, test_no): values 
+                   for identifier, test_no, values 
+                   in zip(self.df['identifier'], 
+                          self.df['test_no'], 
+                          values)}
+
+        return results
 
     def get_headers_at_indent_level(self, level):
         """Returns all headers at indent level `level`"""
 
         return ['' if len(x) < (level + 1) else x[level] 
                 for x in self.split_identifiers]
-
-class dementia_lut(lut):
-    def __init__(self, excel, sheet_name=0):
-        super().__init__(excel, sheet_name)
-        self.dict_lut = self.convert_dflut_to_dictlut()
-
-    def convert_dflut_to_dictlut(self):
-        """Converts a df lut to a dict lut"""
-        identifier_loc = self.df_lut.columns.isin(['identifier'])
-        rc_cols = self.df_lut.columns[~identifier_loc]
-
-        values = self.df_lut.fillna({x:'' for x in rc_cols})[rc_cols].values.tolist()
-        results = {x:y for x,y in zip(self.df_lut['identifier'], values)}
-
-        return results
-    
-
-class ped_lut(lut):
-    def __init__(self, excel, sheet_name=0):
-        super().__init__(excel, sheet_name)
-        self.dict_lut = self.convert_dflut_to_dictlut()
-
-    def convert_dflut_to_dictlut(self):
-        """Converts a df lut to a dict lut"""
-        data_cols = ['raw', 'ss', 'percentile', 'equivalent', 'form', 'notes']
-
-        values = self.df_lut.fillna({x:'' for x in data_cols})[data_cols].values.tolist()
-        results = {(identifier, test_no): values 
-                   for identifier, test_no, values 
-                   in zip(self.df_lut['identifier'], 
-                          self.df_lut['test_no'], 
-                          values)}
-
-        return results
 
