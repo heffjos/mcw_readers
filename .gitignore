@@ -1,3 +1,5 @@
 test*
 *swp
 __pycache__
+*egg-info
+mcw_readers/redcap_files
