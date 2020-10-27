@@ -20,6 +20,9 @@ setup(
             'mcw_parse_neuroscore=mcw_readers.gui.mcw_parse_neuroscore:main',
             'mcw_parse_multineuroscore=mcw_readers.gui.mcw_parse_multineuroscore:main',
         ],
+        'console_scripts': [
+            'parse_epilepsy_neuroscore=mcw_readers.cli.parse_epilepsy_neuroscore:main'
+        ]
     },
     install_requires=[
         'openpyxl',
@@ -32,8 +35,7 @@ setup(
     package_data={
         '': ['LICENSE', 'README.md'],
         'mcw_readers': ['data/ped_lut.xlsx',
-                        'data/xpdf-tools-linux-4.01.01/bin64/pdftotext',
-                        'data/xpdf-tools-win-4.01.01/bin64/pdftotext.exe',
+                        'data/epilepsy_lut.xlsx',
         ],
     },
     include_package_data=True,
