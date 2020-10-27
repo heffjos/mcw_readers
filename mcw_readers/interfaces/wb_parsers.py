@@ -3,6 +3,7 @@ from collections import namedtuple
 
 import openpyxl
 
+import numpy as np
 import pandas as pd
 
 try:
@@ -45,7 +46,7 @@ class wb_parser():
 
     COL_NAMES = ['raw', 'ss', 'percentile', 'notes']
 
-    def __init__(self, wb_fname):
+    def __init__(self, wb_fname, verbose=True):
 
         self.fname = wb_fname
         self.wb = openpyxl.load_workbook(self.fname, data_only=True)
@@ -56,7 +57,7 @@ class wb_parser():
             raise Exception('first_data_row > sh.max_row')
 
         rd = self.sh.row_dimensions
-        self.lines = self.parse_lines()
+        self.lines = self.parse_lines(verbose)
         self.unhidden_lines = [x for x in self.lines
                                if not rd[x.row].hidden]
 
@@ -76,7 +77,7 @@ class wb_parser():
 
         return i
 
-    def parse_lines(self):
+    def parse_lines(self, verbose=True):
         """Returns unique data entry line identifiers in wb"""
         col = 1
 
@@ -115,7 +116,8 @@ class wb_parser():
                     p_indent_key = c_indent
                 c_indent = indent_mapper[c_indent]
 
-                print(f"Parsing line : {current_line} : {c_text} : {c_indent}")
+                if verbose:
+                    print(f"Parsing line : {current_line} : {c_text} : {c_indent}")
 
                 c_text = c_text.strip()
 
@@ -197,9 +199,9 @@ class wb_parser():
                     try:
                         value = self.sh[row][n + col_offset].value
                         if value in self.NAN_VALUES:
-                            value = pd.np.nan
+                            value = np.nan
                     except:
-                        value = pd.np.nan
+                        value = np.nan
 
                     if variable:
                         results[variable] = [value]
@@ -378,7 +380,7 @@ class peds_wb_parser():
                     if variable:
                         results[variable] = self.sh[row_num][raw_col + n].value
                         if results[variable] in NAN_VALUES:
-                            results[variable] = pd.np.nan
+                            results[variable] = np.nan
             else:
                 new_identifiers['identifier'].append(identifier[0])
                 new_identifiers['test_no'].append(identifier[1])
