@@ -1,5 +1,5 @@
 
-NEUROREADER_HEADER_MAPPER = {
+NEUROREADER_ECP_HEADER_MAPPER = {
     'Image ID': 'image_id',
     'Group name': 'group_name',
     'Study ID': 'study_id',
@@ -13,14 +13,14 @@ NEUROREADER_HEADER_MAPPER = {
     'Age': 'age',
 }
 
-NEUROREADER_RESULTS_MAPPER = {
+NEUROREADER_ECP_RESULTS_MAPPER = {
     'Hippocampal Left-Right Asymmetry Index': 'hippocampal_leftright_asymmetry_index',
     'NR Index': 'hippocampal_asymmetry_nr_index',
     'Z-score': 'hippocampal_asymmetry_zscore',
     'Percentile': 'hippocampal_asymmetry_percentile',
 }
 
-NEUROREADER_TABLE_MAPPER = {
+NEUROREADER_ECP_TABLE_MAPPER = {
     'Whole Brain Matter': 'whole_brain_matter',
     'Gray Matter': 'gray_matter',
     'White Matter': 'white_matter',
@@ -67,7 +67,7 @@ NEUROREADER_TABLE_MAPPER = {
     'Left Lateral Ventricle': 'left_lateral_ventricle'
 }
 
-DEMENTIA_HEADER_MAPPER = {
+NEUROREADER_DEMENTIA_HEADER_MAPPER = {
     'Image ID': 'image_id',
     'Group name': 'group_name',
     'Study ID': 'study_id',
@@ -81,14 +81,14 @@ DEMENTIA_HEADER_MAPPER = {
     'Age': 'age',
 }
 
-DEMENTIA_RESULTS_MAPPER = {
+NEUROREADER_DEMENTIA_RESULTS_MAPPER = {
     'Hippocampal Left-Right Asymmetry Index': 'Hippocampus_Asym_Index',
     'NR Index': 'nr_index',
     'Z-score': 'Hippocampus_Asym_Zscor',
     'Percentile': 'Hippocampus_Asym_percentile',
 }
 
-DEMENTIA_TABLE_MAPPER = {
+NEUROREADER_DEMENTIA_TABLE_MAPPER = {
     'Whole Brain Matter': 'WBV',
     'Gray Matter': 'GrayMatter',
     'White Matter': 'WhiteMatter',
@@ -132,11 +132,11 @@ DEMENTIA_TABLE_MAPPER = {
 }
 
 NEUROREADER_MAPPERS = {
-    'ECP': (NEUROREADER_HEADER_MAPPER,
-            NEUROREADER_RESULTS_MAPPER,
-            NEUROREADER_TABLE_MAPPER),
-    'DEMENTIA': (DEMENTIA_HEADER_MAPPER,
-                 DEMENTIA_RESULTS_MAPPER,
-                 DEMENTIA_TABLE_MAPPER),
+    'ECP': (NEUROREADER_ECP_HEADER_MAPPER,
+            NEUROREADER_ECP_RESULTS_MAPPER,
+            NEUROREADER_ECP_TABLE_MAPPER),
+    'DEMENTIA': (NEUROREADER_DEMENTIA_HEADER_MAPPER,
+                 NEUROREADER_DEMENTIA_RESULTS_MAPPER,
+                 NEUROREADER_DEMENTIA_TABLE_MAPPER),
 }
 
