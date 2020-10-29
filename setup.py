@@ -17,8 +17,6 @@ setup(
     entry_points={
         'gui_scripts': [
             'ped_parse_neuroscore=mcw_readers.gui.ped_parse_neuroscore:main',
-            'mcw_parse_neuroscore=mcw_readers.gui.mcw_parse_neuroscore:main',
-            'mcw_parse_multineuroscore=mcw_readers.gui.mcw_parse_multineuroscore:main',
         ],
         'console_scripts': [
             'parse_epilepsy_neuroscore=mcw_readers.cli.parse_epilepsy_neuroscore:main'
