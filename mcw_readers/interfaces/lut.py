@@ -4,12 +4,19 @@ import pandas as pd
 
 def initialize_lut(excel, dept):
     """
-    Initialize a blank lookup table for the pediatric neuroscore file.
+    Initialize a blank lookup table for neuroscore file for a specific department.
 
     **Parameters**
 
         excel
-            Excel file name point to a ped mcwscore file.
+            Neuroscore file name.
+        dept
+            A str indicating what the department for the excel file.
+            Here are the available choices:
+                peds
+                epilepsy
+                dementia
+                aphasia
 
     **Outputs**
 
@@ -18,13 +25,6 @@ def initialize_lut(excel, dept):
                 test - the test name the row belongs
                 test_no - the current test number
                 identifier - the unique identifier for the row
-        dept
-            A str indicating what the department for the excel file.
-            Here are the available choices:
-                peds
-                epilepsy
-                dementia
-                aphasia
     """
     output = {'test': [], 'test_no': [], 'identifier': []}
     test_counter = {}
