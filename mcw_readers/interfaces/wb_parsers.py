@@ -14,13 +14,17 @@ except ImportError:
 from .lut import lut
 from .. import data
 
-NAN_VALUES = ['#N/A', '#REF!', '#VALUE!', None, 'RAW', 'Score', '']
-
 line = namedtuple('line', 'identifier test_no row')
 
-class wb_parser():
+class neuroscore_parser():
 
     NAN_VALUES = {
+        '#N/A',
+        '#REF!',
+        '#VALUE!',
+        'RAW',
+        'Score',
+        '',
         ' --',
         '%tile',
         '9-Min',
@@ -44,15 +48,39 @@ class wb_parser():
         'val',
     }
 
-    COL_NAMES = ['raw', 'ss', 'percentile', 'notes']
-
     def __init__(self, wb_fname, verbose=True):
+        """
+        Initializes neuroscore_parser.
+
+        Parameters
+        ----------
+
+        wb_fname: str
+            path to excel workbook
+        verbose : str
+            be verboose about doing things
+
+        Attributes
+        ----------
+            fname : str
+                path to exel workbook
+            wb : Workbook
+                Workbook object for fname
+            sh : Sheet
+                Sheet object for "Template" in wb
+            first_data_row : int
+                first line in sh containing data (1-based)
+            lines : list of line
+                unique data entry lines in sh
+            unhidden_lines : list of line
+                line objects in lines that are unhidden in sh
+        """
 
         self.fname = wb_fname
         self.wb = openpyxl.load_workbook(self.fname, data_only=True)
         self.sh = self.wb['Template']
 
-        self.first_data_row = self.find_first_data_row()
+        self.first_data_row, self.first_data_col = self.find_first_data()
         if self.first_data_row > self.sh.max_row:
             raise Exception('first_data_row > sh.max_row')
 
@@ -61,25 +89,17 @@ class wb_parser():
         self.unhidden_lines = [x for x in self.lines
                                if not rd[x.row].hidden]
 
-    def find_first_data_row(self):
-        """Returns the first line number of data entry"""
+    def find_first_data(self):
+        """Returns the row, column for the first data entry"""
 
-        col_stop1 = 2
-        col_stop2 = 1
-
-        for i in range(1, self.sh.max_row + 1):
-            if self.sh[i] and self.sh[i][col_stop1].value == "Raw":
-                break
-
-        for i in range(i + 1, self.sh.max_row + 1):
-            if self.sh[i] and self.sh[i][col_stop2].value:
-                break
-
-        return i
+        for row in range(1, self.sh.max_row + 1):
+            for col, cell in enumerate(self.sh[row]):
+                if cell.data_type == 's' and cell.value == 'Raw':
+                    return (row + 1, col - 1)
 
     def parse_lines(self, verbose=True):
         """Returns unique data entry line identifiers in wb"""
-        col = 1
+        col = self.first_data_col
 
         output = []
         test_counter = {}
@@ -175,11 +195,44 @@ class wb_parser():
                 if identifier.find(' | ') == -1]
 
     def parse_data(self, lut, tp):
-        """Parse the data in sh using lut for timepoint tp"""
+        """
+        Parse the data in sh using lut for timepoint tp
 
-        results = {}
+        Parameters
+        ----------
+
+        lut : lut
+            The lookup table for parsing.
+        tp : int
+            The timepoint number
+            Used only for epilepsy, dementia, or aphasia depts
+
+        Returns
+        -------
+
+        results : dict (variable : [value])
+            parsed neuroscore values according to lut
+        new_lines : dict
+            Each entry contains a new identifier/test_no information
+            identifier -> list
+            test_no    -> list
+            row        -> list
+        missing_lines : dict
+            Contains neuroscore variables where no redcap variable is assigned,
+            but an identifier is present in the lut
+            identifier -> list
+            test_no    -> list
+            row        -> list
+            col        -> list
+            name       -> list of neuroscore column names
+            value      -> neuroscore value
+        """
+
+        data_cols = ['raw', 'ss', 'percentile', 'notes']
         tp_offset = 4 * (tp - 1)
         col_offset = 2 + tp_offset
+            
+        results = {}
         new_lines = {'identifier': [],
                      'test_no': [],
                      'row': [],}
@@ -210,7 +263,7 @@ class wb_parser():
                         missing_lines['test_no'].append(test_no)
                         missing_lines['row'].append(row)
                         missing_lines['col'].append(n + col_offset)
-                        missing_lines['name'].append(self.COL_NAMES[n])
+                        missing_lines['name'].append(data_cols[n])
                         missing_lines['value'].append(value)
                         
             else:
@@ -225,7 +278,19 @@ class wb_parser():
 
         results = {}
 
-        if study == 'epilepsy':
+        if self.dept in {'peds'}:
+            results['Provider'] = self.sh['C4'].value
+            results['Psychometrist'] = self.sh['C5'].value
+
+            results['Sex'] = self.sh['G4'].value
+            results['DOE'] = self.sh['G5'].value
+            results['DOB'] = self.sh['G6'].value
+            results['Yrs'] = self.sh['G7'].value
+            results['Mo']  = self.sh['G8'].value
+            results['D']   = self.sh['G9'].value
+            results['Handedness'] =  self.sh['G10'].value
+
+        elif self.dept in {'epilepsy', 'dementia', 'aphasia'}:
             date_col = 4 + (tp - 1) * 4
             age_col = 2 + (tp -1) * 4
 
