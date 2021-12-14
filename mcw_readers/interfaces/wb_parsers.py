@@ -299,7 +299,7 @@ class neuroscore_parser():
                                   .split(',')[0]
                                   .split(': ')[1])]
         else:
-            raise Exception(f'Unkown study: {study}')
+            raise Exception(f'Unkown dept: {dept}')
 
         return results
     
