@@ -1,3 +1,5 @@
+import re
+
 from datetime import datetime
 from collections import namedtuple
 
@@ -302,7 +304,343 @@ class neuroscore_parser():
             raise Exception(f'Unkown dept: {dept}')
 
         return results
-    
+
+class peds_parser(neuroscore_parser):
+
+    def parse_data(self, lut):
+        """
+        Parse the data in sh using lut
+
+        Parameters
+        ----------
+
+        lut : lut
+            The lookup table for parsing.
+
+        Returns
+        -------
+
+        results : dict (variable : [value])
+            parsed neuroscore values according to lut
+        new_lines : dict
+            Each entry contains a new identifier/test_no information
+            identifier -> list
+            test_no    -> list
+            row        -> list
+        missing_lines : dict
+            Contains neuroscore variables where no redcap variable is assigned,
+            but an identifier is present in the lut
+            identifier -> list
+            test_no    -> list
+            row        -> list
+            col        -> list
+            name       -> list of neuroscore column names
+            value      -> neuroscore value
+        """
+
+        data_cols = ['raw', 'ss', '%tile', 'equivalent', 'form', 'notes']
+        get_variables = [
+            self._get_raw_variable,
+            self._get_ss_variable,
+            self._get_percentile_variable,
+            self._get_equivalent_variable,
+            self._get_form_variable,
+            self._get_notes_variable
+        ]
+            
+        results = {}
+        new_lines = {'identifier': [],
+                     'test_no': [],
+                     'row': [],}
+        missing_lines = {'identifier': [],
+                         'test_no': [],
+                         'row': [],
+                         'col': [],
+                         'col_letter': [],
+                         'name': [],
+                         'value': [],}
+
+        for identifier, test_no, row in self.unhidden_lines:
+            key = (identifier, test_no)
+            if key in lut.lut:
+                rc_variables = lut.lut[key]
+
+                for n, get_variable in enumerate(get_variables):
+
+                    cell = self.sh[row][n + self.first_data_col + 1]
+                    variable_values = get_variable(cell, rc_variables)
+
+                    for variable, value in variable_values:
+                        if value in self.NAN_VALUES:
+                            value = np.nan
+
+                        if variable:
+                            results[variable] = [value]
+                        elif not pd.isna(value):
+                            missing_lines['identifier'].append(identifier)
+                            missing_lines['test_no'].append(test_no)
+                            missing_lines['row'].append(row)
+                            missing_lines['col'].append(cell.column)
+                            missing_lines['col_letter'].append(cell.column_letter)
+                            missing_lines['name'].append(data_cols[n])
+                            missing_lines['value'].append(value)
+                        
+            else:
+                new_lines['identifier'].append(identifier)
+                new_lines['test_no'].append(test_no)
+                new_lines['row'].append(row)
+
+        if (self.sh[1][1].value is not None and
+            self.sh[1][1].data_type == 'n'):
+            results['ID'] = int(self.sh[1][1].value) 
+        else:
+            results['ID'] = np.nan
+
+        if (self.sh[2][1].value is not None and
+            self.sh[2][1].data_type == 'n'): 
+            results['Visit'] = int(self.sh[2][1].value)
+        else:
+            results['Visit'] = np.nan
+
+        if self.sh[3][1].value is not None:
+            results['Sex'] = self.sh[3][1].value
+        else:
+            results['Sex'] = np.nan
+
+        if (self.sh[4][1].value is not None and
+            self.sh[4][1].data_type == 'n'):
+            results['Yrs'] = int(self.sh[4][1].value)
+        else:
+            results['Yrs'] = np.nan
+
+        if (self.sh[5][1].value is not None and
+            self.sh[5][1].data_type == 'n'):
+            results['Mos'] = int(self.sh[5][1].value)
+        else:
+            results['Mos'] = np.nan
+
+        if self.sh[6][1].value is not None:
+            results['Handedness'] = self.sh[6][1].value
+        else:
+            results['Handedness'] = np.nan
+                    
+        return results, new_lines, missing_lines
+
+    def _get_raw_variable(self, cell, rc_variables):
+        """Returns the redcap variable and postprocessed value for raw column"""
+
+        return [(rc_variables[0], cell.value)]
+
+    def _get_ss_variable(self, cell, rc_variables):
+        """
+        Returns the redcap variable and postprocessed value for 'ss' column
+
+        Parameters
+        ----------
+
+        cell : Cell
+            the cell from an openpyxl sheet
+        rc_variables : list of str
+            the list of redcap variables for the row of cell
+
+
+        Returns
+        -------
+
+        rc_variable : str
+            the redcap variable name
+        postprocessed_value : str or float
+            the postprocessed cell value
+
+        Description
+        -----------
+
+        Here are the lut columns associated with ss:
+            standard_score
+                between (60, 120]
+            scaled_score
+                between [1,35]
+            t_score
+                between [40, 60]
+                the cell value may start with "T" or "T "
+        """
+        value = cell.value
+
+        if value is not None: 
+
+            if cell.data_type == 'n':
+                variable_values = [
+                    (rc_variables[1], value),
+                    (rc_variables[2], None),
+                    (rc_variables[3], None),
+                ]
+
+            elif cell.data_type == 's':
+                if re.fullmatch('T[ ]?\d+', value):
+                    postprocessed_value = float(re.sub('T[ ]*', '', value))
+
+                    variable_values = [
+                        (rc_variables[1], postprocessed_value),
+                        (rc_variables[2], None),
+                        (rc_variables[3], None),
+                    ]
+                else:
+                    variable_values = [(None, value)]
+            else:
+                variable_values = [
+                    (rc_variables[1], None),
+                    (rc_variables[2], None),
+                    (rc_variables[3], None),
+                ]
+
+        else:
+            variable_values = [(None, value)]
+
+        return variable_values
+
+        # value = cell.value
+
+        # if value is not None: 
+        #     print(cell.row, cell.column_letter, value, cell.data_type)
+
+        #     if cell.data_type == 'n':
+
+        #         if value > 60 and value <= 120:
+        #             variable_values = [
+        #                 (rc_variables[1], value),
+        #                 (rc_variables[2], None),
+        #                 (rc_variables[3], None),
+        #             ]
+        #         elif value > 1 and value <= 35:
+        #             variable_values = [
+        #                 (rc_variables[1], None),
+        #                 (rc_variables[2], value),
+        #                 (rc_variables[3], None),
+        #             ]
+        #         elif value >= 40 and value <= 60:
+        #             variable_values = [
+        #                 (rc_variables[1], None),
+        #                 (rc_variables[2], None),
+        #                 (rc_variables[3], value),
+        #             ]
+        #         else:
+        #             raise Exception(f'Cannot process ss value: ({cell.row}, {cell.column}): {value}')
+
+        #     elif cell.data_type == 's':
+        #         if re.fullmatch('T[ ]?\d+', value):
+        #             postprocessed_value = float(re.sub('T[ ]*', '', value))
+
+        #             variable_values = [
+        #                 (rc_variables[1], None),
+        #                 (rc_variables[2], None),
+        #                 (rc_variables[3], postprocessed_value),
+        #             ]
+        #         else:
+        #             variable_values = [(None, value)]
+        #     else:
+        #         variable_values = [
+        #             (rc_variables[1], None),
+        #             (rc_variables[2], None),
+        #             (rc_variables[3], None),
+        #         ]
+
+        # else:
+        #     variable_values = [(None, value)]
+
+        # return variable_values
+
+    def _get_percentile_variable(self, cell, rc_variables):
+        """Returns the redcap variable and postprocessed value for 'percentile' colum"""
+
+        return [(rc_variables[4], cell.value)]
+
+    def _get_equivalent_variable(self, cell, rc_variables):
+        """
+        Returns the redcap variables and postprocessed values for 'equivalent' column.
+
+        Parameters
+        ----------
+
+        cell : Cell
+            the cell from an openpyxl sheet
+        rc_variables : list of str
+            the list of redcap variables for the row of cell
+
+
+        Returns
+        -------
+
+        rc_variable : str
+            the redcap variable name
+        postprocessed_value : str or float
+            the postprocessed cell value
+
+        Description
+        -----------
+        The eqiuvalent column is the only column that can return multiple values.
+        Here are the columns associated with 'equivalent':
+            sign
+                <, > will be listed or two values with a dash will be listed
+            age_equivalent
+                either enter the singal valeu listed or the first value ifa  range
+            high_equivalent
+                either leave blank if a single value listed or enter the send value of range
+        """
+
+        value = cell.value
+
+        if value is not None:
+            if cell.data_type == 's':
+                if re.match('[<>]', value):
+                    variable_values = [
+                        (rc_variables[5], value),
+                        (rc_variables[6], None),
+                        (rc_variables[7], None)
+                    ]
+                elif re.fullmatch('\d+-\d+', value):
+                    variable_values = [
+                        (rc_variables[5], value),
+                        (rc_variables[6], None),
+                        (rc_variables[7], None),
+                    ]
+                elif re.fullmatch('\d+:\d+', value):
+                    m = re.fullmatch('(\d+):(\d+)', value)
+                    variable_values = [
+                            (rc_variables[5], None),
+                            (rc_variables[6], float(m.group(1))),
+                            (rc_variables[7], float(m.group(2)))
+                    ]
+                else:
+                    variable_values = [(None, value)]
+
+            elif cell.data_type == 'n':
+                variable_values = [
+                    (rc_variables[5], None),
+                    (rc_variables[6], float(value)),
+                    (rc_variables[7], None),
+                ]
+
+            else:
+                variable_values = [(None, value)]
+
+        else:
+            variable_values = [
+                (rc_variables[5], None),
+                (rc_variables[6], None),
+                (rc_variables[7], None),
+            ]
+
+        return variable_values
+
+    def _get_form_variable(self, cell, rc_variables):
+        """Returns the redcap variable and postprocessed value for 'form' column"""
+
+        return [(rc_variables[8], cell.value)]
+
+    def _get_notes_variable(self, cell, rc_variables):
+        """Returns the redcap variable and postprocesse value for the 'notes' column"""
+
+        return [(rc_variables[9], cell.value)]
 
 class peds_wb_parser():
 
