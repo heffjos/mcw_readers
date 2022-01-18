@@ -154,7 +154,20 @@ class lut():
         """Converts a df lut to a dict lut"""
 
         if self.dept in {'peds'}:
-            data_cols = ['raw', 'ss', 'percentile', 'equivalent', 'form', 'notes']
+            data_cols = [
+                'raw', 
+                'standard_score', 
+                'scaled_score',
+                't_score',
+                'percentile', 
+                'sign',
+                'age_equivalent',
+                'high_equivalent',
+                'developmental_quotient',
+                'form', 
+                'notes',
+            ]
+
         elif self.dept in {'epilepsy', 'dementia', 'aphasia'}:
             data_cols = ['raw', 'ss', 'percentile', 'notes']
         else:
