@@ -13,10 +13,175 @@ try:
 except ImportError:
     import importlib_resources as pkg_resources
 
-from .lut import lut
-from .. import data
+from mcw_readers.interfaces.lut import lut
+from mcw_readers import data
+from mcw_readers.utils import DF_PSYCHOMETRIC, DICT_PSYCHOMETRIC, close_any
 
 line = namedtuple('line', 'identifier test_no row')
+
+class PedsParserError(Exception):
+    """Exception raised if there is an error while parsing a peds neuroscore file"""
+    pass
+
+def peds_determine_variable_value(value, rc_variables, percentile):
+    """
+    Determines the variable value for 'ss' column
+    
+    Parameters
+    ----------
+    
+    value : float
+        the cell value
+    rc_variables : list of str
+        the list of redcap variables for the row of cell
+    percentile : float
+        the percentile value for the current row.
+    
+    Returns
+    -------
+    
+    rc_variable : str
+        the redcap variable name
+    postprocessed_value : str or float
+        the postprocessed cell value
+    
+    Description
+    -----------
+    
+    Here are the lut columns associated with ss:
+        standard_score: [49, 150]
+        scaled_score:   [1,20]
+        t_score:        [19, 80]
+    """
+
+    if ~pd.isnan(percentile):
+        standard_scores = DICT_PSYCHOMETRIC['standard_score'][percentile]
+        scaled_scores = DICT_PSYCHOMETRIC['scaled_score'][percentile]
+        t_scores = DICT_PSYCHOMETRIC['t_score'][percentile]
+        
+        if (value in standard_scores or
+            (percentile == 1 and (value < 67 and value > 49))):
+        
+            variable_values = [
+                (rc_variables[1], value),
+                (rc_variables[2], None),
+                (rc_variables[3], None),
+            ]
+        elif (value in scaled_scores or 
+              close_any(value, scaled_scores, 3) or
+              (percentile == 1 and (value < 4 and value > 0))):
+        
+            variable_values = [
+                (rc_variables[1], None),
+                (rc_variables[2], value),
+                (rc_variables[3], None),
+            ]
+        elif (value in t_scores or 
+              close_any(value, t_scores, 3) or
+              (percentile == 1 and (value < 28 and value > 0))):
+        
+            variable_values = [
+                (rc_variables[1], None),
+                (rc_variables[2], None),
+                (rc_variables[3], value),
+            ]
+        else:
+            raise PedsParserError()
+    else pd.isnan(percentile):
+        if value > 80:
+            variable_values = [
+                (rc_variables[1], value),
+                (rc_variables[2], None),
+                (rc_variables[3], None),
+            ]
+        elif value > 0 and value < 21:
+            variable_values = [
+                (rc_variables[1], None),
+                (rc_variables[2], value),
+                (rc_variables[3], None),
+            ]
+        elif value > 21 and value < 50:
+            variable_values = [
+                (rc_variables[1], None),
+                (rc_variables[2], None),
+                (rc_variables[3], value),
+            ]
+        else:
+            raise PedsParserError()
+
+    return variable_values
+    
+
+def peds_get_ss_variable(cell, rc_variables, percentile):
+    """
+    Returns the redcap variable and postprocessed value for 'ss' column
+    
+    Parameters
+    ----------
+    
+    cell : Cell
+        the cell from an openpyxl sheet
+    rc_variables : list of str
+        the list of redcap variables for the row of cell
+    percentile : float
+        the percentile value for the current row.
+    
+    Returns
+    -------
+    
+    rc_variable : str
+        the redcap variable name
+    postprocessed_value : str or float
+        the postprocessed cell value
+    
+    Description
+    -----------
+    
+    Here are the lut columns associated with ss:
+        standard_score
+            between [49, 150]
+        scaled_score
+            between [1,20]
+        t_score
+            between [19, 80]
+            the cell value may start with "T" or "T "
+    """
+    value = cell.value
+    
+    if value is not None: 
+        print(cell.row, cell.column_letter, value, cell.data_type)
+    
+        if cell.data_type == 'n':
+            variable_values = peds_determine_variable_value(value, rc_variables, percentile)
+    
+        elif cell.data_type == 's':
+            if re.fullmatch('T[ ]?\d+', value):
+                postprocessed_value = float(re.sub('T[ ]*', '', value))
+    
+                variable_values = [
+                    (rc_variables[1], None),
+                    (rc_variables[2], None),
+                    (rc_variables[3], postprocessed_value),
+                ]
+
+            elif re.fullmatch('[<>][ ]?\d+', value):
+                value = float(re.sub('[<>][ ]?', '', value))
+                variable_values = peds_determine_variable_value(value, rc_variables, percentile)
+
+            else:
+                variable_values = [(None, value)]
+    
+        else:
+            variable_values = [
+                (rc_variables[1], None),
+                (rc_variables[2], None),
+                (rc_variables[3], None),
+            ]
+    
+    else:
+        variable_values = [(None, value)]
+    
+    return variable_values
 
 class neuroscore_parser():
 
@@ -340,12 +505,11 @@ class peds_parser(neuroscore_parser):
 
         data_cols = ['raw', 'ss', '%tile', 'equivalent', 'form', 'notes']
         get_variables = [
-            self._get_raw_variable,
-            self._get_ss_variable,
-            self._get_percentile_variable,
-            self._get_equivalent_variable,
-            self._get_form_variable,
-            self._get_notes_variable
+            (0, self._get_raw_variable),
+            (2, self._get_percentile_variable),
+            (3, self._get_equivalent_variable),
+            (4, self._get_form_variable),
+            (5, self._get_notes_variable),
         ]
             
         results = {}
@@ -365,11 +529,40 @@ class peds_parser(neuroscore_parser):
             if key in lut.lut:
                 rc_variables = lut.lut[key]
 
-                for n, get_variable in enumerate(get_variables):
+                for n, get_variable in get_variables:
 
                     cell = self.sh[row][n + self.first_data_col + 1]
                     variable_values = get_variable(cell, rc_variables)
 
+                    for variable, value in variable_values:
+                        if value in self.NAN_VALUES:
+                            value = np.nan
+                        if n == 2:
+                            percentile = value
+
+                        if variable:
+                            results[variable] = [value]
+                        elif not pd.isna(value):
+                            missing_lines['identifier'].append(identifier)
+                            missing_lines['test_no'].append(test_no)
+                            missing_lines['row'].append(row)
+                            missing_lines['col'].append(cell.column)
+                            missing_lines['col_letter'].append(cell.column_letter)
+                            missing_lines['name'].append(data_cols[n])
+                            missing_lines['value'].append(value)
+
+                # get_ss_variable outside, because it is dependent on percentile
+                cell = self.sh[row][1 + self.first_data_col + 1]
+                value = np.nan if cell.value in self.NAN_VALUES else cell.value
+                if (percentile is not None and 
+                    np.isnan(percentile) and 
+                    ~np.isnan(value)):
+
+                    err_msg = (f'Missing percentile value when ss value is present. '
+                               f'Row: {row}')
+                    raise Exception(err_msg)
+                else:
+                    variable_values = self._get_ss_variable(cell, rc_variables, percentile)
                     for variable, value in variable_values:
                         if value in self.NAN_VALUES:
                             value = np.nan
@@ -390,40 +583,6 @@ class peds_parser(neuroscore_parser):
                 new_lines['test_no'].append(test_no)
                 new_lines['row'].append(row)
 
-        if (self.sh[1][1].value is not None and
-            self.sh[1][1].data_type == 'n'):
-            results['ID'] = int(self.sh[1][1].value) 
-        else:
-            results['ID'] = np.nan
-
-        if (self.sh[2][1].value is not None and
-            self.sh[2][1].data_type == 'n'): 
-            results['Visit'] = int(self.sh[2][1].value)
-        else:
-            results['Visit'] = np.nan
-
-        if self.sh[3][1].value is not None:
-            results['Sex'] = self.sh[3][1].value
-        else:
-            results['Sex'] = np.nan
-
-        if (self.sh[4][1].value is not None and
-            self.sh[4][1].data_type == 'n'):
-            results['Yrs'] = int(self.sh[4][1].value)
-        else:
-            results['Yrs'] = np.nan
-
-        if (self.sh[5][1].value is not None and
-            self.sh[5][1].data_type == 'n'):
-            results['Mos'] = int(self.sh[5][1].value)
-        else:
-            results['Mos'] = np.nan
-
-        if self.sh[6][1].value is not None:
-            results['Handedness'] = self.sh[6][1].value
-        else:
-            results['Handedness'] = np.nan
-                    
         return results, new_lines, missing_lines
 
     def _get_raw_variable(self, cell, rc_variables):
@@ -431,7 +590,7 @@ class peds_parser(neuroscore_parser):
 
         return [(rc_variables[0], cell.value)]
 
-    def _get_ss_variable(self, cell, rc_variables):
+    def _get_ss_variable(self, cell, rc_variables, percentile):
         """
         Returns the redcap variable and postprocessed value for 'ss' column
 
@@ -442,6 +601,9 @@ class peds_parser(neuroscore_parser):
             the cell from an openpyxl sheet
         rc_variables : list of str
             the list of redcap variables for the row of cell
+        percentile : float
+            the percentile value for the current row.
+            This can be blank leading to a pd.nan value.
 
 
         Returns
@@ -464,95 +626,27 @@ class peds_parser(neuroscore_parser):
                 between [40, 60]
                 the cell value may start with "T" or "T "
         """
-        value = cell.value
 
-        if value is not None: 
+        try:
+            variable_values = peds_get_ss_variable(cell, rc_variables, percentile)
+        except PedsParserError:
+            value = cell.value
+            row = cell.row
+            column = cell.column_letter
+            msg = f'Unable to parse cell ({column:row}): {value}'
 
-            if cell.data_type == 'n':
-                variable_values = [
-                    (rc_variables[1], value),
-                    (rc_variables[2], None),
-                    (rc_variables[3], None),
-                ]
-
-            elif cell.data_type == 's':
-                if re.fullmatch('T[ ]?\d+', value):
-                    postprocessed_value = float(re.sub('T[ ]*', '', value))
-
-                    variable_values = [
-                        (rc_variables[1], postprocessed_value),
-                        (rc_variables[2], None),
-                        (rc_variables[3], None),
-                    ]
-                else:
-                    variable_values = [(None, value)]
-            else:
-                variable_values = [
-                    (rc_variables[1], None),
-                    (rc_variables[2], None),
-                    (rc_variables[3], None),
-                ]
-
-        else:
-            variable_values = [(None, value)]
+            raise PedsParserError(msg)
 
         return variable_values
 
-        # value = cell.value
-
-        # if value is not None: 
-        #     print(cell.row, cell.column_letter, value, cell.data_type)
-
-        #     if cell.data_type == 'n':
-
-        #         if value > 60 and value <= 120:
-        #             variable_values = [
-        #                 (rc_variables[1], value),
-        #                 (rc_variables[2], None),
-        #                 (rc_variables[3], None),
-        #             ]
-        #         elif value > 1 and value <= 35:
-        #             variable_values = [
-        #                 (rc_variables[1], None),
-        #                 (rc_variables[2], value),
-        #                 (rc_variables[3], None),
-        #             ]
-        #         elif value >= 40 and value <= 60:
-        #             variable_values = [
-        #                 (rc_variables[1], None),
-        #                 (rc_variables[2], None),
-        #                 (rc_variables[3], value),
-        #             ]
-        #         else:
-        #             raise Exception(f'Cannot process ss value: ({cell.row}, {cell.column}): {value}')
-
-        #     elif cell.data_type == 's':
-        #         if re.fullmatch('T[ ]?\d+', value):
-        #             postprocessed_value = float(re.sub('T[ ]*', '', value))
-
-        #             variable_values = [
-        #                 (rc_variables[1], None),
-        #                 (rc_variables[2], None),
-        #                 (rc_variables[3], postprocessed_value),
-        #             ]
-        #         else:
-        #             variable_values = [(None, value)]
-        #     else:
-        #         variable_values = [
-        #             (rc_variables[1], None),
-        #             (rc_variables[2], None),
-        #             (rc_variables[3], None),
-        #         ]
-
-        # else:
-        #     variable_values = [(None, value)]
-
-        # return variable_values
-
     def _get_percentile_variable(self, cell, rc_variables):
         """Returns the redcap variable and postprocessed value for 'percentile' colum"""
+        value = cell.value
 
-        return [(rc_variables[4], cell.value)]
+        if cell.data_type == 's' and re.fullmatch('[<>]\d+', value):
+                value = float(re.sub('[<>]', '', value))
+
+        return [(rc_variables[4], value)]
 
     def _get_equivalent_variable(self, cell, rc_variables):
         """
@@ -605,10 +699,23 @@ class peds_parser(neuroscore_parser):
                     ]
                 elif re.fullmatch('\d+:\d+', value):
                     m = re.fullmatch('(\d+):(\d+)', value)
+                    n1 = float(m.group(1))
+                    n2 = float(m.group(2))
                     variable_values = [
                             (rc_variables[5], None),
-                            (rc_variables[6], float(m.group(1))),
-                            (rc_variables[7], float(m.group(2)))
+                            (rc_variables[6], n1 * 12 + n2),
+                            (rc_variables[7], None),
+                    ]
+                elif re.fullmatch('\d+:\d+-\d+:\d+', value):
+                    m = re.fullmatch('(\d+):(\d+)-(\d+):(\d+)', value)
+                    n1 = float(m.group(1))
+                    n2 = float(m.group(2))
+                    n3 = float(m.group(3))
+                    n4 = float(m.group(4))
+                    variable_values = [
+                            (rc_variables[5], None),
+                            (rc_variables[6], n1 * 12 + n2),
+                            (rc_variables[7], n3 * 12 + n4),
                     ]
                 else:
                     variable_values = [(None, value)]
