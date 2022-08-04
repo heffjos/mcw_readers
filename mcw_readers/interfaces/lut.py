@@ -140,7 +140,12 @@ class lut():
     def __init__(self, dept, excel, sheet_name=0):
 
         self.excel = excel
-        self.df = pd.read_excel(self.excel, sheet_name = sheet_name)
+
+        if excel.endswith('csv'):
+            self.df = pd.read_csv(excel)
+        else:
+            self.df = pd.read_excel(self.excel, sheet_name = sheet_name)
+
         self.split_identifiers = [x.split(' | ') 
                                   for x in self.df['identifier']]
 
