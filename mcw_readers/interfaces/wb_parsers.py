@@ -54,7 +54,7 @@ def peds_determine_variable_value(value, rc_variables, percentile):
         t_score:        [19, 80]
     """
 
-    if ~pd.isnan(percentile):
+    if ~np.isnan(percentile):
         standard_scores = DICT_PSYCHOMETRIC['standard_score'][percentile]
         scaled_scores = DICT_PSYCHOMETRIC['scaled_score'][percentile]
         t_scores = DICT_PSYCHOMETRIC['t_score'][percentile]
@@ -87,7 +87,7 @@ def peds_determine_variable_value(value, rc_variables, percentile):
             ]
         else:
             raise PedsParserError()
-    else pd.isnan(percentile):
+    elif np.isnan(percentile):
         if value > 80:
             variable_values = [
                 (rc_variables[1], value),
@@ -150,9 +150,16 @@ def peds_get_ss_variable(cell, rc_variables, percentile):
     
     if value is not None: 
         print(cell.row, cell.column_letter, value, cell.data_type)
-    
+
         if cell.data_type == 'n':
-            variable_values = peds_determine_variable_value(value, rc_variables, percentile)
+            if cell.number_format == '"T"\\ 0;"T"\\ \\-0;"T"\\ 0;"T"\\ @':
+                variable_values = [
+                    (rc_variables[1], None),
+                    (rc_variables[2], None),
+                    (rc_variables[3], value),
+                ]
+            else:    
+                variable_values = peds_determine_variable_value(value, rc_variables, percentile)
     
         elif cell.data_type == 's':
             if re.fullmatch('T[ ]?\d+', value):
@@ -190,6 +197,10 @@ class neuroscore_parser():
         '#REF!',
         '#VALUE!',
         'RAW',
+        'Raw',
+        'Equivalent',
+        'Form',
+        'Notes',
         'Score',
         '',
         ' --',
@@ -554,29 +565,21 @@ class peds_parser(neuroscore_parser):
                 # get_ss_variable outside, because it is dependent on percentile
                 cell = self.sh[row][1 + self.first_data_col + 1]
                 value = np.nan if cell.value in self.NAN_VALUES else cell.value
-                if (percentile is not None and 
-                    np.isnan(percentile) and 
-                    ~np.isnan(value)):
+                variable_values = self._get_ss_variable(cell, rc_variables, percentile)
+                for variable, value in variable_values:
+                    if value in self.NAN_VALUES:
+                        value = np.nan
 
-                    err_msg = (f'Missing percentile value when ss value is present. '
-                               f'Row: {row}')
-                    raise Exception(err_msg)
-                else:
-                    variable_values = self._get_ss_variable(cell, rc_variables, percentile)
-                    for variable, value in variable_values:
-                        if value in self.NAN_VALUES:
-                            value = np.nan
-
-                        if variable:
-                            results[variable] = [value]
-                        elif not pd.isna(value):
-                            missing_lines['identifier'].append(identifier)
-                            missing_lines['test_no'].append(test_no)
-                            missing_lines['row'].append(row)
-                            missing_lines['col'].append(cell.column)
-                            missing_lines['col_letter'].append(cell.column_letter)
-                            missing_lines['name'].append(data_cols[n])
-                            missing_lines['value'].append(value)
+                    if variable:
+                        results[variable] = [value]
+                    elif not pd.isna(value):
+                        missing_lines['identifier'].append(identifier)
+                        missing_lines['test_no'].append(test_no)
+                        missing_lines['row'].append(row)
+                        missing_lines['col'].append(cell.column)
+                        missing_lines['col_letter'].append(cell.column_letter)
+                        missing_lines['name'].append(data_cols[n])
+                        missing_lines['value'].append(value)
                         
             else:
                 new_lines['identifier'].append(identifier)
@@ -629,13 +632,13 @@ class peds_parser(neuroscore_parser):
 
         try:
             variable_values = peds_get_ss_variable(cell, rc_variables, percentile)
-        except PedsParserError:
+        except PedsParserError as e:
             value = cell.value
             row = cell.row
             column = cell.column_letter
-            msg = f'Unable to parse cell ({column:row}): {value}'
+            msg = f'Unable to parse cell ({column}:{row}): {value}'
 
-            raise PedsParserError(msg)
+            raise PedsParserError(msg).with_traceback(e.__traceback__)
 
         return variable_values
 
