@@ -60,7 +60,7 @@ def peds_determine_variable_value(value, rc_variables, percentile):
         t_scores = DICT_PSYCHOMETRIC['t_score'][percentile]
         
         if (value in standard_scores or
-            (percentile == 1 and (value < 67 and value > 49))):
+            (percentile == 1 and (value < 67 and value >= 32))):
         
             variable_values = [
                 (rc_variables[1], value),
@@ -88,13 +88,13 @@ def peds_determine_variable_value(value, rc_variables, percentile):
         else:
             raise PedsParserError()
     elif np.isnan(percentile):
-        if value > 80:
+        if value >= 80:
             variable_values = [
                 (rc_variables[1], value),
                 (rc_variables[2], None),
                 (rc_variables[3], None),
             ]
-        elif value > 0 and value < 21:
+        elif value >= 0 and value < 21:
             variable_values = [
                 (rc_variables[1], None),
                 (rc_variables[2], value),
