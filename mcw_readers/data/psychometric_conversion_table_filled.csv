@@ -31,9 +31,10 @@ standard_score,percentile_rank,scaled_score,ets_score,t_score,z_score,descriptio
 121,92,15,650,65,1.5,Superior
 120,91,14,633,63,1.33,High Average
 119,90,14,633,63,1.33,High Average
-118,88,14,325,62,1.25,High Average
-117,87,14,325,62,1.25,High Average
-116,86,14,325,62,1.25,High Average
+118,88,14,625,62,1.25,High Average
+117,87,14,625,62,1.25,High Average
+116,86,14,625,62,1.25,High Average
+116,85,14,625,62,1.25,High Average
 115,84,13,600,60,1,High Average
 114,82,13,600,60,1,High Average
 113,81,13,575,58,0.75,High Average
@@ -54,7 +55,9 @@ standard_score,percentile_rank,scaled_score,ets_score,t_score,z_score,descriptio
 98,45,10,480,48,-0.25,Average
 97,42,10,480,48,-0.25,Average
 96,40,10,480,48,-0.25,Average
+96,39,10,480,48,-0.25,Average
 95,37,9,467,47,-0.33,Average
+94,35,9,467,47,-0.33,Average
 94,34,9,467,47,-0.33,Average
 93,32,9,450,45,-0.5,Average
 92,30,9,450,45,-0.5,Average
