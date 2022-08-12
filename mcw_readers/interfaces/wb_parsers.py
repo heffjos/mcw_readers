@@ -148,7 +148,7 @@ def peds_get_ss_variable(cell, rc_variables, percentile):
     """
     value = cell.value
     
-    if value is not None: 
+    if value is not None and value not in neuroscore_parser.NAN_VALUES: 
         print(cell.row, cell.column_letter, value, cell.data_type)
 
         if cell.data_type == 'n':
@@ -162,8 +162,16 @@ def peds_get_ss_variable(cell, rc_variables, percentile):
                 variable_values = peds_determine_variable_value(value, rc_variables, percentile)
     
         elif cell.data_type == 's':
-            if re.fullmatch('T[ ]?\d+', value):
-                postprocessed_value = float(re.sub('T[ ]*', '', value))
+            if cell.number_format == '"T"\\ 0;"T"\\ \\-0;"T"\\ 0;"T"\\ @':
+                postprocessed_value = float(re.sub('[<>]?[ ]*', '', value.strip()))
+
+                variable_values = [
+                    (rc_variables[1], None),
+                    (rc_variables[2], None),
+                    (rc_variables[3], postprocessed_value),
+                ]
+            elif re.fullmatch('T[ ]*[>]?\d+', value):
+                postprocessed_value = float(re.sub('T[ ]*[>]?', '', value))
     
                 variable_values = [
                     (rc_variables[1], None),
@@ -646,8 +654,8 @@ class peds_parser(neuroscore_parser):
         """Returns the redcap variable and postprocessed value for 'percentile' colum"""
         value = cell.value
 
-        if cell.data_type == 's' and re.fullmatch('[<>]\d+', value):
-                value = float(re.sub('[<>]', '', value))
+        if cell.data_type == 's' and re.fullmatch('[<>][ ]*\d+', value):
+                value = float(re.sub('[<>][ ]*', '', value))
 
         return [(rc_variables[4], value)]
 
