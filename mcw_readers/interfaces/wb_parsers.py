@@ -232,6 +232,9 @@ class neuroscore_parser():
         '[TIME]',
         'raw',
         'val',
+        '<Form>',
+        '<Item Set>',
+        'Choose One',
     }
 
     def __init__(self, wb_fname, verbose=True):
