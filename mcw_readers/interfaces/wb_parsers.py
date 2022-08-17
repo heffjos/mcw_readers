@@ -284,7 +284,17 @@ class neuroscore_parser():
         for row in range(1, self.sh.max_row + 1):
             for col, cell in enumerate(self.sh[row]):
                 if cell.data_type == 's' and cell.value == 'Raw':
-                    return (row + 1, col - 1)
+                    first_row = row + 1
+                    first_col = col - 1
+                    break
+            else:
+                continue
+            break
+
+        while self.sh[first_row][first_col].data_type == 'n':
+            first_row = first_row + 1
+
+        return (first_row, first_col)
 
     def parse_lines(self, verbose=True):
         """Returns unique data entry line identifiers in wb"""
