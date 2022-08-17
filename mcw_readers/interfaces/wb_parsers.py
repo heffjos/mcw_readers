@@ -502,6 +502,37 @@ class neuroscore_parser():
 
         return results
 
+class mci_parser(neuroscore_parser):
+
+    def parse_date(self, tp):
+        """Retrieve the date for a timepoint"""
+
+        for row in range(1, self.sh.max_row + 1):
+            for col, cell in enumerate(self.sh[row]):
+                if (cell.data_type == 's' and 
+                    (cell.value.startswith('DOS A:') or 
+                     cell.value.startswith('EXAM A:'))):
+
+                    first_row = row
+                    first_col = col
+                    break
+            else:
+                continue
+            break
+
+        if cell.value.startswith('DOS A:'):
+            row = first_row + tp - 1
+            txt = self.sh[row][first_col].value.split(':')[1].strip()
+
+            exam_date = datetime.strptime(txt, '%B %d, %Y').strftime('%Y-%m-%d')
+        elif cell.value.startswith('EXAM A:'):
+            col = (first_col + 2) + ((tp - 1) * 4)
+            exam_date = self.sh[first_row][col].value.strftime('%Y-%m-%d')
+        else:
+            exam_date = None
+
+        return exam_date
+            
 class peds_parser(neuroscore_parser):
 
     def parse_data(self, lut):
