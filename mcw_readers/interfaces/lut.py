@@ -161,9 +161,7 @@ class lut():
         if self.dept in {'peds'}:
             data_cols = [
                 'raw', 
-                'standard_score', 
-                'scaled_score',
-                't_score',
+                'ss',
                 'percentile', 
                 'sign',
                 'age_equivalent',

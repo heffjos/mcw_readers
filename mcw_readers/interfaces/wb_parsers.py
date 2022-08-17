@@ -528,6 +528,7 @@ class peds_parser(neuroscore_parser):
         data_cols = ['raw', 'ss', '%tile', 'equivalent', 'form', 'notes']
         get_variables = [
             (0, self._get_raw_variable),
+            (1, self._get_ss_variable),
             (2, self._get_percentile_variable),
             (3, self._get_equivalent_variable),
             (4, self._get_form_variable),
@@ -535,6 +536,11 @@ class peds_parser(neuroscore_parser):
         ]
             
         results = {}
+        debug_results = {
+            'identifier': [],
+            'variable': [],
+            'value': [],
+        }
         new_lines = {'identifier': [],
                      'test_no': [],
                      'row': [],}
@@ -557,14 +563,15 @@ class peds_parser(neuroscore_parser):
                     variable_values = get_variable(cell, rc_variables)
 
                     for variable, value in variable_values:
-                        if value in self.NAN_VALUES:
-                            value = np.nan
-                        if n == 2:
-                            percentile = value
+                        is_nan_value = value in self.NAN_VALUES
 
-                        if variable:
+                        if variable and not is_nan_value:
                             results[variable] = [value]
-                        elif not pd.isna(value):
+
+                            debug_results['identifier'].append(identifier)
+                            debug_results['variable'].append(variable)
+                            debug_results['value'].append(value)
+                        elif not pd.isna(value) and not is_nan_value:
                             missing_lines['identifier'].append(identifier)
                             missing_lines['test_no'].append(test_no)
                             missing_lines['row'].append(row)
@@ -573,38 +580,19 @@ class peds_parser(neuroscore_parser):
                             missing_lines['name'].append(data_cols[n])
                             missing_lines['value'].append(value)
 
-                # get_ss_variable outside, because it is dependent on percentile
-                cell = self.sh[row][1 + self.first_data_col + 1]
-                value = np.nan if cell.value in self.NAN_VALUES else cell.value
-                variable_values = self._get_ss_variable(cell, rc_variables, percentile)
-                for variable, value in variable_values:
-                    if value in self.NAN_VALUES:
-                        value = np.nan
-
-                    if variable:
-                        results[variable] = [value]
-                    elif not pd.isna(value):
-                        missing_lines['identifier'].append(identifier)
-                        missing_lines['test_no'].append(test_no)
-                        missing_lines['row'].append(row)
-                        missing_lines['col'].append(cell.column)
-                        missing_lines['col_letter'].append(cell.column_letter)
-                        missing_lines['name'].append(data_cols[n])
-                        missing_lines['value'].append(value)
-                        
             else:
                 new_lines['identifier'].append(identifier)
                 new_lines['test_no'].append(test_no)
                 new_lines['row'].append(row)
 
-        return results, new_lines, missing_lines
+        return results, debug_results, new_lines, missing_lines
 
     def _get_raw_variable(self, cell, rc_variables):
         """Returns the redcap variable and postprocessed value for raw column"""
 
         return [(rc_variables[0], cell.value)]
 
-    def _get_ss_variable(self, cell, rc_variables, percentile):
+    def _get_ss_variable(self, cell, rc_variables):
         """
         Returns the redcap variable and postprocessed value for 'ss' column
 
@@ -615,9 +603,6 @@ class peds_parser(neuroscore_parser):
             the cell from an openpyxl sheet
         rc_variables : list of str
             the list of redcap variables for the row of cell
-        percentile : float
-            the percentile value for the current row.
-            This can be blank leading to a pd.nan value.
 
 
         Returns
@@ -641,26 +626,12 @@ class peds_parser(neuroscore_parser):
                 the cell value may start with "T" or "T "
         """
 
-        try:
-            variable_values = peds_get_ss_variable(cell, rc_variables, percentile)
-        except PedsParserError as e:
-            value = cell.value
-            row = cell.row
-            column = cell.column_letter
-            msg = f'Unable to parse cell ({column}:{row}): {value}'
-
-            raise PedsParserError(msg).with_traceback(e.__traceback__)
-
-        return variable_values
+        return [(rc_variables[1], cell.value)]
 
     def _get_percentile_variable(self, cell, rc_variables):
         """Returns the redcap variable and postprocessed value for 'percentile' colum"""
-        value = cell.value
 
-        if cell.data_type == 's' and re.fullmatch('[<>][ ]*\d+', value):
-                value = float(re.sub('[<>][ ]*', '', value))
-
-        return [(rc_variables[4], value)]
+        return [(rc_variables[2], cell.value)]
 
     def _get_equivalent_variable(self, cell, rc_variables):
         """
@@ -701,24 +672,24 @@ class peds_parser(neuroscore_parser):
             if cell.data_type == 's':
                 if re.match('[<>]', value):
                     variable_values = [
-                        (rc_variables[5], value),
-                        (rc_variables[6], None),
-                        (rc_variables[7], None)
+                        (rc_variables[3], value),
+                        (rc_variables[4], None),
+                        (rc_variables[5], None)
                     ]
                 elif re.fullmatch('\d+-\d+', value):
                     variable_values = [
-                        (rc_variables[5], value),
-                        (rc_variables[6], None),
-                        (rc_variables[7], None),
+                        (rc_variables[3], value),
+                        (rc_variables[4], None),
+                        (rc_variables[5], None),
                     ]
                 elif re.fullmatch('\d+:\d+', value):
                     m = re.fullmatch('(\d+):(\d+)', value)
                     n1 = float(m.group(1))
                     n2 = float(m.group(2))
                     variable_values = [
+                            (rc_variables[3], None),
+                            (rc_variables[4], n1 * 12 + n2),
                             (rc_variables[5], None),
-                            (rc_variables[6], n1 * 12 + n2),
-                            (rc_variables[7], None),
                     ]
                 elif re.fullmatch('\d+:\d+-\d+:\d+', value):
                     m = re.fullmatch('(\d+):(\d+)-(\d+):(\d+)', value)
@@ -727,18 +698,18 @@ class peds_parser(neuroscore_parser):
                     n3 = float(m.group(3))
                     n4 = float(m.group(4))
                     variable_values = [
-                            (rc_variables[5], None),
-                            (rc_variables[6], n1 * 12 + n2),
-                            (rc_variables[7], n3 * 12 + n4),
+                            (rc_variables[3], None),
+                            (rc_variables[4], n1 * 12 + n2),
+                            (rc_variables[5], n3 * 12 + n4),
                     ]
                 else:
                     variable_values = [(None, value)]
 
             elif cell.data_type == 'n':
                 variable_values = [
+                    (rc_variables[3], None),
+                    (rc_variables[4], float(value)),
                     (rc_variables[5], None),
-                    (rc_variables[6], float(value)),
-                    (rc_variables[7], None),
                 ]
 
             else:
@@ -746,9 +717,9 @@ class peds_parser(neuroscore_parser):
 
         else:
             variable_values = [
+                (rc_variables[3], None),
+                (rc_variables[4], None),
                 (rc_variables[5], None),
-                (rc_variables[6], None),
-                (rc_variables[7], None),
             ]
 
         return variable_values
@@ -756,12 +727,12 @@ class peds_parser(neuroscore_parser):
     def _get_form_variable(self, cell, rc_variables):
         """Returns the redcap variable and postprocessed value for 'form' column"""
 
-        return [(rc_variables[8], cell.value)]
+        return [(rc_variables[7], cell.value)]
 
     def _get_notes_variable(self, cell, rc_variables):
         """Returns the redcap variable and postprocesse value for the 'notes' column"""
 
-        return [(rc_variables[9], cell.value)]
+        return [(rc_variables[8], cell.value)]
 
 class peds_wb_parser():
 
