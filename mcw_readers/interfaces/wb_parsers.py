@@ -588,7 +588,7 @@ class peds_parser(neuroscore_parser):
             (5, self._get_notes_variable),
         ]
             
-        results = {}
+        results = self.parse_header()
         debug_results = {
             'identifier': [],
             'variable': [],
@@ -794,4 +794,45 @@ class peds_parser(neuroscore_parser):
         """Returns the redcap variable and postprocesse value for the 'notes' column"""
 
         return [(rc_variables[8], cell.value)]
+
+    def parse_header(self):
+        """Returns the header information"""
+
+        header = {
+            'mrn': [np.nan],
+            'doe': [np.nan],
+            'dob': [np.nan],
+            'years': [np.nan],
+            'months': [np.nan],
+            'days': [np.nan],
+            'gender': [np.nan],
+            'handedness': [np.nan],
+        }
+
+        key_mapper = {
+            'yrs': 'years',
+            'mo': 'months',
+            'd': 'days',
+        }
+
+        for row in range(1, self.first_data_row):
+            col = 0
+            ncols = len(self.sh[row])
+            while col < ncols:
+                if self.sh[row][col].data_type == 's' and self.sh[row][col].value.endswith(':'):
+                    key = self.sh[row][col].value[:-1].lower().strip()
+                    if key in key_mapper:
+                        key = key_mapper[key]
+                    col += 1
+                    while col < ncols and not self.sh[row][col].value:
+                        col += 1
+                    if col < ncols and self.sh[row][col].value:
+                        header[key] = [self.sh[row][col].value]
+
+                col += 1
+
+        return header
+
+        
+
 
