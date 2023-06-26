@@ -237,7 +237,7 @@ class neuroscore_parser():
         'Choose One',
     }
 
-    def __init__(self, wb_fname, verbose=True):
+    def __init__(self, wb_fname, sheet_name='Template', verbose=True):
         """
         Initializes neuroscore_parser.
 
@@ -267,7 +267,7 @@ class neuroscore_parser():
 
         self.fname = wb_fname
         self.wb = openpyxl.load_workbook(self.fname, data_only=True)
-        self.sh = self.wb['Template']
+        self.sh = self.wb[sheet_name]
 
         self.first_data_row, self.first_data_col = self.find_first_data()
         if self.first_data_row > self.sh.max_row:
