@@ -594,16 +594,22 @@ class peds_parser(neuroscore_parser):
             'variable': [],
             'value': [],
         }
-        new_lines = {'identifier': [],
-                     'test_no': [],
-                     'row': [],}
-        missing_lines = {'identifier': [],
-                         'test_no': [],
-                         'row': [],
-                         'col': [],
-                         'col_letter': [],
-                         'name': [],
-                         'value': [],}
+        new_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+        }
+        missing_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+            'col': [],
+            'col_letter': [],
+            'name': [],
+            'value': [],
+        }
 
         for identifier, test_no, row in self.unhidden_lines:
             key = (identifier, test_no)
@@ -625,8 +631,9 @@ class peds_parser(neuroscore_parser):
                             debug_results['variable'].append(variable)
                             debug_results['value'].append(value)
                         elif not pd.isna(value) and not is_nan_value:
-                            missing_lines['identifier'].append(identifier)
+                            missing_lines['test'].append(identifier.split(' | ')[0])
                             missing_lines['test_no'].append(test_no)
+                            missing_lines['identifier'].append(identifier)
                             missing_lines['row'].append(row)
                             missing_lines['col'].append(cell.column)
                             missing_lines['col_letter'].append(cell.column_letter)
@@ -634,8 +641,9 @@ class peds_parser(neuroscore_parser):
                             missing_lines['value'].append(value)
 
             else:
-                new_lines['identifier'].append(identifier)
+                new_lines['test'].append(identifier.split(' | ')[0])
                 new_lines['test_no'].append(test_no)
+                new_lines['identifier'].append(identifier)
                 new_lines['row'].append(row)
 
         return results, debug_results, new_lines, missing_lines
