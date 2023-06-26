@@ -317,17 +317,18 @@ class neuroscore_parser():
                            test_counter[current_test],
                            self.first_data_row))
 
-        for current_line in range(self.first_data_row + 1, 
-                                  self.sh.max_row + 1):
+        start_row = self.first_data_row + 1
+        for current_line, row in enumerate(
+            self.sh.iter_rows(min_row=start_row), start=start_row
+        ):
+            if (row and
+                row[col].value and
+                row[col].value.strip() and
+                not row[col].value.strip().startswith('*')):
 
-            if (self.sh[current_line] and
-                self.sh[current_line][col].value and
-                self.sh[current_line][col].value.strip() and
-                not self.sh[current_line][col].value.strip().startswith('*')):
+                c_text = row[col].value
 
-                c_text = self.sh[current_line][col].value
-
-                c_indent = self.sh[current_line][col].alignment.indent
+                c_indent = row[col].alignment.indent
                 if c_text.startswith(' '):
                     c_indent = c_indent + 1
 
