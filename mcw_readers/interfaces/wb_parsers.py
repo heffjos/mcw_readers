@@ -282,8 +282,8 @@ class neuroscore_parser():
     def find_first_data(self):
         """Returns the row, column for the first data entry"""
 
-        for row in range(1, self.sh.max_row + 1):
-            for col, cell in enumerate(self.sh[row]):
+        for row, row_cells in enumerate(self.sh.iter_rows(), start=1):
+            for col, cell in enumerate(row_cells):
                 if cell.data_type == 's' and cell.value == 'Raw':
                     first_row = row + 1
                     first_col = col - 1
