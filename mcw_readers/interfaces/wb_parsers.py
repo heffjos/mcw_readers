@@ -234,6 +234,7 @@ class neuroscore_parser():
         'val',
         '<Form>',
         '<Item Set>',
+        '<Hand>',
         'Choose One',
     }
 
