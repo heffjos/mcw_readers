@@ -415,14 +415,16 @@ class neuroscore_parser():
             parsed neuroscore values according to lut
         new_lines : dict
             Each entry contains a new identifier/test_no information
-            identifier -> list
+            test       -> list
             test_no    -> list
+            identifier -> list
             row        -> list
         missing_lines : dict
             Contains neuroscore variables where no redcap variable is assigned,
             but an identifier is present in the lut
-            identifier -> list
+            test       -> list
             test_no    -> list
+            identifier -> list
             row        -> list
             col        -> list
             name       -> list of neuroscore column names
@@ -434,15 +436,21 @@ class neuroscore_parser():
         col_offset = 2 + tp_offset
             
         results = {}
-        new_lines = {'identifier': [],
-                     'test_no': [],
-                     'row': [],}
-        missing_lines = {'identifier': [],
-                         'test_no': [],
-                         'row': [],
-                         'col': [],
-                         'name': [],
-                         'value': [],}
+        new_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+        }
+        missing_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+            'col': [],
+            'name': [],
+            'value': [],
+        }
 
         for identifier, test_no, row in self.unhidden_lines:
             key = (identifier, test_no)
@@ -460,16 +468,18 @@ class neuroscore_parser():
                     if variable:
                         results[variable] = [value]
                     elif not pd.isna(value):
-                        missing_lines['identifier'].append(identifier)
+                        missing_lines['test'].append(identifier.split(' | ')[0])
                         missing_lines['test_no'].append(test_no)
+                        missing_lines['identifier'].append(identifier)
                         missing_lines['row'].append(row)
                         missing_lines['col'].append(n + col_offset)
                         missing_lines['name'].append(data_cols[n])
                         missing_lines['value'].append(value)
                         
             else:
-                new_lines['identifier'].append(identifier)
+                new_lines['test'].append(identifier.split(' | ')[0])
                 new_lines['test_no'].append(test_no)
+                new_lines['identifier'].append(identifier)
                 new_lines['row'].append(row)
                     
         return results, new_lines, missing_lines
