@@ -1,7 +1,7 @@
 import re
 
 from datetime import datetime
-from collections import namedtuple
+from collections import namedtuple, defaultdict
 
 import openpyxl
 
@@ -238,7 +238,13 @@ class neuroscore_parser():
         'Choose One',
     }
 
-    def __init__(self, wb_fname, sheet_name='Template', verbose=True):
+    def __init__(
+        self, 
+        wb_fname,
+        sheet_name='Template', 
+        form_info=None, 
+        verbose=True
+    ):
         """
         Initializes neuroscore_parser.
 
@@ -247,6 +253,18 @@ class neuroscore_parser():
 
         wb_fname: str
             path to excel workbook
+        sheet_name: str
+            the excel workbook sheet to parse
+        form_info: (int, str)
+            This variable holds information in order to replace tests matched with forms
+            with a single test name in the parsed lines.
+            First index is the form colun number (1-based).
+            Second index is the form replacement file. Create this file to repalce test
+            names with specific forms with a new single test name.
+            The file format is expected to be a tsv file with these columns:
+                test
+                form
+                new_test_name
         verbose : str
             be verboose about doing things
 
@@ -275,7 +293,7 @@ class neuroscore_parser():
             raise Exception('first_data_row > sh.max_row')
 
         rd = self.sh.row_dimensions
-        self.lines = self.parse_lines(verbose)
+        self.lines = self.parse_lines(form_info, verbose)
         self.unhidden_lines = [x for x in self.lines
                                if not rd[x.row].hidden]
 
@@ -297,25 +315,25 @@ class neuroscore_parser():
 
         return (first_row, first_col)
 
-    def parse_lines(self, verbose=True):
+    def _get_identifiers(self, verbose=True):
         """Returns unique data entry line identifiers in wb"""
         col = self.first_data_col
 
-        output = []
-        test_counter = {}
+        output = defaultdict(list)
 
         # process first line here
-        current_test = self.sh[self.first_data_row][col].value
-        test_counter[current_test] = 1
+        current_test = (
+            self.sh[self.first_data_row][col].value, self.first_data_row
+        )
 
         unique_stack = [self.sh[self.first_data_row][col].value]
         p_indent = self.sh[self.first_data_row][col].alignment.indent
         indent_mapper = {p_indent: 0}
         p_indent_key = p_indent
 
-        output.append(line(" | ".join(unique_stack), 
-                           test_counter[current_test],
-                           self.first_data_row))
+        output[current_test].append(
+            (" | ".join(unique_stack), self.first_data_row)
+        )
 
         start_row = self.first_data_row + 1
         for current_line, row in enumerate(
@@ -331,6 +349,8 @@ class neuroscore_parser():
                 c_indent = row[col].alignment.indent
                 if c_text.startswith(' '):
                     c_indent = c_indent + 1
+                if c_indent == 0 and not row[col].font.b:
+                    c_indent = 1
 
                 if c_indent not in indent_mapper:
                     indent_mapper[c_indent] = indent_mapper[p_indent_key] + 1
@@ -347,11 +367,7 @@ class neuroscore_parser():
                     unique_stack.append(c_text)
 
                     if c_indent == 0:
-                        current_test = c_text
-                        if current_test in test_counter:
-                            test_counter[current_test] += 1
-                        else:
-                            test_counter[current_test] = 1
+                        current_test = (c_text, current_line)
                         
                 elif c_indent > p_indent:
                     unique_stack.append(c_text)
@@ -359,11 +375,7 @@ class neuroscore_parser():
                     if c_indent == 0:
                         unique_stack.clear()
 
-                        current_test = c_text
-                        if current_test in test_counter:
-                            test_counter[current_test] += 1
-                        else:
-                            test_counter[current_test] = 1
+                        current_test = (c_text, current_line)
 
                         indent_mapper = {c_indent: 0}
                         p_indent_key = c_indent
@@ -373,11 +385,84 @@ class neuroscore_parser():
 
                     unique_stack.append(c_text)
 
-                output.append(line(' | '.join(unique_stack), 
-                                   test_counter[current_test],
-                                   current_line))
+                output[current_test].append(
+                    (" | ".join(unique_stack), current_line)
+                )
 
                 p_indent = c_indent
+
+        return output
+
+    def _replace_testforms(self, unique_identifiers, form_info):
+        """
+        Finds grabs the forms for the tests in unique_identifiers.
+
+        Parameters
+        ----------
+
+        unique_identifiers: dict ((test_identifier, line_no) : [unique_identifiers])
+            The unique_identifiers mapped to their test name.
+        valid_forms: list
+            The list of valid forms to identifiy for tests.
+        form_column: str
+            Search this excel column for forms.
+
+        Returns
+        -------
+
+        test_forms: dict ((test_identifier, line_no) : str)
+            The form associated with the test. The empty string indicates not form
+            found.
+        """
+
+        replaced_uids = dict()
+        form_column = form_info[0]
+        replacements = (pd.read_csv(form_info[1], sep='\t')
+            .loc[lambda df_: df_.replacement.notnull()]
+        )
+        valid_forms = set(replacements.form)
+        replacements.set_index(['test', 'form'], inplace=True)
+        for test, lines in unique_identifiers.items():
+            forms = []
+            min_row = lines[0][1]
+            max_row = lines[-1][1] 
+            for row in self.sh.iter_rows(
+                min_row, 
+                max_row, 
+                form_column, 
+                form_column, 
+                True
+            ):
+                if row[0] in valid_forms:
+                    forms.append(row[0])
+
+            check = (test[0], ' | '.join(forms))
+            if check in replacements.index:
+                replacement = replacements.loc[check, 'replacement']
+                replaced_uids[(replacement, test[1])] = [
+                    (x[0].replace(test[0], replacement, 1), x[1])
+                    for x in lines
+                ]
+            else:
+                replaced_uids[test] = lines
+
+        return replaced_uids
+
+    def parse_lines(self, form_info, verbose=True):
+
+        output = []
+        unique_identifiers = self._get_identifiers(verbose)
+        if form_info:
+            unique_identifiers = self._replace_testforms(
+                unique_identifiers, 
+                form_info
+            )
+
+        test_counter = defaultdict(int)
+        for test_info, uids in unique_identifiers.items():
+            test_counter[test_info[0]] += 1
+            for uid in uids:
+                output.append(line(uid[0], test_counter[test_info[0]], uid[1]))
 
         return output
 
