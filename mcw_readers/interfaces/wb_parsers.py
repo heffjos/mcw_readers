@@ -523,7 +523,8 @@ class mci_parser(neuroscore_parser):
             for col, cell in enumerate(self.sh[row]):
                 if (cell.data_type == 's' and 
                     (cell.value.startswith('DOS A:') or 
-                     cell.value.startswith('EXAM A:'))):
+                     cell.value.startswith('EXAM A:') or
+                     cell.value.startswith('Exam A:'))):
 
                     first_row = row
                     first_col = col
@@ -540,6 +541,10 @@ class mci_parser(neuroscore_parser):
         elif cell.value.startswith('EXAM A:'):
             col = (first_col + 2) + ((tp - 1) * 4)
             exam_date = self.sh[first_row][col].value.strftime('%Y-%m-%d')
+        elif cell.value.startswith('Exam A'):
+            col = first_col + ((tp - 1) * 4)
+            txt = self.sh[first_row][col].value.strip().split()
+            exam_date = datetime.strptime(txt[-1], '%d-%b-%Y').strftime('%Y-%m-%d')
         else:
             exam_date = None
 
