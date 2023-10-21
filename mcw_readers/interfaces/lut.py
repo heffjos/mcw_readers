@@ -149,7 +149,7 @@ class lut():
         self.split_identifiers = [x.split(' | ') 
                                   for x in self.df['identifier']]
 
-        if dept not in {'peds', 'epilepsy', 'dementia', 'aphasia'}:
+        if dept not in {'peds', 'epilepsy', 'dementia', 'aphasia', 'neonatology'}:
             raise Exception(f'Unknown dept: {dept}')
         self.dept = dept
 
@@ -170,7 +170,16 @@ class lut():
                 'form', 
                 'notes',
             ]
-
+        elif self.dept in {'neonatology'}:
+            data_cols = [
+                'raw',
+                'ss',
+                'percentile',
+                'equivalent',
+                'form',
+                'notes',
+                'gsv'
+            ]
         elif self.dept in {'epilepsy', 'dementia', 'aphasia'}:
             data_cols = ['raw', 'ss', 'percentile', 'notes']
         else:
