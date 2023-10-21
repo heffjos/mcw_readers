@@ -1,5 +1,6 @@
 import re
 
+from pathlib import Path
 from datetime import datetime
 from collections import namedtuple, defaultdict
 
@@ -22,6 +23,18 @@ line = namedtuple('line', 'identifier test_no row')
 class PedsParserError(Exception):
     """Exception raised if there is an error while parsing a peds neuroscore file"""
     pass
+
+def read_workbook(fname):
+    if fname.name.endswith('.csv'):
+        df = pd.read_csv(fname)
+    elif fname.name.endswith('.tsv'):
+        df = pd.read_csv(fname, sep='\t')
+    elif fname.name.endswith('.xlsx'):
+        df = pd.read_excel(fname)
+    else:
+        raise Exception(f'Cannot parser spreadsheet: {fname}')
+
+    return df
 
 def peds_determine_variable_value(value, rc_variables, percentile):
     """
@@ -255,7 +268,7 @@ class neuroscore_parser():
             path to excel workbook
         sheet_name: str
             the excel workbook sheet to parse
-        form_info: (int, str)
+        form_info: (int, str, str)
             This variable holds information in order to replace tests matched with forms
             with a single test name in the parsed lines.
             First index is the form colun number (1-based).
@@ -265,6 +278,8 @@ class neuroscore_parser():
                 test
                 form
                 new_test_name
+            Third index is the valid form file. It is a workbook listing the valid forms
+            to search under the form_name column.
         verbose : str
             be verboose about doing things
 
@@ -417,10 +432,12 @@ class neuroscore_parser():
 
         replaced_uids = dict()
         form_column = form_info[0]
-        replacements = (pd.read_csv(form_info[1], sep='\t')
+        form_lut = Path(form_info[1]).resolve()
+        file_valid_forms = Path(form_info[2]).resolve()
+        replacements = (read_workbook(form_lut)
             .loc[lambda df_: df_.replacement.notnull()]
         )
-        valid_forms = set(replacements.form)
+        valid_forms = set(read_workbook(file_valid_forms).form_name)
         replacements.set_index(['test', 'form'], inplace=True)
         for test, lines in unique_identifiers.items():
             forms = []
