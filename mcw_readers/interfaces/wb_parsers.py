@@ -970,6 +970,177 @@ class peds_parser(neuroscore_parser):
 
         return header
 
-        
+class neonatology_parser(neuroscore_parser):
 
+    def parse_data(self, lut):
+        """
+        Parse the data in sh using lut
 
+        Parameters
+        ----------
+
+        lut : lut
+            The lookup table for parsing.
+
+        Returns
+        -------
+
+        results : dict (variable : [value])
+            parsed neuroscore values according to lut
+        new_lines : dict
+            Each entry contains a new identifier/test_no information
+            identifier -> list
+            test_no    -> list
+            row        -> list
+        missing_lines : dict
+            Contains neuroscore variables where no redcap variable is assigned,
+            but an identifier is present in the lut
+            identifier -> list
+            test_no    -> list
+            row        -> list
+            col        -> list
+            name       -> list of neuroscore column names
+            value      -> neuroscore value
+        """
+
+        data_cols = ['raw', 'ss', 'percentile', 'equivalent', 'form', 'notes', 'gsv']
+            
+        results = self.parse_header()
+        debug_results = {
+            'identifier': [],
+            'variable': [],
+            'value': [],
+        }
+        new_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+        }
+        missing_lines = {
+            'test': [],
+            'test_no': [],
+            'identifier': [],
+            'row': [],
+            'col': [],
+            'col_letter': [],
+            'name': [],
+            'value': [],
+        }
+
+        for identifier, test_no, row in self.unhidden_lines:
+            key = (identifier, test_no)
+            if key in lut.lut:
+                rc_variables = lut.lut[key]
+
+                for n, variable in enumerate(rc_variables):
+                    cell = self.sh[row][n + self.first_data_col + 1]
+                    value = cell.value
+                    if value in self.NAN_VALUES:
+                        value = np.nan
+
+                    if variable:
+                        results[variable] = [value]
+
+                        debug_results['identifier'].append(identifier)
+                        debug_results['variable'].append(variable)
+                        debug_results['value'].append(value)
+                    elif not pd.isna(value):
+                        missing_lines['test'].append(identifier.split(' | ')[0])
+                        missing_lines['test_no'].append(test_no)
+                        missing_lines['identifier'].append(identifier)
+                        missing_lines['row'].append(row)
+                        missing_lines['col'].append(cell.column)
+                        missing_lines['col_letter'].append(cell.column_letter)
+                        missing_lines['name'].append(data_cols[n])
+                        missing_lines['value'].append(value)
+                        
+            else:
+                new_lines['test'].append(identifier.split(' | ')[0])
+                new_lines['test_no'].append(test_no)
+                new_lines['identifier'].append(identifier)
+                new_lines['row'].append(row)
+                    
+        return results, debug_results, new_lines, missing_lines
+
+    def parse_header(self):
+        """Returns the header information"""
+
+        header = {
+            'mrn': [np.nan],
+            'doe': [np.nan],
+            'dob': [np.nan],
+            'years': [np.nan],
+            'months': [np.nan],
+            'days': [np.nan],
+            'sex': [np.nan],
+            'handedness': [np.nan],
+            'dominant_language': [np.nan],
+            'interpreter_used': [np.nan],
+            'adjusted_age_years': [np.nan],
+            'adjusted_age_months': [np.nan],
+            'adjusted_age_days': [np.nan],
+        }
+
+        key_mapper = {
+            'yrs': 'years',
+            'mo': 'months',
+            'd': 'days',
+            'dominant language': 'dominant_language',
+            'interpreter used': 'interpreter_used',
+            'adjusted_age_yrs': 'adjusted_age_years',
+            'adjusted_age_mo': 'adjusted_age_months',
+            'adjusted_age_d': 'adjusted_age_days',
+        }
+
+        adjusted_age_col = 0
+        adjusted_age_row = 0
+        iter_rows = self.sh.iter_rows(
+            max_row=self.first_data_row, 
+            values_only=True
+        )
+        for i, row in enumerate(iter_rows, start=1):
+            for j, col in enumerate(row, start=1):
+                if col == 'Adjusted Age':
+                    adjusted_age_row = i
+                    adjusted_age_col = j
+                    break
+            else:
+                continue
+            break
+
+        max_col = (adjusted_age_col - 1) if adjusted_age_col else None
+        for row in self.sh.iter_rows(max_row=self.first_data_row, max_col=max_col):
+            for i, col in enumerate(row):
+                if col.data_type == 's' and col.value.endswith(':'):
+                    key = col.value[:-1].lower().strip()
+                    if key in key_mapper:
+                        key = key_mapper[key]
+                    for cell_val in row[(i + 1):]:
+                        if cell_val.value is not None:
+                            if cell_val.value in self.NAN_VALUES:
+                                header[key] = [np.nan]
+                            else:
+                                header[key] = [cell_val.value]
+                            break
+
+        if adjusted_age_col > 0:
+            iter_rows = self.sh.iter_rows(
+                min_row=adjusted_age_row,
+                max_row=self.first_data_row,
+                min_col=adjusted_age_col,
+            )
+            for row in iter_rows:
+                field = row[0]
+                if field.data_type == 's' and field.value.endswith(':'):
+                    key = 'adjusted_age_' + field.value[:-1].lower().strip()
+                    if key in key_mapper:
+                        key = key_mapper[key]
+                    for cell_val in row[1:]:
+                        if cell_val.value is not None:
+                            if cell_val.value in self.NAN_VALUES:
+                                header[key] = [np.nan]
+                            else:
+                                header[key] = [cell_val.value]
+
+        return header
