@@ -483,6 +483,36 @@ class neuroscore_parser():
 
         return output
 
+    def get_test_forms(self, form_column, verbose=True):
+        """Returns all tests and their forms for original identifiers"""
+
+        results = {
+            'line_no': [],
+            'test': [],
+            'form': [],
+        }
+        unique_identifiers = self._get_identifiers(verbose)
+        for test, lines in unique_identifiers.items():
+            forms = []
+            min_row = lines[0][1]
+            max_row = lines[-1][1] 
+            for row in self.sh.iter_rows(
+                min_row, 
+                max_row, 
+                form_column, 
+                form_column, 
+                True
+            ):
+                if row[0] and row[0] not in self.NAN_VALUES:
+                    forms.append(row[0])
+
+            if forms:
+                results['line_no'].append(test[1])
+                results['test'].append(test[0])
+                results['form'].append(' | '.join(forms))
+
+        return pd.DataFrame(results)
+
     def find_new_lines(self, lut):
         """Return new lines in sh not found in lut"""
 
